@@ -1,0 +1,31 @@
+library(dplyr)
+library(magrittr)
+library(here)
+library(readr)
+
+Local2_Path <- "C:/Users/Kevin/Documents/GitHub/Accelerometers/SampleEntropy/"
+
+DataFileNames <- list.files(Local2_Path)
+
+Complexity_PRE <- read_csv(paste(Local2_Path,"Complexity_PRE.csv",sep=""))   
+Complexity_PRE <-   Complexity_PRE[1:15,]
+
+Complexity_POST <- read_csv(paste(Local2_Path,"Complexity_POST.csv",sep=""))    
+Complexity_POST <-   Complexity_POST[1:15,]
+
+
+SampleEntropy_POST <- read_csv(paste(Local2_Path,"SampleEntropy_POST.csv",sep=""))    
+SampleEntropy_PRE <- read_csv(paste(Local2_Path,"SampleEntropy_PRE.csv" ,sep=""))    
+
+Complexity <- bind_rows(Complexity_PRE,Complexity_POST) %>% select(-item)
+Complexity <- Complexity[4:12] # Removal of identical columns
+
+
+MDs <- mahalanobis(Complexity,colMeans(Complexity),cov(Complexity))
+shapiro.test(MDs)
+
+MD_PRE <- MDs[1:15]
+MD_POST <- MDs[16:30]
+
+
+wilcox.test(MD_POST, MD_PRE, paired = TRUE, alternative = "greater")
