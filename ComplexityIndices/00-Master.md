@@ -73,9 +73,11 @@ mean of the differences
 data:  CIMD_POST and CIMD_PRE
 V = 75, p-value = 0.2106
 alternative hypothesis: true location shift is greater than 0
+
 </code></pre>
 
 #### Test for Pelvis Variables (Significant Difference)
+
 <pre><code>
 
 	Paired t-test
@@ -95,10 +97,11 @@ mean of the differences
 data:  CIMD_POST and CIMD_PRE
 V = 96, p-value = 0.02063
 alternative hypothesis: true location shift is greater than 0
+
 </code><pre>
 
-
 #### Test for Thorax Variables (No Significant Difference)
+
 <pre><code>
 
 	Paired t-test
@@ -118,6 +121,7 @@ mean of the differences
 data:  CIMD_POST and CIMD_PRE
 V = 67, p-value = 0.3599
 alternative hypothesis: true location shift is greater than 0
+
 </code></pre>
 
 #### Sample Entropy 
