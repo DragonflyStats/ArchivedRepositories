@@ -21,31 +21,33 @@ Two procedures are used to test for significant difference.
 
 The Hotelling Paired T-test is implemented using the MVTest R package (using the MPaired function).
 
-As the Left and Right tibia measurements are identical, only one set of measurements is included.
+0.2134127As the Left and Right tibia measurements are identical, only one set of measurements is included.
 
-#### Results of Hotelling Procedure
+### Part A : MVTests - Complexity Index - Results of Hotelling Procedure
 
-* CI - all three regions  - no significant difference
-* CI - for tibia (left)  - no significant difference
-* CI - for pelvis  -  ***significant difference****
-* CI - for thorax  - no significant difference
+* A1: CI - all three regions  - p-value: 0.2598553 - no significant difference
+* A2: CI - for tibia (left)  - p-value: 0.282157 - no significant difference
+* A3: CI - for pelvis  - p-value:  0.01274736 -  ***significant difference****
+* A4: CI - for thorax  - p-value: 0.4543853 -  no significant difference
 
-* SE - all three regions  - no significant difference
-* SE - for tibia (left)  - no significant difference
-* SE - for pelvis  -  ***significant difference***
-* SE - for thorax  - no significant difference
+### Part B : MVTests - Sample Entropy - Results of Hotelling Procedure
 
-#### Mahalanobis Procedure
+* B1: SE - all three regions  - p-value: 0.537562 -  no significant difference
+* B2: SE - for tibia (left)  - p-value: 0.2134127 -  no significant difference
+* B3: SE - for pelvis  - p-value: 0.678382 -  no significant difference
+* B4: SE - for thorax  - p-value: 0.3566413 -  no significant difference
+
+
+### Mahalanobis Procedure
 
 (What is the Mahalanobis Distance?)
 
-Both Pre and Post measurements are combined into a single matrix of measurements, creating a 30 x 9 matrix. Using the vector of column means, and the covariance
-matrix, a set of 30 Mahalanobis Distances are calculated using the mahalanobis funtion in R. 
+Both Pre and Post measurements are combined into a single matrix of measurements, creating a 30 x 9 matrix. Using the vector of column means, and the covariance matrix, a set of 30 Mahalanobis Distances are calculated using the "mahalanobis" funtion in R. 
 These Mahalanobis distances are split into two paired values, on which the conventional paired t-test can be applied. 
 This approach is a useful complement to the Hotelling test as it would allow 
 analysts to determine if any particular athletes are influential in the outcome of the procedure.
 
-#### PART C Summary of Results of Mahalanobis Paired Test Procedure
+### PART C Summary of Results of Mahalanobis Paired Test Procedure
 
 Compelxity Indices
 
@@ -58,12 +60,10 @@ Compelxity Indices
 
 <pre><code>
 
-
-	Shapiro-Wilk normality test
+       Shapiro-Wilk normality test
 
 data:  CIMD_POST - CIMD_PRE
 W = 0.94448, p-value = 0.442
-
 
 	Paired t-test
 
