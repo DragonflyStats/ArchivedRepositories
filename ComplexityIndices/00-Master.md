@@ -127,3 +127,117 @@ alternative hypothesis: true location shift is greater than 0
 * SE - for pelvis  -  ***significant difference***
 * SE - for thorax  - no significant difference
 
+<pre><code>
+
+	Shapiro-Wilk normality test
+
+data:  SEMD_POST - SEMD_PRE
+W = 0.94618, p-value = 0.4665
+
+
+	Paired t-test
+
+data:  SEMD_POST and SEMD_PRE
+t = 1.6623, df = 14, p-value = 0.05934
+alternative hypothesis: true difference in means is greater than 0
+95 percent confidence interval:
+ -0.1508658        Inf
+sample estimates:
+mean of the differences 
+                2.53229 
+
+
+	Wilcoxon signed rank test
+
+data:  SEMD_POST and SEMD_PRE
+V = 88, p-value = 0.06027
+alternative hypothesis: true location shift is greater than 0
+</code></pre>
+
+#### Sample Entropy for Tibia
+
+<pre><code>
+
+	Shapiro-Wilk normality test
+
+data:  SEMD_POST - SEMD_PRE
+W = 0.54936, p-value = 9.052e-06
+
+
+	Paired t-test
+
+data:  SEMD_POST and SEMD_PRE
+t = 1.4806, df = 14, p-value = 0.08044
+alternative hypothesis: true difference in means is greater than 0
+95 percent confidence interval:
+ -0.4555543        Inf
+sample estimates:
+mean of the differences 
+               2.402516 
+
+
+	Wilcoxon signed rank test
+
+data:  SEMD_POST and SEMD_PRE
+V = 79, p-value = 0.1514
+alternative hypothesis: true location shift is greater than 0
+</code><pre>
+
+#### Sample Entropy  - Pelvis 
+
+<pre><code>
+
+	Shapiro-Wilk normality test
+
+data:  SEMD_POST - SEMD_PRE
+W = 0.98465, p-value = 0.9917
+
+
+	Paired t-test
+
+data:  SEMD_POST and SEMD_PRE
+t = 0.97507, df = 14, p-value = 0.173
+alternative hypothesis: true difference in means is greater than 0
+95 percent confidence interval:
+ -0.6249946        Inf
+sample estimates:
+mean of the differences 
+              0.7751054 
+
+
+	Wilcoxon signed rank test
+
+data:  SEMD_POST and SEMD_PRE
+V = 79, p-value = 0.1514
+alternative hypothesis: true location shift is greater than 0
+</code></pre>
+
+#### Sample Entropy for Thorax
+
+<pre><code>
+
+	Shapiro-Wilk normality test
+
+data:  SEMD_POST - SEMD_PRE
+W = 0.50128, p-value = 3.602e-06
+
+
+
+	Paired t-test
+
+data:  SEMD_POST and SEMD_PRE
+t = 1.4184, df = 14, p-value = 0.08897
+alternative hypothesis: true difference in means is greater than 0
+95 percent confidence interval:
+ -0.6259088        Inf
+sample estimates:
+mean of the differences 
+               2.589343 
+
+
+	Wilcoxon signed rank test
+
+data:  SEMD_POST and SEMD_PRE
+V = 49, p-value = 0.7378
+alternative hypothesis: true location shift is greater than 0
+</code></pre>
