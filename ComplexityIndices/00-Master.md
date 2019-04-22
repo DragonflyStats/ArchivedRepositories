@@ -47,10 +47,12 @@ analysts to determine if any particular athletes are influential in the outcome 
 
 #### PART C Summary of Results of Mahalanobis Paired Test Procedure
 
-* CI - all three regions  - no significant difference
-* CI - for tibia (left)  - no significant difference
-* CI - for pelvis  -  ***significant difference****
-* CI - for thorax  - no significant difference
+Compelxity Indices
+
+* C1: CI - all three regions  - no significant difference
+* C2: CI - for tibia (left)  - no significant difference
+* C3: CI - for pelvis  -  ***significant difference****
+* C4: CI - for thorax  - no significant difference
 
 #### C2 Test for Tibia Variables (No Significant Difference)
 
@@ -188,7 +190,7 @@ mean of the differences
 data:  SEMD_POST and SEMD_PRE
 V = 79, p-value = 0.1514
 alternative hypothesis: true location shift is greater than 0
-</code><pre>
+</code></pre>
 
 #### D3 : Sample Entropy  - Pelvis 
 
