@@ -49,14 +49,51 @@ analysts to determine if any particular athletes are influential in the outcome 
 
 Compelxity Indices
 
-* C1: CI - all three regions  - no significant difference
+* C1: CI - all three regions  - ***significant difference****
 * C2: CI - for tibia (left)  - no significant difference
 * C3: CI - for pelvis  -  ***significant difference****
 * C4: CI - for thorax  - no significant difference
 
+#### C1 Test for all 9 Variables (Significant Difference)
+
+<pre><code>
+
+
+	Shapiro-Wilk normality test
+
+data:  CIMD_POST - CIMD_PRE
+W = 0.94448, p-value = 0.442
+
+
+	Paired t-test
+
+data:  CIMD_POST and CIMD_PRE
+t = 1.7899, df = 14, p-value = 0.04756
+alternative hypothesis: true difference in means is greater than 0
+95 percent confidence interval:
+ 0.02244618        Inf
+sample estimates:
+mean of the differences 
+               1.407416 
+
+
+
+	Wilcoxon signed rank test
+
+data:  CIMD_POST and CIMD_PRE
+V = 87, p-value = 0.06769
+alternative hypothesis: true location shift is greater than 0
+
+</code></pre>
+
 #### C2 Test for Tibia Variables (No Significant Difference)
 
 <pre><code>
+
+	Shapiro-Wilk normality test
+
+data:  CIMD_POST - CIMD_PRE
+W = 0.97489, p-value = 0.9227
 
 	Paired t-test
 
@@ -78,9 +115,15 @@ alternative hypothesis: true location shift is greater than 0
 
 </code></pre>
 
+
 #### C3 Test for Pelvis Variables (Significant Difference)
 
 <pre><code>
+
+	Shapiro-Wilk normality test
+
+data:  CIMD_POST - CIMD_PRE
+W = 0.94023, p-value = 0.3853
 
 	Paired t-test
 
@@ -106,6 +149,12 @@ alternative hypothesis: true location shift is greater than 0
 
 <pre><code>
 
+	Shapiro-Wilk normality test
+
+data:  CIMD_POST - CIMD_PRE
+W = 0.96848, p-value = 0.8349
+
+
 	Paired t-test
 
 data:  CIMD_POST and CIMD_PRE
@@ -116,7 +165,6 @@ alternative hypothesis: true difference in means is greater than 0
 sample estimates:
 mean of the differences 
              0.04519575 
-
 
 	Wilcoxon signed rank test
 
