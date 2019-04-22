@@ -1,27 +1,36 @@
-#### Complexity Indices & Sample Entropy
+### Summary 
+
+Significant difference in Complexity Index for Pelvis Area 
+
+### Complexity Indices & Sample Entropy
 
 * *What are they?*
 * *Which measure is more important?*
 
-#### Testing for Differences: Univariated Paired Tests
+### Testing for Differences: Univariated Paired Tests
 
 The test for a significant difference between measurements before and after fatigue training is carried out by univariate procedures (i.e. the well-known paired t-test) for each 
 variable.
 
 
 
-#### Multivariate Procedures
+### Multivariate Procedures
 
 To account for correlated nature of the variables, multiavariate procedure are used to jointly test for significant difference at each region (i.e. pelvis, thorax and ankles).
 Two procedures are used to test for significant difference.
+
 1. The Hotelling Multivariate Paired Test
 2. A Paired T-test on the Mahalanobis Distances.
 
-(As the validity of the nornality assumption is open to scrutiny, the paired t-test procedure is complemented by it's non parametric counterpart, the Wilcoxon Sign Test.)
+
+
+
+As the Left and Right tibia measurements are identical, only one set of measurements is included (we pick Left).
+
+
+### Description of Hotelling Paired Test
 
 The Hotelling Paired T-test is implemented using the MVTest R package (using the MPaired function).
-
-0.2134127As the Left and Right tibia measurements are identical, only one set of measurements is included.
 
 ### Part A : MVTests - Complexity Index - Results of Hotelling Procedure
 
@@ -55,6 +64,9 @@ Compelxity Indices
 * C2: CI - for tibia (left)  - no significant difference
 * C3: CI - for pelvis  -  ***significant difference****
 * C4: CI - for thorax  - no significant difference
+
+
+The assumption of normality for the Casewise Differences is tested with the Shapiro Wilk Test. In the cases where validity of the nornality assumption is not valid, the paired t-test procedure is superseded by it's non parametric counterpart, the Wilcoxon Sign Test. 
 
 #### C1 Test for all 9 Variables (Significant Difference)
 
