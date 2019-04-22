@@ -45,14 +45,85 @@ These Mahalanobis distances are split into two paired values, on which the conve
 This approach is a useful complement to the Hotelling test as it would allow 
 analysts to determine if any particular athletes are influential in the outcome of the procedure.
 
-#### Results of Mahalanobis Paired Test Procedure
+#### Summary of Results of Mahalanobis Paired Test Procedure
 
 * CI - all three regions  - no significant difference
 * CI - for tibia (left)  - no significant difference
 * CI - for pelvis  -  ***significant difference****
 * CI - for thorax  - no significant difference
 
+#### Test for Tibia Variables (No Significant Difference)
+
+<pre><code>
+
+	Paired t-test
+
+data:  CIMD_POST and CIMD_PRE
+t = 1.0157, df = 14, p-value = 0.1635
+alternative hypothesis: true difference in means is greater than 0
+95 percent confidence interval:
+ -0.4263781        Inf
+sample estimates:
+mean of the differences 
+              0.5808437 
+
+
+	Wilcoxon signed rank test
+
+data:  CIMD_POST and CIMD_PRE
+V = 75, p-value = 0.2106
+alternative hypothesis: true location shift is greater than 0
+</code></pre>
+
+#### Test for Pelvis Variables (Significant Difference)
+<pre><code>
+
+	Paired t-test
+
+data:  CIMD_POST and CIMD_PRE
+t = 2.2834, df = 14, p-value = 0.01927
+alternative hypothesis: true difference in means is greater than 0
+95 percent confidence interval:
+ 0.255188      Inf
+sample estimates:
+mean of the differences 
+               1.116083 
+
+
+	Wilcoxon signed rank test
+
+data:  CIMD_POST and CIMD_PRE
+V = 96, p-value = 0.02063
+alternative hypothesis: true location shift is greater than 0
+</code><pre>
+
+
+#### Test for Thorax Variables (No Significant Difference)
+<pre><code>
+
+	Paired t-test
+
+data:  CIMD_POST and CIMD_PRE
+t = 0.076116, df = 14, p-value = 0.4702
+alternative hypothesis: true difference in means is greater than 0
+95 percent confidence interval:
+ -1.000622       Inf
+sample estimates:
+mean of the differences 
+             0.04519575 
+
+
+	Wilcoxon signed rank test
+
+data:  CIMD_POST and CIMD_PRE
+V = 67, p-value = 0.3599
+alternative hypothesis: true location shift is greater than 0
+</code></pre>
+
+#### Sample Entropy 
+
 * SE - all three regions  - no significant difference
 * SE - for tibia (left)  - no significant difference
 * SE - for pelvis  -  ***significant difference***
 * SE - for thorax  - no significant difference
+
