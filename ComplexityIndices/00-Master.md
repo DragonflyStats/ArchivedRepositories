@@ -45,14 +45,14 @@ These Mahalanobis distances are split into two paired values, on which the conve
 This approach is a useful complement to the Hotelling test as it would allow 
 analysts to determine if any particular athletes are influential in the outcome of the procedure.
 
-#### Summary of Results of Mahalanobis Paired Test Procedure
+#### PART C Summary of Results of Mahalanobis Paired Test Procedure
 
 * CI - all three regions  - no significant difference
 * CI - for tibia (left)  - no significant difference
 * CI - for pelvis  -  ***significant difference****
 * CI - for thorax  - no significant difference
 
-#### Test for Tibia Variables (No Significant Difference)
+#### C2 Test for Tibia Variables (No Significant Difference)
 
 <pre><code>
 
@@ -76,7 +76,7 @@ alternative hypothesis: true location shift is greater than 0
 
 </code></pre>
 
-#### Test for Pelvis Variables (Significant Difference)
+#### C3 Test for Pelvis Variables (Significant Difference)
 
 <pre><code>
 
@@ -98,9 +98,9 @@ data:  CIMD_POST and CIMD_PRE
 V = 96, p-value = 0.02063
 alternative hypothesis: true location shift is greater than 0
 
-</code><pre>
+</code></pre>
 
-#### Test for Thorax Variables (No Significant Difference)
+#### C4 Test for Thorax Variables (No Significant Difference)
 
 <pre><code>
 
@@ -124,12 +124,15 @@ alternative hypothesis: true location shift is greater than 0
 
 </code></pre>
 
-#### Sample Entropy 
+#### Part D Sample Entropy 
 
 * SE - all three regions  - no significant difference
 * SE - for tibia (left)  - no significant difference
 * SE - for pelvis  -  ***significant difference***
 * SE - for thorax  - no significant difference
+
+
+#### D1 : All Three Regions together (not significant)
 
 <pre><code>
 
@@ -158,7 +161,7 @@ V = 88, p-value = 0.06027
 alternative hypothesis: true location shift is greater than 0
 </code></pre>
 
-#### Sample Entropy for Tibia
+#### D2 : Sample Entropy for Tibia (Not Significant)
 
 <pre><code>
 
@@ -187,7 +190,7 @@ V = 79, p-value = 0.1514
 alternative hypothesis: true location shift is greater than 0
 </code><pre>
 
-#### Sample Entropy  - Pelvis 
+#### D3 : Sample Entropy  - Pelvis 
 
 <pre><code>
 
@@ -216,7 +219,7 @@ V = 79, p-value = 0.1514
 alternative hypothesis: true location shift is greater than 0
 </code></pre>
 
-#### Sample Entropy for Thorax
+#### D4: Sample Entropy for Thorax (Not Significant)
 
 <pre><code>
 
