@@ -14,8 +14,15 @@ Significant difference in Complexity Index for Pelvis Area
 
 ### Testing for Differences: Univariated Paired Tests
 
-The test for a significant difference between measurements before and after fatigue training is carried out by univariate procedures (i.e. the well-known paired t-test) for each 
-variable.
+The test for a significant difference between measurements before and after fatigue training is carried out by univariate procedures (i.e. the well-known paired t-test) for each variable.
+
+### Results of univariate paired t-test
+
+* *Bonferrroni Correction*
+
+
+Bonferroni correction would commonbly feature in significance testing of families of hypotheses to provide an aggregated indication of significance.
+In multivariate statistics, a single hypothesis test would be carried out on a set of variables, yielding one significance value, with no necessity to carry out a correction. 
 
 
 
