@@ -2,10 +2,15 @@
 
 Significant difference in Complexity Index for Pelvis Area 
 
+
+### Statement of your hypothesis
+
+
 ### Complexity Indices & Sample Entropy
 
 * *What are they?*
 * *Which measure is more important?*
+* *How they are active in literature*.
 
 ### Testing for Differences: Univariated Paired Tests
 
