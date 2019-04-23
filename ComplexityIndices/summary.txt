@@ -1,0 +1,6 @@
+
+when carrying out univariate analyses on the complexity indices, we detect a significant difference [INSERT] in the Y direction 
+for the pelvis. (nowhere else)
+
+When a multivariate analyis of paired difference is applied to the pelvis regions (i.e. X,Y and Z), a significant difference is detected, 
+re-inforcing the hypothesis of [INSERT], and that the univariate ressult is not an artifact.
