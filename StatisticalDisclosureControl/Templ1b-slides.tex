@@ -1,0 +1,80 @@
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+	\begin{frame}
+		\frametitle{sdcMicro}
+		\begin{itemize}
+			\item The \texttt{R} package \textbf{sdcMicro} is a well-known collection of microdata protection methods developed by \textbf{Statistics Austria}, which is already in use in several national statistics offices. 
+			\item \textbf{sdcMicro} has become one of the standard tools for \textbf{microdata protection} during the last five years.
+			\item The IHSN is supporting the further development of sdcMicro and has partnered with its developers to perform the following tasks (next slide).
+		\end{itemize}
+	\end{frame}
+\begin{frame}
+	\begin{itemize}
+		\item Version 4.4.0 of the sdcMicro package is available on the Comprehensive R Archive Network (CRAN).
+		\item Existing guidelines and a user guide for \textbf{sdcMicro} are being updated. 
+		\item A specific tutorial is being developed to show how to implement these concepts and algorithms on real datasets (see 
+		Vignettes)
+	\end{itemize}
+	
+	
+\end{frame}
+	%======================================================= % 
+\begin{frame}
+\frametitle{\texttt{R}-Package sdcMicro and sdcMicroGUI}
+
+\begin{itemize}
+\item SDC methods introduced in this guideline can be implemented by the R-Package
+	sdcMicro. 
+\item Users who are not familiar with the native R command line interface
+	can use sdcMicroGUI, an easy-to-use and interactive application. 
+	%For details, see Tcnipl ct al. [2Ol'lb, 2013].
+\end{itemize}
+\end{frame}
+%=========================================================== %
+%\section*{1.3. Remarks on SDC Methods}
+\begin{frame}
+\frametitle{SDC Methods} 
+\textbf{Mathematical Foundation of SDC}
+\begin{itemize}
+\item In general, SDC methods borrow techniques from other ﬁelds. 
+\item For instance, multivariate (robust) statistics are used to modify or simulate continuous variables and
+to quantify information loss. 
+
+\item Distribution-fitting methods are used to quantify
+disclosure risks.
+\item Statistical modeling methods form the basis of perturbation algorithms, to simulate synthetic data, to quantify risk and information loss. 
+\item Linear
+programming is used to modify data but minimize the impact on data quality.
+\end{itemize}
+\end{frame}
+%==================================================================== %
+\begin{frame}
+	\frametitle{SDC Methods} 
+	\begin{itemize}
+		\item
+Problems and challenges arise from large datasets and the need for efﬁcient algorithms and implementations.\\ (\textbf{Remark} 1000 variables+)
+\item Another layer of complexity is produced by complex
+structures of hierarchical, multidimensional data sampled with complex survey designs. \\ (\textbf{Remark} Rooted Questions )
+\item 
+Missing values are a challenge, especially for computation time issues; structural Zeros (values that are by deﬁnition Zero) also have impact on the application
+of SDC methods. 
+\end{itemize}
+\end{frame}
+%================================================================================ %
+\begin{frame}
+	\frametitle{SDC Methods} 
+Furthermore, the compositional nature of many components
+should always be considered, but adds even more complexity.\\ \bigskip
+SDC techniques can be divided into three broad topics:
+\begin{itemize}
+\item Measuring disclosure risk % (see Section 2)
+\item Methods to anonymize micro-data % (see Section 3)
+\item Comparing original and modiﬁed data (information loss) % (see Section /l)
+\end{itemize}
+\end{frame}
+%============================================================================== %
+\end{document}

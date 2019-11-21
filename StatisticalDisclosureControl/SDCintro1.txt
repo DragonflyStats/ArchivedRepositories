@@ -1,0 +1,62 @@
+11-12 monday C2062
+10-11 tuesday C2062
+
+\end{frame}
+%========================================================================%
+\begin{frame}
+\frametitle{Statistical Disclosure Control}
+
+Statistical disclosure control (SDC) concerns safeguarding the confidentiality of the information that the Office for National Statistics (ONS) holds about people and businesses.
+
+\end{frame}
+%========================================================================%
+\begin{frame}
+\frametitle{Statistical Disclosure Control}
+
+Aims
+
+ONS activities involve collecting and processing a wide range of personal and commercial data. The SDC team provides advice to enable ONS to safeguard information given in confidence. It is developing methods that reduce the risk of confidential information being obtained from published official statistics, whether as tables or microdata. 
+Recent technological advances have dramatically increased the volume of data available to companies and individuals, especially through the Internet. In conjunction with the pressure for open government, these advances have given the issue of disclosure control greater importance. 
+The increased accessibility translates into higher risk of identifying individuals from published statistics. 
+
+
+Therefore, it is essential that the disclosure control measures used to protect the confidentiality of individuals contributing to official statistics are adequate and robust.
+
+\end{frame}
+%========================================================================%
+\begin{frame}
+\frametitle{Statistical Disclosure Control}
+
+Areas of Ongoing Research (ONS, UK)
+%Current and planned areas of work
+
+Development and application of statistical disclosure control methodology to ensure that information attributable to an individual or organisation is not disclosed in any National Statistics publication. 
+Statistical disclosure control involves modifying data so that the risk of identifying individuals is reduced to an acceptable level. 
+At a basic level, this involves removing information (for example, broadbanding variables) or damaging the data (perturbing values).
+ Disclosure control methods attempt to find an optimal balance between the improvement in confidentiality protection and the reduction in data quality. 
+
+
+
+\end{frame}
+%========================================================================%
+\begin{frame}
+\frametitle{Statistical Disclosure Control}
+
+\begin{itemize}
+\item Generally, rare combinations of attributes lead to the identification of individuals, for example, a sixteen-year-old widow, a female miner or a single manufacturer in an area. Disclosure control methods are usually applied if ethical, practical or legal considerations require the data to be protected, and the possibility of identification exists. 
+\item Statistical disclosure control techniques are currently being used in a wide number of areas of National Statistics, for example the Census, the Neighbourhood Statistics Service and for several social surveys. Different types of data pose different types of problems and inevitably require different solutions.
+\end{itemize}
+
+\end{frame}
+%========================================================================%
+\begin{frame}
+\frametitle{Statistical Disclosure Control}
+Variable Types
+\begin{itemize}
+\item
+\item
+\item
+\item
+\end{itemize}
+\end{frame}
+%========================================================================%

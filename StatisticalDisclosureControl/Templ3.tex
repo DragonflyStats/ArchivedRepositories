@@ -1,0 +1,282 @@
+\documentclass[]{article}
+
+%opening
+\title{}
+\author{}
+
+\begin{document}
+Measuring Risk for Continuous Key Variables
+%%.2.7.1 Distance Based Record Linkage
+
+
+\section*{Part 3 Anonymisation Methods}
+%=========================================================%
+%% 3.2  Local Suppression
+%% 3.3. Post-randomization (PRAM)
+
+%% 3.4  MicroAggregation
+%% 3.5  Adding Noise
+%% 3.6  Shuffling
+ 
+ 
+% % Section  4 MEASURING DATA UTILITY AND INFORMATION LOSS
+
+
+\subsection*{3. Anonymisation Methods}
+\begin{itemize}
+\item In general, there are two kinds of anonymization methods: deterministic and prob-
+abilistic. For categorical variables, recoding and local suppression are deterministic
+procedures (they are not inﬂuenced by randomness), while swapping and PRAM
+[\textit{Gouweleeuw ct al., 1998}] are based on randomness and considered probabilistic
+methods. 
+\item 
+For continuous variables, micro-aggregation is a deterministic method,
+while adding correlated noise [\textit{Brand, 2001}] and shuffling [\textit{Muralidhar et al., 1999}]
+are probabilistic procedures. Whenever probabilistic methods are applied, the ran-
+dom seed of the software’s pseudo random number generator should be ﬁxed to
+ensure reproducibility of the results.
+\end{itemize}
+\newpage
+%===============================================%
+\subsection*{3.1. Recoding}
+\begin{itemize}
+\item Global recoding is a non-perturbative method that can be applied to both categor-
+ical and continuous key variables. The basic idea of recoding a categorical variable
+is to combine several categories into a new, less informative category. A frequent
+use case is the recoding of age given in years into ag'e—groups. If the method is ap-
+plied to a continuous variable, it means to discretize the variable. An application
+would be the to split a variable containing incomes some income groups.
+%% Page 14 / 31
+%% 3 AN ON YMISATI ON METHODS
+\item The goal in both cases is to reduce the total number of possible outcomes of a
+variable. Typically, recoding is applied to categorical variables Where the number
+of categories with only few observations (i.e., extreme categories such as persons
+being older than 100 years) is reduced. A typical example would be to combine
+certain economic branches or to build age classes from the variable age.
+\item A special case of global recoding is top and bottom coding, which can be applied
+to ordinal and categorical variables. The idea for this approach is that all values
+above (i.e., top coding) and / or below (i.e., bottom coding) a pre-speciﬁed threshold
+value are combined into a new category. 
+\item A typical use case for top-coding is to
+recode all values of a variable containing age in years that are above 80 into a new
+category 80+.
+
+%--------------------------------------------------------------------%
+\item Function \texttt{globalRecode()} can be applied in \textbf{sdcMicro} to perform both global
+recoding and top/bottom coding. The \textbf{sdcMicroGUI} offers a more user-friendly
+way of applying global recoding.
+\end{itemize}
+%================================================%
+\subsection*{3.2. Local Suppression}
+\begin{itemize}
+\item Local suppression is a non-perturbative method that is typically applied to cate-
+gorical variables to suppress certain values in at least one variable. Normally, the
+input variables are part of the set of key variables that is also used for calculation
+of individual risks, as described in Section 2. 
+
+\item Individual values are suppressed
+in a way that the set of variables with a speciﬁc pattern are increased. Local
+suppression is often used to achieve \textbf{k-Anonymity}, as described in Section 2.2.
+\item Using function \texttt{localSupp()} of \textbf{sdcMicro}, it is possible to suppress the values of
+a key variable for all units having individual risks above a pre—deﬁned threshold,
+given a disclosure scenario. 
+
+
+\item This procedure requires user intervention by setting
+the threshold. To automatically suppress a minimum amount of values in the key
+variables to achieve k-anonymity, one can use function \texttt{localSuppression()}. This
+algorithm also allows specification of a user-dependent reference that determines
+which key variables are preferred when choosing values that need to be suppressed.
+
+\item ln this implementation, a heuristic algorithm is called to suppress as few values
+as possible. It is possible to specify a desired ordering of key variables in terms of
+importance, which the algorithm takes into account. lt is even possible to specify
+key variables that are considered of such importance that almost no values for
+these variables are suppressed. This function can also be used in the graphical
+user interface of the \textbf{sdcMicroGUI} package.
+\end{itemize}
+% [Kowarik ct al., 20l3, Tenipl ct al.,201/lb].
+\newpage
+%--------------------------------------------------------------------------------------------%
+\subsection*{3.3. Post-randomization (PRAM)}
+\begin{itemize}
+\item Post-randomization [\textit{Gouweleeuw et al., 1998}] PRAM is a perturbation, proba-
+bilistic method that can be applied to categorical variables. 
+
+\item The idea is that the values of a categorical variable in the original microdata ﬁle are changed into other categories, taking into account pre-deﬁned transition probabilities. This process is
+usually modeled using a known transition matrix. 
+
+\item For each category of a categorical variable, this matrix lists probabilities to change into other possible categories.
+\end{itemize}
+
+
+
+\textbf{Examples}\\
+As an example, consider a variable with only 3 categories: Al, A2 and A3. The
+transition of a value from category A1 to category A1 is, for example, ﬁxed with
+probability Pi I 0.85, which means that only with probability I11 I 0.15 can a
+value of A1 be changed to either A2 or A3. The probability of a change from
+%% Page 15 / 31
+%% 3 AN ON YMISATI ON METHODS
+category A1 to A2 might be ﬁxed with probability [)2 = 0.1 and changes from A1
+to A3 with p3 = 0.05. Probabilities to change values from class A2 to other classes
+and for A3, respectively, must be speciﬁed beforehand. All transition probabilities
+must be stored in a matrix that is the main input to function \texttt{pram()} in sdcMicro.
+
+PRAM is applied to each observation independently and randomly. This means
+that different solutions are obtained for every run of PRAM if no seed is speciﬁed
+for the random number generator. A main advantage of the PRAM procedure is
+the ﬂexibility of the method. Since the transition matrix can be speciﬁed freely as a
+function parameter, all desired effects can be modeled. For example, it is possible
+to prohibit changes from one category to another by setting the corresponding
+probability in the transition matrix to 0.
+
+In sdcMicro and \textbf{sdcMicroGUI}, \texttt{pram\_strat()} allows PRAM to be performed.
+The corresponding help ﬁle can be accessed by typing ?pram into an R console
+or using the help-menu of sdcMicroGUI. 
+
+When using \texttt{pram\_strat()}, it is possible
+to apply PRAM to sub-groups of the micro datasct independently. In this case,
+the user needs to select the stratiﬁcation variable deﬁning the sub-groups. If
+the speciﬁcation of this variable is omitted, the PRAM procedure is applied to
+all observations in the dataset. We note that the output of PRAM is slightly
+different in sdcMicroGUI. In this case for each variable values \texttt{nrChanges} shows
+the total number of changed values for a given variable while \texttt{percChanges} lists the
+percentage of changed values any variable for which PRAM has been applied.
+%===================================================%
+\subsection*{3.4. Microaggregation}
+Miicro-aggregation is a perturbative method that is typically applied to continuous
+variables. The idea is that records are partitioned into groups; within each group,
+the values of each variable are aggregated. Typically, the arithmetic mean is used
+to aggregate the values, but other robust methods are also possible. Individual
+values of the records for each variable are replaced by the group aggregation value,
+which is often the mean; as an example, see Table 4, where two values that are
+most similar are replaced by their column-wise means.
+
+% % Table 4
+Depending on the method chosen in function \texttt{mircoaggregation()}, additional
+parameters can be speciﬁed. For example, it is possible to specify the number of
+observations that should be aggregated as well as the statistic used to calculate
+the aggregation. It is also possible to perform micro—aggregation independently to
+pre-deﬁned clusters or to use cluster methods to achieve the grouping.
+
+%% Page 16 / 31
+%% 3 AN ON YMISATI ON METHODS
+However, computationally it is the most challenging task to ﬁnd a good partition
+of the observations to groups. 
+
+
+\subsubsection*{Methods for Micro-Aggregation}
+In \textbf{sdcMicroGUI}, ﬁve different methods for micro-aggregation can be selected:
+\begin{itemize}
+\item \texttt{mdav}: grouping is based on classical (Euclidean) distance measures.
+\item \texttt{rmd}: grouping is based on robust multivariate (Mahalanobis) distance mea-
+sures.
+\item \texttt{pca}: grouping is based on principal component analysis whereas the data
+are sorted on the ﬁrst principal component.
+\item \texttt{clustpppca}: grouping is based on clustering and (robust) principal cornpo-
+nent analysis for each cluster.
+
+
+\item \texttt{Inﬂuence}: grouping is based on clustering and aggregation is performed
+within clusters.
+\end{itemize}
+For computational reasons it is recommended to use the highly efﬁcient imple-
+mentation of method \texttt{mdav}. It is almost as fast as the pca method, but performs
+better. For data of moderate or small size, method \texttt{rmd} is favorable since the
+grouping is based on multivariate (robust) distances.
+
+All of the previous settings (and many more) can be applied in sdcMicro, using
+function \texttt{microaggregation()}. 
+
+% The corresponding help ﬁle can be viewed with command \texttt{?microaggregation} or by using the help-menu in sdcMicroGUI.
+\newpage
+\subsection*{3.5. Adding Noise}
+\begin{itemize}
+
+\item Adding noise is a perturbative protection method for microdata, which is typically
+applied to continuous variables. This approach protects data against exact match-
+ing with external ﬁles if, for example, information on specific variables is available
+from registers.
+
+\item While this approach sounds simple in principle, many different algorithms can
+be used to overlay data with stochastic noise. It is possible to add uncorrelated
+random noise. In this case, the noise is usually distributed and the variance of
+the noise term is proportional to the variance of the original data vector. 
+\item Adding
+uncorrelated noise preserves means, but variances and correlation coefficients be-
+tween variables are not preserved. This statistical property is respected, however,
+if correlated noise metl1od(s) are applied.
+
+\item For the correlated noise method [Brand, 2004], ), the noise term is derived from a
+distribution having a covariance matrix that is proportional to the co-variance ma-
+trix of the original microdata. In the case of correlated noise addition, correlation
+coefﬁcients are preserved and at least the co-variance matrix can be consistently
+estimated from the perturbed data. 
+
+\item The data structure may dilfer a great deal,
+however, if the assumption of normality is violated. Since this is virtually always
+the case when working with real-world datasets, a robust version of the correlated
+noise method is included in \textbf{sdcMicro}. 
+\item This method allows departures from model
+assumptions and is described in detail in Templ and Meindl [2008b]). More infor-
+mation can be found in the help ﬁle by calling \texttt{?addNoise} or using the graphical
+user interface help menu.
+\end{itemize}
+%===========================================%
+In \textbf{sdcMicro}, several other algorithms are implemented that can be used to add
+noise to continuous variables. For example, it is possible to add noise only to out-
+lying observations. In this case, it is assumed that such observations possess higher
+%% Page 17/ 31
+
+risks than non-outlying observations. Other methods ensure that the amount of
+noise added takes into account the underlying sample size and sampling weights.
+Noise can be added to variables in sdclMicro using function addNoise() or by
+using sdcMicroGUI.
+%==========================================%
+\newpage
+\subsection*{3.6. Shuffling}
+\begin{itemize}
+\item 
+Various masking techniques based on linear models have been developed in literature, such as multiple imputation, general additive data perturbation and the information preserving statistical obfuscation syrithetic data generators. These methods are capable of maintaining
+linear relationships between variables but fail to maintain marginal distributions
+or non-linear relationships between variables.
+
+\item Several methods are available for shuffling in sdcMicro and sdcMicroGUI, whereas
+the ﬁrst (default) one (ds) is recommended to use. 
+%The explanation of all these methods goes far beyond this guidelines and interested readers might read the
+% original paper from Muralidliar and Sarathy [Z006]. In the following only a brief
+% introduction to shuffling is given.
+
+\item Shuffling simulates a synthetic value of the con-
+tinuous key variables conditioned on independent, non-conﬁdential variables. After
+the simulation of the new values for the continuous key variables, reverse mapping
+(shuﬁling) is applied. This means that ranked values of the simulated values are
+replaced by the ranked values of the original data (columnwise).
+
+\item To explain this theoretical concept more practically we can assume that we have
+two continuous variables containing sensitive information on income and savings.
+These variables are used as regressors in a regression model where suitable variables
+are taken as predictors, like age, occupation, race, education. Of course it is of
+crucial to ﬁnd a good model having good predictive power. 
+
+\item New values for the
+continuous key variables, income and savings, are simulated based on this model.
+%[for details, have a look at Xluralidliar and Sarathy, 2006]. 
+\item However, these expected
+values are not used to replace the original values, but a shuffling of the original
+values using the generated values is carried out. This approach (reverse mapping)
+is applied to each sensitive variable can be summarized in the following steps:
+\begin{enumerate}
+\item rank original variable
+\item rank generated variable
+\item for all observations, replace the value of the modiﬁed variable with rank i
+with the value of the original sensitive variable with rank 1'.
+\item once finished, the modiﬁed variable contains only original values and is ﬁnally
+used to replace the original sensitive variable.
+\end{enumerate}
+It can be shown that the structure of the data is preserved when the model ﬁt
+is of good quality. In the implementation of sdcMicro, a model of almost any form
+and complexity can be speciﬁed (see ?shufHing for details).
+\end{itemize}
+\end{document}

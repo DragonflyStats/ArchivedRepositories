@@ -1,0 +1,192 @@
+
+%===================================================================================================%
+\subsection*{2.6. Measuring the Global Risk}
+
+Sections 2.1 through 2.5 discuss the theory of individual risks and the extension
+of this approach to clusters such as households. ln many applications, however,
+estimating a measure of global risk is preferred. Any global risk measure is result
+in one single number that can be used to assess the risk of an entire micro dataset.
+The following global risk measures are available in sdcMicroGUI, except the last
+one presented in Section 2.7.2 that is computationally expensive is only made
+available in sdcMicro.
+%=================================================================%
+\subsection*{2.6.1. Measuring the global risk using individual risks}
+Two approaches can be used to determine the global risk for a dataset using
+individual risks:
+\begin{description}
+	\item[Benchmark:] This approach counts the number of observations that can be con-
+	sidered risky and also have higher risk as the main part of the data. For
+	example, we consider units with individual risks being both $\geq 0.1$ and twice
+	as large as the median of all individual risks + 2 times the median abso-
+	lute deviation (MAD) of all unit risks. This statistics in also shown in the
+	\textbf{sdcMicroGUI}.
+	
+	\item[Global risk:] The sum of the individual risks in the dataset gives the expected
+	number of re—identiﬁcations
+	
+	%%%%CITE  [see Hundepool et al., 2008].
+\end{description}
+The benchmark approach indicates whether the distribution of individual risk
+occurrences contains extreme values; it is a relative measure that depends on the
+distribution of individual risks. It is not valid to conclude that observations with
+higher risk as this benchmark are of very high risk; it evaluates whether some
+unit risks behave differently compared to most of the other individual risks. The
+global risk approach is based on an absolute measure of risk. 
+
+Following is the print
+output of the corresponding function from sdclvlicro, which shows both measures
+(see the example in the manual of sdcMicro [Tcinpl ct al., 2013]):
+
+%% CODE OUTPUT HERE
+
+The global risk measurement taking into account this hierarchical structure if a
+variable expressing it is defined.
+%%-----------------------------------------------------------------------------------------------------%
+%\subsection*{2.6.2. Measuring the global risk using log-linear models}
+%Sample frequencies, considered for each of [W patterns 'm, fm ,m : 1, ..., 1% can
+%be modeled by a Poisson distribution. In this case, global risk can be deﬁned as
+%the following [see also Skinner and Holmes, 1998]:
+%
+%%% EQUATION
+%
+%For simplicity, the (ﬁrst order) inclusion probabilities are assumed to be equal,
+%71',” = 7T ,m = 1. ..., ZVI. T1 can be estimated by log-linear models that include both
+%the primary effects and possible interactions. This model is defined as:
+%
+%%% EQUATION
+%
+%To estimate the ,a,,,’s, the regression coefficients /2’ have to be estimated using,
+%for example, iterative proportional ﬁtting. The quality of this risk measurement
+%approach depends o11 the number of different keys that result from cross-tabulating
+%all key variables. If the cross—tabulated key variables are sparse in terms of how
+%many observations have the same patterns, predicted values might be of low quality.
+%It must also be considered that if the model for prediction is weak, the quality of
+%the prediction of the frequency counts is also weak. Thus, the risk measurement
+%%% Page 11 / 31
+%%% 2 MEASURING THE DISCLOSURE RISK
+%with log-linear models may lead to acceptable estimates of global risk only if not
+%too many key variables are selected and if good predictors are available in the
+%dataset.
+%%----------------------------------------------------------------------------------------%
+%In sdcMicro, global risk measurement using log-linear models can be completed
+%with function \texttt{LLmodGlobalRisk()}. This function is experimental and needs further
+%testing, however. It should be used only by expert users.
+
+\subsection*{2.7. Measuring Risk for Continuous Key Variables}
+The concepts of uniqueness and k—anonymity cannot be directly applied to con-
+tinuous key variables because almost every unit in the dataset will be identiﬁed as
+unique. As a result, this approach will fail. The following sections present methods
+to measure risk for continuous key variables.
+
+
+\subsection*{2.7.1. Distance-based record linkage}
+If detailed information about a value of a continuous variable is available, i.e. the
+risk comes from the fact that multiple datasets can be available to the attacker,
+one of which contains identiﬁers like income, for example, attackers may be able
+to identify and eventually obtain further information about an individual. Thus,
+an intruder may identify statistical units by applying, for example, linking or
+matching algorithms. The anonymization of continuous key variables should avoid
+the possibility of successfully merging the underlying microdata with other external
+data sources.
+%-------------------------------------------------------------------------------------------------%
+We assume that an intruder has information about a statistical unit included
+in the microdata; the intruder’s information overlaps on some variables with the
+information in the data. In simpler terms, We assume that the intruderls informa-
+tion can be merged with niicrodata that should be secured. In addition, we also
+assume that the intruder is sure that the link to the data is correct, except for
+micro-aggregated data (see Section 3.4). Domingo-Fcrrcr and Torra [2001] showed
+that these methods outperform probabilistic methods.
+
+Mateo-Sanz et al. [2004] introduced distance-based record linkage and interval
+disclosure. In the ﬁrst approach, they look for the nearest neighbor from each
+observation of the masked data value to the original data points. Then they mark
+those units for which the nearest neighbor is the corresponding original value.
+
+In the second approach, they check if the original value falls within an interval
+centered on the masked value. Then they calculate the length of the intervals
+based on the standard deviation of the variable under consideration (see Figure 2,
+upper left graphic; the boxes expresses the intervals).
+%--------------------------------------------------------------------------------------------------------------%
+\subsection*{2.7.2. Special treatment of outliers when calculating disclosure risks}
+
+It is worth to show alternatives to the previous distance-based risk measure. Such
+alternatives took either distances between every observation into account or are
+based on covariance estimation (as shown here). Thus, they are computationlly
+more intensive, which is also the reason why they are not available in sdcMicroGUI
+but only in sdcMicro for experienced users.
+
+Almost all datasets used in ofﬁcial statistics contain units whose values in at least
+one variable are quite different from the general observations. As a result, these
+variables are very asymmetrically distributed. Examples of such outliers might
+%%Page 12 / 31
+
+%======================================================================================%
+%% 2 MEASURING THE DISCLOSURE RISK
+be enterprises with a very high value for turnover or persons with extremely high
+income. In addition, multivariate outliers exist [see \textit{Templ and Meindl, 2008a}].
+
+\begin{itemize}
+	\item Unfortunately, intruders may want to disclose a large enterprise or an enterprise
+	with speciﬁc characteristics. Since enterprises are often sampled with certainty or
+	have a sampling weight close to 1, intruders can often be very conﬁdent that the
+	enterprise they want to disclose has been sampled. 
+	\item In contrast, an intruder may
+	not be as interested to disclose statistical units that exhibit the same behavior as
+	most other observations. For these reasons, it is good practice to deﬁne measures
+	of disclosure risk that take the outlyingness of an observation into account. 
+	% For details, see Templ and l\Iein<ll [2U08a]. 
+	\item Outliers should be much more perturbed than
+	non—outliers because these units are easier to re-identify even when the distance
+	from the masked observation to its original observation is relatively large.
+\end{itemize}
+
+This method for risk estimation (called RMDID2 in Figure 2) is also included
+in the \textbf{sdcMicro} package. 
+It works as described in \textit{Templ and Meindl [2008a]} and
+is listed as follows:
+\begin{itemize}
+	\item[(1.)] Robust mahalanobis distances (RMD) [see, for example Maronna ct al., 2006]
+	are estimated between observations (continuous variables) to obtain a robust,
+	multivariate distance for each unit.
+	\item[(2.)] Intervals are estimated for each observation around every data point of the
+	original data points. The length of the intervals depends on squared distances
+	calculated in step 1 and an additional scale parameter. The higher the RMD
+	of an observation, the larger the corresponding intervals.
+	\item[(3.)] Check whether the corresponding masked values of a unit fall into the in-
+	tervals around the original values. If the masked value lies within such an
+	interval, the entire observation is considered unsafe. We obtain a vector in-
+	dicating which observations are safe or which are not. For all unsafe units,
+	at least m other observations from the masked data should be very close.
+\end{itemize}
+%--------------------------------------------------------------------------------------------------------%
+Close is quantiﬁed by specifying a parameter for the length of the intervals
+around this observation using Euclidean distances. If more than m points lie
+within these small intervals, we can conclude that the observation is safe.
+%--------------------------------------------------------------------------------------------------------%
+Figure 2 depicts the idea of weighting disclosure risk intervals. For simple meth-
+ods (top left and right graphics), the rectangular regions around each value are
+the same size for each observation. Our proposed methods take the RMDs of
+each observation into account. The difference between the bottom right and left
+graphics is that, for method RMDID2, rectangular regions are calculated around
+each masked variable as well. If an observation of the masked variable falls into an
+interval around the original value, check whether this observation has close neigh-
+bors. If the values of at least m other masked observations can be found inside a
+second interval around this masked observation, these observations are considered
+safe.
+
+
+These methods are also implemented and available in sdcMicro as \texttt{dRisk()} and
+\texttt{dRiskRMD()}. The former is automatically applied to objects of class sdcMi-
+cr'0Obj, while the latter has to be speciﬁed explicitly and can currently not be
+applied using the graphical user interface.
+\newpage
+Page 13 / 31
+
+\textit{Figure 2: Original and corresponding masked observations (perturbed by adding
+	additive noise). In the bottom right graphic, small additional regions are
+	plotted around the masked values for RMDID2 procedures. The larger
+	the intervals the more the observations is an outlier for the latter two
+	methods.}
+%====================================================%
+\end{frame}
+\end{document}

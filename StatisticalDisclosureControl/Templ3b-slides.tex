@@ -1,0 +1,163 @@
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+\begin{document}
+\begin{frame}
+\frametitle{5. Adding Noise}
+\begin{itemize}
+
+\item Adding noise is a perturbative protection method for microdata, which is typically
+applied to continuous variables. 
+\item \textbf{Motivation:} This approach protects data against exact matching with external files if, for example, information on specific variables is available
+from registers.
+
+\item While this approach sounds simple in principle, many different algorithms can
+be used to overlay data with stochastic noise. 
+\item It is possible to add uncorrelated
+random noise. In this case, the noise is usually distributed and the variance of
+the noise term is proportional to the variance of the original data vector. 
+\end{itemize}
+\end{frame}
+%================================================ %
+\begin{frame}
+	\frametitle{5. Adding Noise}
+	\begin{itemize}
+		\item \textbf{Important} - Adding
+uncorrelated noise preserves means, but variances and correlation coefficients between variables are not preserved.
+\item This statistical property is respected, however,
+if correlated noise method(s) are applied.
+
+\item For the correlated noise method , the noise term is derived from a
+distribution having a covariance matrix that is proportional to the co-variance matrix of the original microdata. 
+\item In the case of correlated noise addition, correlation
+coefﬁcients are preserved and at least the co-variance matrix can be consistently
+estimated from the perturbed data. 
+\end{itemize}
+\end{frame}
+%================================================ %
+\begin{frame}
+	\frametitle{5. Adding Noise}
+	\textbf{Implementation}
+	\begin{itemize}
+\item The data structure may differ a great deal,
+however, if the assumption of normality is violated. 
+\item Since this is virtually always
+the case when working with real-world datasets, a robust version of the correlated
+noise method is included in \textbf{sdcMicro}. 
+% \item This method allows departures from model
+% assumptions and is described in detail in Templ and Meindl [2008b]). 
+\item Noise can be added to variables in \textbf{sdcMicro} using function \texttt{addNoise()} or by
+using sdcMicroGUI.
+\item More information can be found in the help ﬁle by calling \texttt{?addNoise} or using the graphical
+user interface help menu.
+\end{itemize}
+\end{frame}
+%================================================ %
+\begin{frame}
+	\frametitle{5. Adding Noise}
+	\textbf{Outliers / Implementation}
+	\begin{itemize}
+\item In \textbf{sdcMicro}, several other algorithms are implemented that can be used to add
+noise to continuous variables. For example, it is possible to add noise only to outlying observations. 
+\item In this case, it is assumed that such observations possess higher risks than non-outlying observations.
+%% Page 17/ 31
+
+ 
+\item Other methods ensure that the amount of
+noise added takes into account the underlying sample size and sampling weights.
+
+\end{itemize}
+\end{frame}
+%================================================ %
+\begin{frame}
+	\frametitle{6. Shuffling}
+	\begin{itemize}
+\item \textbf{Mathematically Complex}
+Various masking techniques based on linear models have been developed in literature, such as multiple imputation, general additive data perturbation and the information preserving statistical obfuscation syrithetic data generators.
+\item These methods are capable of maintaining
+linear relationships between variables but fail to maintain marginal distributions
+or non-linear relationships between variables.
+
+\item Several methods are available for shuffling in \textbf{sdcMicro} and \textbf{sdcMicroGUI}, whereas
+the first (default) one (ds) is recommended to use. 
+%The explanation of all these methods goes far beyond this guidelines and interested readers might read the
+% original paper from Muralidliar and Sarathy [Z006]. In the following only a brief
+% introduction to shuffling is given.
+
+\end{itemize}
+\end{frame}
+%================================================ %
+\begin{frame}
+	\frametitle{6. Shuffling}
+	\begin{itemize}
+		\item 
+\item Shuffling simulates a synthetic value of the continuous key variables conditioned on independent, non-conﬁdential variables. 
+\item After
+the simulation of the new values for the continuous key variables, reverse mapping
+(shuffling) is applied. 
+\item This means that ranked values of the simulated values are
+replaced by the ranked values of the original data (columnwise).
+
+\end{itemize}
+\end{frame}
+
+%================================================ %
+\begin{frame}
+	\frametitle{6. Shuffling}
+	\begin{itemize}
+\item \textbf{Example} To explain this theoretical concept more practically we can assume that we have
+two continuous variables containing sensitive information on income and savings.
+\item These variables are used as regressors in a regression model where suitable variables
+are taken as predictors, like age, occupation, race, education. 
+\item Of course it is of
+crucial to find a good model having good predictive power. 
+\end{itemize}
+\end{frame}
+%================================================ %
+\begin{frame}
+	\frametitle{6. Shuffling}
+	\begin{itemize}
+\item New values for the
+continuous key variables, income and savings, are simulated based on this model.
+
+%[for details, have a look at Xluralidliar and Sarathy, 2006]. 
+\item However, these expected
+values are not used to replace the original values. 
+\item Rather a value re-assignment system (shuffling) of the original
+values using the generated values is carried out. 
+
+
+\end{itemize}
+\end{frame}
+%================================================ %
+\begin{frame}
+	\frametitle{6. Shuffling}
+\textbf{Value Assignment System}
+	\begin{itemize}
+		\item This approach (reverse mapping)
+is applied to each sensitive variable can be summarized in the following steps:
+\begin{enumerate}
+\item rank original variable
+\item rank generated variable
+\item for all observations, replace the fitted value of the variable with rank i
+with the value of the original sensitive variable with rank $i$.
+\item once finished, the modiﬁed variable contains only original values and is finally
+used to replace the original sensitive variable.
+\end{enumerate}
+\end{itemize}
+\end{frame}
+
+%================================================ %
+\begin{frame}
+	\frametitle{6. Shuffling}
+	\begin{itemize}
+\item It can be shown that the structure of the data is preserved when the model fir
+is of good quality. \item In the implementation of sdcMicro, a model of almost any form
+and complexity can be specified 
+\\ (see \texttt{?shuffling} for details).
+\end{itemize}
+\end{frame}
+\end{document}

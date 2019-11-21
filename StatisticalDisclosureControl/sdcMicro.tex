@@ -1,0 +1,166 @@
+\documentclass[SDCmaster.tex]{subfiles}
+\begin{document}
+	\begin{frame}
+		\frametitle{sdcMicro}
+\begin{itemize}
+\item The \texttt{R} package \textbf{sdcMicro} is a well-known collection of microdata protection methods developed by Statistics Austria, which is already in use in several national statistics offices. 
+\item sdcMicro has become one of the standard tools for microdata protection during the last five years.
+\item The IHSN is supporting the further development of sdcMicro and has partnered with its developers to perform the following tasks (next slide).
+\end{itemize}
+\end{frame}
+%=====================================%
+
+\begin{frame}
+	\begin{itemize}
+\item Include in \textbf{sdcMicro} relevant methods available in the IHSN plug-ins
+\item Test \textbf{sdcMicro} on real datasets to calibrate its outputs and facilitate their interpretation
+\item Develop practical guidelines to support the use of a toolbox and help users navigate between methods and associated algorithms
+
+	\end{itemize}
+SdcMicro already includes several popular methods for microdata anonymization; some of these methods can also be found in the IHSN C++ plug-ins.
+\end{frame}
+%=====================================%
+
+\begin{frame} 
+\begin{itemize}
+\item The overlapping methods have been tested and compared with their analogous implementation in \textbf{sdcMicro}. 
+\item Three new methods (or improved implementations) have been included in sdcMicro: suda2 (i.e., finding minimal samples unique), rank swap (i.e., numerical rank swapping), and mdav (i.e., micro-aggregation). 
+\item Since the C++ code contained specific class structures 
+and required multiple and sometimes different header files to be included when compiling the code, the inclusion of these new methods into \texttt{R} has proved to be a complex task. 
+\end{itemize}
+\end{frame}
+%=====================================%
+
+\begin{frame}The following Figure 1 shows computation time efficiency gains between the old and new implementation of rank swapping in sdcMicro, based on 100 runs on a 10-dimensional dataset with varying numbers of observations.
+
+Figure 1 computation time efficiency gains between old and new implementation of rank swapping algorithms
+
+SDC
+\end{frame}
+%=====================================%
+
+\begin{frame}
+	\begin{itemize}
+\item Version 4.4.0 of the sdcMicro package is available on the Comprehensive R Archive Network (CRAN).
+\item Existing guidelines and a user guide for \textbf{sdcMicro} are being updated. 
+\item A specific tutorial is being developed to show how to implement these concepts and algorithms on real datasets. 
+	\end{itemize}
+
+
+\end{frame}
+%=====================================%
+
+\begin{frame}
+	\frametitle{Statistical Disclosure Control}
+	\begin{itemize}
+\item This tutorial is being drafted with examples of the European Union SES dataset.
+\item The IHSN is promoting the adoption of sdcMicro and an associated guidelines toolbox for the creation of Public Use Files and Scientific Use Files.
+\item See our pages Software - Statistical Disclosure Control and Guidelines on Microdata Anonymization.
+	\end{itemize}
+
+\end{frame}
+%=====================================%
+\begin{frame}
+	\begin{itemize}
+\item Class \texttt{"sdcMicroObj"}
+\item Data shuffling and General Additive Data Perturbation.
+\item \texttt{suda2} Detecting Special Uniques
+	\end{itemize}
+
+
+\end{frame}
+%=====================================%
+\begin{frame}[fragile]
+\begin{verbatim}
+> data(testdata)
+> sdc <- createSdcObj(testdata,
+ + keyVars=c('urbrur','roof','walls','relat','sex'),
+ + pramVars=c('water','electcon'),
+ + numVars=c('expend','income','savings'), w='sampling_weight')
+> fk=freq(sdc)
+> Fk=freq(sdc,type="Fk")
+\end{verbatim}
+\end{frame}
+%=====================================%
+\begin{frame}[fragile]
+\begin{verbatim}
+> print(sdc)
+Number of observations violating
+
+-  2-anonymity:  26 
+-  3-anonymity:  52 
+--------------------------
+
+Percentage of observations violating
+-  2-anonymity:  0.57 % 
+-  3-anonymity:  1.14 % 
+\end{verbatim}
+\end{frame}
+%=====================================%
+\begin{frame}[fragile]
+\begin{verbatim}
+> print(sdc,type="ls")
+
+urbrur .. 0 [ 0 %]
+
+roof .... 0 [ 0 %]
+
+walls ... 0 [ 0 %]
+
+relat ... 0 [ 0 %]
+
+sex ..... 0 [ 0 %]
+\end{verbatim}
+\end{frame}
+%=====================================%
+\begin{frame}[fragile]
+	\begin{verbatim}
+> print(sdc,type="recode")
+Reported is the
+number | mean size and | size of smallest category
+
+-------------
+urbrur .. 2 | 2290 | 646 
+-------------
+roof .... 5 | 916 | 16 
+-------------
+walls ... 3 | 1527 | 50 
+-------------
+relat ... 9 | 509 | 1 
+-------------
+sex ..... 2 | 2290 | 2284 
+\end{verbatim}
+\end{frame}
+%=====================================%
+\begin{frame}[fragile]
+	\begin{verbatim}
+> print(sdc,type="risk")
+
+--------------------------
+0 obs. with higher risk than the main part
+Expected no. of re-identifications:
+2.41 [ 0.05 %]
+--------------------------
+
+\end{verbatim}
+\end{frame}
+%=====================================%
+\begin{frame}[fragile]
+	\begin{verbatim}
+> print(sdc,type="numrisk")
+Disclosure Risk is between: 
+[0% ; 100%] (current)
+- Information Loss:
+IL1: 0
+- Difference Eigenvalues: 0 %
+\end{verbatim}
+\end{frame}
+%=====================================%
+\begin{frame}[fragile]
+	\begin{verbatim}
+> print(sdc,type="pram")
+PRAM has not been applied!
+> 
+\end{verbatim}
+\end{frame}
+\end{document}

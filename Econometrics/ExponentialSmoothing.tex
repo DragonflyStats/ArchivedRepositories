@@ -1,0 +1,14 @@
+\section*{Exponential Smoothing}
+Exponential smoothing is a rule of thumb technique for smoothing time series data, particularly for recursively applying as many as three low-pass filters with exponential window functions. Such techniques have broad application that is not intended to be strictly accurate or reliable for every situation. It is an easily learned and easily applied procedure for approximately calculating or recalling some value, or for making some determination based on prior assumptions by the user, such as seasonality. 
+
+Like any application of repeated low-pass filtering, the observed phenomenon may be an essentially random process, or it may be an orderly, but noisy, process. Whereas in the simple moving average the past observations are weighted equally, exponential window functions assign exponentially decreasing weights over time. The use of three filters is based on empirical evidence and broad application.
+
+Exponential smoothing is commonly applied to smoothen data, as many window functions are in signal processing, acting as low-pass filters to remove high frequency noise. This method parrots Poisson's use of recursive exponential window functions in convolutions from the 19th century, as well as Kolmogorov and Zurbenko's use of recursive moving averages from their studies of turbulence in the 1940s. See Kolmogorov–Zurbenko filter for more information.
+
+The raw data sequence is often represented by {\displaystyle \{x_{t}\}} \{x_{t}\} beginning at time {\displaystyle t=0} t=0, and the output of the exponential smoothing algorithm is commonly written as {\displaystyle \{s_{t}\}} \{s_{t}\}, which may be regarded as a best estimate of what the next value of {\displaystyle x} x will be. When the sequence of observations begins at time {\displaystyle t=0} t=0, the simplest form of exponential smoothing is given by the formulas:[1]
+
+\[{\displaystyle {\begin{aligned}s_{0}&=x_{0}\\s_{t}&=\alpha x_{t}+(1-\alpha )s_{t-1},\ t>0\end{aligned}}}\] \[{\begin{aligned}s_{0}&=x_{0}\\s_{t}&=\alpha x_{t}+(1-\alpha )s_{t-1},\ t>0\end{aligned}}\]
+
+where {\displaystyle \alpha } \alpha  is the smoothing factor, and {\displaystyle 0<\alpha <1} 0<\alpha <1.
+
+\end{document}

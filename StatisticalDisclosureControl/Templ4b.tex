@@ -1,0 +1,33 @@
+\documentclass[]{article}
+
+%opening
+\title{}
+\author{}
+
+\begin{document}
+In general, the following recommendations hold:
+\begin{description}
+\item[Recommendation 1:] Carefully choose the set of key variables using knowledge
+of both subject matter experts and disclosure control experts. As already men-
+tioned, the key variables are those variables for which an intruder may possible
+have data/ information, e.g. age and region from persons or turnover of enter-
+prises. Which external data are available containing information on key variables
+is usually known by subject matter specialist.
+\item[Recommendation 2:] Always perform a frequency and risk estimation to evaluate
+how many observations have a high risk of disclosure given the selection of key
+variables.
+\item[Recommendation 3:] Apply recoding to reduce uniqueness given the set of cat-
+egorical key variables. This approach should be done in an exploratory manner.
+Receding on a variable, however, should also be based on expert knowledge to
+combine appropriate categories. Alternatively, swapping procedures may be ap-
+plied on categorical key variables so that data intruders cannot be certain if an
+observation has or has not been perturbed.
+\item[Recommendation 4:] If recoding is applied, apply local suppression to achieve
+k-anonymity. In practice, parameter It" is often set to 3.
+\item[Recommendation 5:] Apply micro-aggregation to continuously scaled key vari-
+ables. This automatically provides k-anonymity for these variables.
+\item[Recommendation 6:] Quantify the data utility not only by using typical esti-
+mates such as quantiles or correlations, but also by using the most important
+data-speciﬁc benchmarking indicators
+\end{description}
+\end{document}

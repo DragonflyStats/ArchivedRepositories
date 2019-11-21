@@ -1,0 +1,139 @@
+
+
+%This document provides an introduction to statistical disclosure control (SDC)
+%and guidelines on how to apply SDC methods to microdata. Section 1 introduces
+%basic concepts and presents a general workﬂow. Section 2 discusses methods of
+%measuring disclosure risks for a given micro dataset and disclosure scenario. Sec-
+%tion 3 presents some common anonymization methods. Section -1 introduces how
+%to assess utility of a micro dataset after applying disclosure limitation methods.
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\begin{frame}
+
+\frametitle{Microdata}
+\textbf{MicroData}
+\begin{itemize}
+	\item
+A microdata file is a dataset that holds information collected on individual units;
+examples of units include people, households or enterprises. 
+\item For each unit, a set of
+variables is recorded and available in the dataset. 
+%\item This section discusses concepts
+%related to disclosure and SDC methods, and provides a workﬁow that shows how
+%to apply SDC methods to microdata.
+\end{itemize}
+\end{frame}
+%================================================================== %
+\subsection*{1.1. Categorization of Variables}
+\begin{frame}
+\frametitle{Types of variables}
+
+In accordance with disclosure risks, variables can be classiﬁed into three groups,
+which are not necessarily exclusive:
+
+\bigskip
+\begin{description}
+	\item[Direct Identifiers] are variables that precisely identify statistical units. 
+\end{description}
+
+\begin{itemize}
+	\item For example, social insurance numbers, names of companies or persons and addresses
+	are direct identiﬁers 
+	\item (Remark: Primary Keys)
+\end{itemize}
+\end{frame}
+%======================================================================== %
+\begin{frame}
+\frametitle{Types of variables}
+\begin{description}
+	\item[Key variables] are a set of variables that, when considered together, can be used
+	to identify individual units. For example, it may be possible to identify
+	individuals by using a combination of variables such as gender, age, region
+	and occupation. Other examples of key variables are income, health status,
+	nationality or political preferences. 
+\end{description}
+\end{frame}
+%======================================================================== %
+\begin{frame}
+	\frametitle{Types of variables}
+\begin{itemize}
+	\item Key variables are also called implicit
+	identiﬁers or quasi-identifiers. \item When discussing SDC methods, it is preferable
+	to distinguish between categorical and continuous key variables based on the
+	scale of the corresponding variables.
+	\item Non-identifying variables are variables that are not direct identiﬁers or key variables.
+\end{itemize}
+%======================================================= %
+%For speciﬁc methods such as l-diversity, another group of sensitive variables is deﬁned in Section 
+\end{frame}
+\subsection*{1.2. What is disclosure?}
+\begin{frame}
+\frametitle{Types of Disclosure}
+
+\begin{itemize}
+\item In general, disclosure occurs when an intruder uses the released data to reveal
+previously unknown information about a respondent.
+\item There are three different types of disclosure:\textit{(next set of slides)}
+\end{itemize}
+
+
+\end{frame}
+%==================================================================== %
+\begin{frame}
+	\frametitle{Types of Disclosure}
+
+\textbf{Identity disclosure:}
+\begin{itemize}
+	\item In this case, the intruder associates an individual with a re-
+	leased data record that contains sensitive information, i.e. linkage with external available data is possible.
+	\item Identity disclosure is possible through direct
+	identfiers, rare combinations of values in the key variables and exact knowledge of continuous key variable values in external databases. 
+	\item For the latter,
+	extreme data values 
+	lead to high re-identification risks, i.e. it is likely that responends with extreme data values are disclosed.
+\end{itemize}
+% - (e.g., extremely high turnover values for an enterprise)
+\end{frame}
+%==================================================================== %
+\begin{frame}
+	\frametitle{Types of Disclosure}
+\textbf{Attribute disclosure:}
+\begin{itemize}
+	
+	\item In this case, the intruder is able to determine some characteristics of an individual based on information available in the released data.
+	\item For example, if all people aged 56 to GO who identify their race as black in
+	region 12345 are unemployed, the intruder can determine the value of the
+	variable labor status.
+	\item \textbf{Also} Diet - detailed questionnaire on diet can give clues to other aspects of some people's lives.
+\end{itemize}
+\end{frame}
+%==================================================================== %
+\begin{frame}
+	\frametitle{Types of Disclosure}
+\textbf{Inferential disclosure:}
+\begin{itemize}
+	
+	\item In this case, the intruder, though with some uncertainty,
+	can predict the value of some characteristics of an individual more accurately with the released data.
+\end{itemize}
+\end{frame}
+%==================================================================== %
+\begin{frame}
+\frametitle{Linkage}
+\textbf{Linkage}
+\begin{itemize}
+	
+\item If linkage is successful based on a number of identifiers, the intruder will have
+	access to all of the information related to a specific corresponding unit in the
+	released data. 
+\item This means that a subset of critical variables can be exploited to
+	disclose everything about a unit in the dataset.
+\end{itemize}
+
+\end{frame}
+%==================================================================== %
+\end{document}

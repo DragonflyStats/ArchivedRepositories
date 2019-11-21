@@ -1,0 +1,247 @@
+\documentclass{beamer}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+	
+	%======================================================%
+	\begin{frame}
+		\frametitle{Measuring Risk : k-anonymity}
+		\begin{itemize}
+		\item Based on a set of key variables, one desired characteristic of a protected micro
+		dataset is often to achieve \textbf{k-anonymity} 
+		%[Samarati and Sweeney, 1998, Sarnarati,2001, Swwriey, 2002]. 
+		\item This means that each possible pattern of key variables con-
+		tains at least k units in the microdata. This is equal to $f_i \geq k, i=1,2,3,\ldots ,n$.  A
+		typical value is k = 3.
+		\item k—anonymity is typically achieved by recoding categorical key variables into fewer
+		categories and by suppressing speciﬁc values of key variables for some units;
+		\end{itemize}
+		% see Section 3.1 and 3.2.
+	\end{frame}
+
+	%======================================================%
+	\begin{frame}
+\frametitle{Measuring Risk : l-diversity}
+\begin{itemize}	
+	\item An extension of k-anonymity is l-diversity. Consider
+		a group of observations with the same pattern/keys in the key variables and let
+		the group fulfill k-anonymity. \item A data intruder can therefore by definition not
+		identify an individual within this group. 
+		\item If all observations have the same entries
+		in an additional sensitive variable. however (e.g., cancer in the variable medical
+		diagnosis), an attack will be successful if the attacker can identify at least one
+		individual of the group, as the attacker knows that this individual has cancer
+		with certainty. 
+		\item The distribution of the target-sensitive variable is referred to as
+		l-diversity.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+	\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{TemplJPGs2/Table2}
+\caption{}
+\label{fig:Table2}
+\end{figure}
+
+	\end{frame}
+	%======================================================%
+	\begin{frame}
+		%======================================================%
+	\begin{itemize}
+ \item		Table 2 considers a small example dataset that highlights the calculations of
+		l-diversity.
+		\item  It also points out the slight difference compared to k-anonymity. The
+		ﬁrst two columns present the categorical key variables. 
+		\item The third column of the
+		data deﬁnes a variable containing sensitive information. 
+		\end{itemize}
+		\end{frame}
+
+		%======================================================%
+		\begin{frame}	
+		\begin{itemize}
+		\item Sample frequency counts $f_i$ appear in the fourth column. They equal 3 for the ﬁrst three observations; the
+		fourth observation is unique and frequency counts $f_i$ are 2 for the last two observations. 
+		\item Only the fourth observation violates 2-anonymity. Looking closer at the ﬁrst
+		three observations, we see that only two different values are present in the sensitive
+		variable. 
+		\item Thus the l-(distinct) diversity is just 2. 
+		\end{itemize}
+		%----------------------------------------------------------------------------%
+	\end{frame}
+	%======================================================%
+	\begin{frame}
+		\begin{itemize}
+		\item For the last two observations,
+		2-anonymity is achieved, but the intruder still knows the exact information of the
+		sensitive variable. \item For these observations, the l-diversity measure is 1. indicating
+		that sensitive information can be disclosed, since the value of the sensitive variable
+		is = 62 for both of these observations.
+		\end{itemize}
+		\end{frame}
+		%======================================================%
+		\begin{frame}
+		\begin{itemize}
+		\item Diversity in values of sensitive variables can be measured differently. We present
+		here the distinct diversity that counts how many different values exist within a
+		pattern. 
+		\item Additional methods such as entropy, recursive and multi-recursive are implemented in \textbf{sdcMicro}.
+		\end{itemize}
+	\end{frame}
+
+	%======================================================%
+	\begin{frame}
+		
+		%======================================================%
+		\frametitle{Special Uniques Detection Algorithm (SUDA)}
+		\begin{itemize}
+		\item The \textbf{Special Uniques Detection Algorithm (SUDA)} is an often discussed method
+		to estimate the risk, but applications of this method can be rarely found. 
+		\item For
+		the sake of completeness this algorithm is implemented in sdcMicro (but not in
+		sdcMicroGUI) and explained in this document, but to evaluate the usefulness of
+		this method it needs more research. 
+		
+		\item In the following the interested reader will
+		see that the SUDA approach is more than the sample frequency estimation shown
+		before. 
+		\item It consider also subsets of key variables. SUDA estimates disclosure risks
+		for each unit. SUDA2  is the computationally improved
+		version of SUDA. 
+		\end{itemize}
+		%% Cite:  [e.g., Manning et al., 2008]
+	\end{frame}
+	%======================================================%
+
+	\begin{frame}
+		\frametitle{SUDA2}
+		It is a recursive algorithm to find \textbf{\textit{Minimal Sample Uniques}}
+		(MSUs). SUDA2 generates all possible variable subsets of selected categorical key
+		variables and scans for unique patterns within subsets of these variables. The risk
+		of an observation primarily depends on two aspects:
+		%---------------------------------------------------------------------------------------%
+		
+		\begin{itemize}
+			\item[(a)] The lower the number of variables needed to receive uniqueness, the higher
+			the risk (and the higher the SUDA score) of the corresponding observation.
+			\item[(b)] The larger the number of minimal sample uniqueness contained within an
+			observation, the higher the risk of this observation.
+		\end{itemize}
+		%---------------------------------------------------------------------------------------%
+		
+		%_ m—l
+		%Item (a) is considered by calculating for each observation 1' by Z, — 1_[k_MSUm,-,,,1(m—
+		%la) ,i * I, ..., 11.
+	\end{frame}
+
+		%======================================================%
+	\begin{frame}
+		
+		In this formula, m corresponds to the depth, which is the max-
+		imum size of variable subsets of the key variables, \textit{MSUmin}$_i$, is the number of
+		MSUs of observation and i and n are the number of observations of the dataset.
+		%---------------------------------------------------------------------------------------%
+		\begin{itemize}
+			\item Since each observation is treated independently, a speciﬁc value 1,; belonging to a
+			speciﬁc pattern are summed up. This results in a common SUDA score for each
+			of the observations contained in this pattern; this summation is the contribution
+			mentioned in item 
+			\item The final SUDA score is calculated by normalizing these SUDA scores by dividing them by pl, with p being the number of key variables.
+		\end{itemize}
+	\end{frame}
+	%======================================================%
+	\begin{frame}
+		\frametitle{Data Intrusion Score}
+		\begin{itemize} 
+			\item To receive the so-called
+			\textbf{Data Intrusion Simulation (DIS) score}, loosely speaking, an iterative algorithm
+			based on sampling of the data and matching of subsets of the sampled data with
+			the original data is applied. 
+			\item This algorithm calculates the probabilities of correct
+			matches given unique matches. It is, however, out of scope to precisely describe
+			this algorithm here. %reference Fllliot [2000] for details. 
+		\end{itemize}
+				\end{frame}
+				%======================================================%
+				\begin{frame}
+					\frametitle{Data Intrusion Score}
+					\begin{itemize} 
+			\item The DIS SUDA score is calculated from the SUDA and DIS scores, and is available in \textbf{sdcMicro} as \texttt{disScore()}.
+			\item Note that this method does not consider population frequencies in general, but
+			does consider sample frequencies on subsets. 
+			\item The DIS SUDA scores approximate
+			uniqueness by simulation based on the sample information population, but to our
+			knowledge, they generally do not consider sampling weights, and biased estimates
+			may therefore result.
+		\end{itemize}
+	\end{frame}
+	%======================================================%
+	\begin{frame}
+		\frametitle{Data Intrusion Score}
+		\begin{itemize} 			
+		%	\item In Table 3, we use the same test dataset as in Section 2.1. 
+			\item Sample frequency
+			counts $f_i$ as well as the SUDA and DIS SUDA scores have been calculated. 
+			\item The
+			SUDA scores have the largest value for observation 4 and 6 since subsets of key
+			variables of these observation are also unique, while for observations 1 — 3, 5 and
+			8, less subsets are unique.
+		\end{itemize}
+	\end{frame}
+
+	%======================================================%
+	\begin{frame}
+		%%--- Page 9 / 31
+		%--------------------------------------------------------------------------------------------------------%
+		% 2 MEASURING THE DISCLOSURE RISK
+		Table 3: Example of SUDA scores (scores) and DIS SUDA scores (disScores).
+		\begin{figure}
+\centering
+\includegraphics[width=0.99\linewidth]{JPEGS/TemplTable3}
+\caption{}
+\label{fig:TemplTable3}
+\end{figure}
+
+		%%% TemplTable3.jpg
+	\end{frame}
+	%======================================================%
+	\begin{frame}
+		%----------------------------------------------------------------------------------------------%
+		In sdcMicro (function \texttt{suda2()}) additional output, such as the contribution
+		percentages of each variable to the score, are available. The contribution to the
+		SUDA score is calculated by assessing how often a category of a key variable
+		contributes to the score.
+	\end{frame}
+	%======================================================%
+	\begin{frame}
+		\frametitle{Calculating Cluster (Household) Risks}
+		\begin{itemize}
+			\item Micro datasets often contain hierarchical cluster structures; an example is social
+			surveys, when individuals are clustered in households. 
+			\item The risk of re-identifying
+			an individual within a household may also affect the probability of disclosure of
+			other members in the same household. Thus, the household or cluster-structure of
+			the data must be taken into account when calculating risks.
+\end{itemize}
+	\end{frame}
+	%======================================================%
+	\begin{frame}
+		\frametitle{Calculating Cluster (Household) Risks}
+		\begin{itemize}			
+			\item It is commonly assumed that the risk of re-identﬁcation of a household is the risk
+			that at least one member of the household can be disclosed. Thus this probability
+			can be simply estimated from individual risks as 1 minus the probability that no
+			member of the household can be identﬁed. 
+			\item Thus, if we consider a single household
+			with three persons that have individual risks of re-identiﬁcation of 0.1, 0.05 and
+			0.01, respectively, the risk-measure for the entire household will be calculated as
+			1-(0.1+0.05+0.01). 
+			\item This is also the implementation strategy from \textbf{sdcMicro}.
+		\end{itemize}
+	\end{frame}
+	\end{document}

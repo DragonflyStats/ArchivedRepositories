@@ -1,0 +1,295 @@
+
+
+
+and de Waal (2001, Sect. 9.2). A simple method is rounding, where the modified cell
+values are multiples of a given base integer (Willenborg and de Waal, 2001, Ch. 9). This
+method is more commonly applied to frequency tables derived from 100\% data but can
+also be applied to tables of estimated totals from surveys, where the base integer may be
+chosen according to the magnitudes of the estimated totals. Instead of replacing the cell
+values by single safe values, it is also possible to replace the values by intervals, defined
+by lower and upper bounds (Salazar, 2003; Giessing and Dittrich, 2006). The method of
+controlled tabular adjustment (Cox et al.,2004) determines modified cell values within
+such bounds so that the table remains additive and certain safety and statistical properties
+are met.
+
+Pre-tabular microdata modification: instead of modifying the cell values, the
+underlying microdata may be perturbed, e.g. by adding noise, and then the table formed
+from the perturbed microdata (Evans, et al. 1998; Massell et al., 2006).
+
+%------------------------------------------------------------%
+The statistical output from a survey will typically include many tables. Although the
+above methods may be applied separately to each table, such an approach takes no
+account of the possible additional disclosure risks arising from the combination of
+information from different tables, in particular, from common margins. To protect against
+such additional risks raises new considerations for SDC. Moreover, the set of tables
+constituting the statistical output is not necessarily fixed, as in a traditional survey report.
+
+With developments in online dissemination, there is increasing demand for the generation
+of tables which can respond in a more flexible way to the needs of users. This implies the
+need to consider SDC methods which not only protect each table separately as above, but
+also protect against the risk arising from alternative possible sequences of released tables
+(see e.g. Dobra et al, 2003).
+
+%----------------------------------------------------------%
+\newpage
+\section*{3. Microdata}
+
+\subsection*{P3.1. Assessing disclosure risk}
+
+We suppose the agency is considering releasing to researchers an anonymised
+microdata file, where the records of the file correspond to the basic analysis units and
+each record contains a series of survey variables. The record may also include identifiers
+for higher level analysis units, e.g. household identifiers where the basic units are
+individuals, as well as information required for survey analysis such as survey weights
+and primary sampling unit (PSU) identiﬁers.
+
+We suppose that the threat of concem is that an intmder may link a record in the file
+to some external data source of known units using some variables, which are included in
+both the microdata file and the external source. These variables are often called key
+variables or identifying variables. 
+
+There are various ways of defining disclosure risk in
+this setting. See e.g. Paass (1988) and Duncan and Lambert (1989). A common approach,
+often motivated by the nature of the confidentiality pledge, is to consider a form of
+identification risk (Bethlehem et al., 1990; Reiter, 2005), concemed with the possibility
+that the intmder will be able to determine a correct link between a microdata record and a
+known unit. 
+
+This definition of risk will only be appropriate if the records in the microdata
+can meaningfully be said to be associated with units in the population. When microdata is
+subject to some forms of SDC, this may not be the case (e.g. if the released records are
+obtained by combining original records) and in this case it may be more appropriate to
+consider some deﬁnition of predictive disclosure (e.g. Fuller, 1993) although we do not
+pursue this further here.
+
+A number of approaches to the assessment of identification risk are possible, but all
+depend importantly upon assumptions about the nature of the key variables. One
+approach is to conduct an empirical experiment, matching the proposed microdata against
+another data source, which is treated as a surrogate for the data source held by the
+intruder. Having made assumptions about the key variables, the agency can use record
+linkage methods, which it is plausible would be available to an intruder, to match units
+between the two datasets. 
+
+Risk might then be measured in terms of the number of units
+for which matches are achieved together with a measure of the match quality (in terms of
+the proportions of false positives and negatives). Such an experiment therefore requires
+that the agency has information which enables it to establish precisely which units are in
+common between the two sources and which are not.
+
+The key challenge in this approach is how to construct a realistic surrogate intruder
+dataset, for which there is some overlap of units with the microdata and the nature of this
+overlap is known. On some occasions a suitable alternative data source may be available.
+Blien et al. (1992) provide one example of a data source listing people in certain
+occupations. 
+
+Another possibility might be a different survey undertaken by the agency,
+although agencies often control samples to avoid such overlap. Even if there is overlap,
+say with a census, determining precisely which units are in common and which are not
+may be resource intensive. Thus, this approach is unlikely to be suitable for routine use.
+In the absence of another dataset, the agency may consider a re-identification
+experiment, in which the microdata file is matched against itself in a similar way,
+possibly after the application of some SDC method (Winkler, 2004). This approach has
+the advantage that it is not model-dependent, but it is possible that the re-identiﬁcation
+risk is over-estimated if the disclosure protection effects of sampling and measurement
+error are not allowed for in a realistic way.
+
+In the remainder of section 3, we consider a third approach, which again only
+requires data from the microdata ﬁle, but makes theoretical assumptions, especially of a
+modelling kind, in order to estimate identiﬁcation risk. As for the re~identiﬁcation
+experiment, this approach must make assumptions about how the key variables are
+measured in the microdata and by the intruder on known units using external information.
+
+A simplifying but ‘worst case’ assumption is that the key variables are recorded in
+identical ways in the microdata and externally. We refer to this as the n0 measurement
+error assumption, since measurement error in either of the data sources may be expected
+to invalidate this assumption. 
+
+If at least one of the key variables is continuous and the no
+measurement error assumption is made then an intruder who observes an exact match
+between the values of the key variables in the microdata and on the known units could
+conclude with probability one that the match is correct, in other words the identification
+risk would be one. If at least one of the key variables is continuous and it is supposed that
+measurement error may occur then the risk will generally be below one. Moreover, an
+exact matching approach is not obviously sensible and a broader class of methods of
+record linkage might be considered. See Fuller (1993) for the assessment of disclosure
+risk under some measurement error model assumptions.
+
+In practice, variables are rarely recorded in a continuous way in social survey
+microdata. For example, age would rarely be coded with more detail than one year bands.
+
+%-----------------------------------------------------------------------------------------------%
+
+And from now on we restrict attention to the case of categorical key variables. For
+simplicity, we restrict attention to the case of exact matching, although more general
+record linkage methods could be employed. We focus on a microdata file, where the only
+SDC methods which have been applied are recoding of key variables or random
+(sub)sampling. We comment briefly on the impact of other SDC methods on risk in
+section 3.4.
+3.2 File-level measures of identification risk
+We consider a finite population U of N units (which will typically be individuals)
+and suppose the microdata ﬁle consists of records for a sample s c U of size n § N . We
+assume that the possibility of statistical disclosure arises if an intruder gains access to the
+microdata and attempts to match a microdata record to external information on a known
+unit using the values of m categorical key variables X ,,...,X M . (Note that s and
+X1,..., Xm are defined after the application of (sub)sampling or recoding respectively as
+SDC methods to the original microdata file.)
+
+%==============================================%
+Let the variable formed by cross-classifying X1,...,Xm be denoted X , with values
+denoted k = l,...,K , where K is the number of categories or key values of X . Each of
+these key values corresponds to a possible combination of categories of the key variables.
+Under the no measurement error assumption, identity disclosure is of particular concern
+if a record is unique in the population with respect to the key variables. A record with key
+value k is said to be population unique if F, =1, where F, denotes the number of units
+in U with key value k . If an intruder observes a match with a record with key value k,
+knows that the record is population unique and can make the no measurement error
+assumption then the intruder can infer that the match is correct.
+
+As a simple measure of disclosure risk, we might therefore consider taking some
+summary of the extent of population uniqueness. In survey sampling it is usual to define
+parameters of interest at the population level and this might lead us to define our measure
+as the population proportion NI / N , where N, =2, I (F, = r) is the population
+frequencies of frequencies, r =1, 2,.... From a disclosure risk perspective, however, we
+are interested in the risk for a specific microdata ﬁle it is natural to allow the risk measure
+to be sample dependent. Thus, we might expect the risk to be higher if a sample is
+selected with a high proportion of unusual identifiable units than for a sample where this
+proportion is lower. Thus, a more natural file-level measure is the proportion of
+population uniques in the sample. Let the sample counterpart of F, be denoted by fk
+then this measure can be expressed as:
+
+Pr(PU)=Zk1(f,,=l,Fk=l)/n. (2)
+
+It could be argued, however that the denominator of this proportion should be made even
+smaller, since the only records which might possibly be population unique are ones that
+are sample unique (since fk 3 Fk), i.e. have a key value k such that fk =1 . Thus a more
+conservative measure would be to take:
+
+\[Pr(PU | su) =Z,1(f, = 1, F, =1)/nl, \]
+where n) is the number of sample uniques and, more generally, n,_ = 2, I ( fk : r) is the
+sample frequencies of frequencies. For further consideration of the proportion of sample
+uniques that are population unique, see Fienberg and Ma.kov (1998) and Samuels (1998).
+It may be argued (e.g. Skinner and Elliot, 2002) that these measures may be over-
+optimistic, since they only capture the risk arising from population uniques and not from
+other records with E, 2 2. If an intruder observes a match on a key value with frequency
+E, then (subject to the no measurement error assumption) the probability that the match
+is correct is 1/ F, under the exchangeability assumption that the intruder is equally likely
+to have selected any of the F, units in the population. 
+
+An alternative measure of risk is
+then obtained by extending this notion of probability of correct match across different
+key values. Again, on worst case grounds, it is natural to restrict attention to sample
+uniques. One measure arises from supposing that the intmder starts with the microdata, is
+equally likely to select any sample unique and then matches this sample unique to the
+population. The probability that the resulting match is correct is then the simple average
+of 1/ E across sample uniques:
+9.t=[Zt1<ﬁ<=1>/Fkl/"1 (4)
+
+Another measure is
+61/:Z;<I(_f/(=1)/2/<I:I<I(.ﬁ.:1)a (5)
+
+which is the probability of a correct match under a scenario where the intruder searches at
+random across the population and finds a match with a sample unique.
+All the above four measures are functions of both the fk and the F, . The agency
+conducting the survey will be able to determine the sample quantities fk from the
+microdata but the population quantities Fk will generally be unknown. It is therefore of
+interest to be able to make inference about the measures from sample data.
+Skinner and Elliot (2002) show that, under Bernoulli sampling with inclusion
+probability 71', a simple design-unbiased estimator of 0U is 63,, =n,/[n1+2(7f'—l)n2].
+They also provide a design consistent estimator for the asymptotic variance of éu —6U .
+Skinner and Carter (2003) show that a design-consistent estimator of 6” for an arbitrary
+complex design is éu =11,/[nl+2(7T2" —l)n2], where 772" is the mean of the inverse
+inclusion probabilities 7;?‘ for units iwith key values for which fk =2. They also
+provide a design-consistent estimator of the asymptotic variance of §L,—6U under
+Poisson sampling.
+
+Such simple design-based inference does not seem to be possible for the other three
+measures in (2) - (4). Assuming a symmetric design such as Bernoulli sampling, we
+ll
+
+
+
+might suppose that n,  represent sufficient statistics and seek design-based moment-
+based estimators of the measures by solving the equations:
+E(n,.)=Z1v,1>,,, r=l,Z,...
+where the coefficients P” are known for sampling schemes such as simple random
+sampling or Bernoulli sampling (Goodman, 1949). The solution of these equations for N,
+with E(n,_) replaced by nr gives unbiased estimators of K and N, under apparently
+weak conditions (Goodman, 1949). Unfortunately, Goodman found that the estimator of
+K can be ‘very unreasonable’ and the same appears to be so for the corresponding
+estimator of NI. Bunge and Fitzpatrick (1993) review approaches to estimating K and
+discuss these difficulties. Zayatz (1991) and Greenberg and Zayatz (1992) propose an
+altemative ‘nonparametric’ estimator of N] but this appears to be subject to serious
+upward bias for small sampling fractions (Chen and Keller-McNulty, 1998).
+One way of addressing these estimation difficulties is by making stronger
+modelling assumptions, in particular by assuming that the E are independently
+distributed as:
+Ft l/it ~ P0(1i) (6)
+where the /1, are independently and identically distributed, i.e. that the Fk follow a
+compound Poisson distribution. A tractable choice for the distribution of /1, is the
+gamma distribution (Bethlehem et al., 1990) although it does not appear to fit well in
+some real data applications (e.g. Skinner et al., 1994; Chen and Keller-McNulty, 1998).
+
+A much better fit is provided by the log-normal (Skinner and Holmes, 1993). Samuels
+(1998) discussed estimation of Pr(PU ISU) based on a Poisson-Dirichlet model. A
+general conclusion seems to be that results can be somewhat sensitive to the choice of
+model, especially as the sampling fraction decreases, and that 49” can be more robustly
+estimated than the other three measures.
+
+\subsection*{3.3 Record-level measures of identification risk}
+A concern with file-level measures is that the principles governing confidentiality
+protection often seek to avoid the identification of any individual, that is require the risk
+to be below a threshold for each record, and such aims may not adequately be addressed
+by aggregate measures of the form (2) - (5). To address this concem, it is more natural to
+consider record level measures, i.e. measures which may take different values for each
+microdata record. Such measures may help identify those parts of the sample where risk
+is high and more protection is needed and may be aggregated to a file level measure in
+different ways if desired (Lambert 1993). While record level measures may provide
+greater flexibility and insight when assessing whether specified forms of microdata
+output are ‘clisclosive’, they are potentially more difficult to estimate than file level
+measures.
+A number of approaches have been proposed for the estimation of record level
+measures. For continuous key variables, Fuller (1993) shows how to assess the record
+l2
+
+
+
+level probability of identification in the presence of added noise, under normality
+assumptions. See also Paass (1988) and Duncan and Lambert (1989). We now consider
+related methods for categorical variables, following Skinner and Holmes (1998) and
+Elamir and Skinner (2006).
+
+Consider a microdata record with key value X . Suppose the record is sample unique,
+i.e. with a key value k for which fk =1 , since such records may be expected to be most
+risky. Suppose the intruder observes an exact match between this record and a known
+unit in the population. We make the no measurement error assumption so that there will
+be F, units in the population which potentially match the record. We also assume no
+response knowledge (see section 2.1). The probability that this observed match is correct
+is
+Pr(c0rrect match I exact match, X = k, Fk) =1/F, (7)
+where the probability distribution is with respect to the design under a symmetric
+sampling scheme, such as simple random sampling or Bemoulli sampling. (Alternatively,
+it could be with respect to a stochastic mechanism employed by the intruder, which
+selects any of the F, units with equal probability). This probability is conditional on the
+key value k and on Fk .
+%==============================================%
+In practice, we only observe the sample frequencies fk and not the Fk. We therefore
+integrate out over the uncertainty about 1*‘, and write the measure as
+Pr(c0rrect match I exact match,X = k,fk) = E(l/F, lk, fk = l) (8)
+
+This expectation is with respect to both the sampling scheme and a model generating
+the Fk, such as the compound Poisson model in (6). An altemative measure, focusing on
+the risk from population uniqueness, is:
+\[ Pr(ﬁ, =l|k,fk =1) (9)\]
+The expressions in (8) and (9) may be generalized for any record in the microdata with
+fk >1. A difference between the probabilities in (8) and (9) and those in the previous
+section is that here we condition on the record’s key value X = k. Thus, although we
+might assume Fk ll, ~ P0(/1,), as in (6), we should like to condition on the particular
+key value k when considering the distribution of /1, . Otherwise, if the 2., are identically
+distributed as in the previous section then we would obtain the same measure of risk for
+all (sample unique) records. A natural model is a log-linear model:
+1°g(/1k)= Zkﬂ (10)
+wherezk is a vector of indicator variables representing the main effects and the
+interactions between the key variables Xl,...,Xm and ﬂ is a vector of unknown
+parameters.
+13
+

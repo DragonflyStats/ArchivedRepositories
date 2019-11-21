@@ -1,0 +1,383 @@
+Statistical Disclosure Control for Survey Data
+Chris Skinner
+University of Southampton
+Abstract
+Statistical disclosure control refers to the methodology used in the design of the statistical
+outputs from a survey for protecting the confidentiality of respondents’ answers. The
+threat to confidentiality is assumed to come from a hypothetical intruder who has access
+to these outputs and seeks to use them to disclose information about a survey respondent.
+One key concern relates to identity disclosure, which would occur if the intruder were
+able to link a known individual (or other unit) to an element of the output. Another main
+concern relates to attribute disclosure, which would occur if the intruder could determine
+the value of some survey variable for an identiﬁed individual (or other unit) using the
+statistical output. Measures of the probability of disclosure are called disclosure risk. If
+this level of risk is deemed unacceptable then it may be necessary to apply a method of
+statistical disclosure control to the output. The choice of which method and how much
+protection to apply depends not just on the impact on disclosure risk but also on the
+impact on the utility of the output to users. This paper provides a review of statistical
+disclosure control methodology for two main types of survey output: (i) tables of
+estimates of population parameters and (ii) microdata, often released as a rectangular ﬁle
+of variables by analysis units. For each of these types of output, the definition and
+estimation of disclosure risk is discussed as well as methods for statistical disclosure
+control.
+%==================================================%
+\subsection*{1. Introduction}
+\subsection*{1.1. The problem of statistical disclosure control}
+Survey respondents are usually provided with an assurance that their responses will
+be treated confidentially. These assurances may relate to the way their responses will be
+handled within the agency conducted the survey or they may relate to the nature of the
+statistical outputs of the survey as, for example, in the ‘confidentiality guarantee’ in the
+United Kingdom (UK) National Statistics Code of Practice (National Statistics, 2004,
+p.7) that ‘no statistics will be produced that are likely to identify an individual’. This
+paper is concerned with methods for ensuring that the latter kinds of assurances are met.
+
+Thus, in the context of this paper, statistical disclosure control (SDC) refers to the
+methodology employed, in the design of the statistical outputs from the survey, for
+protecting the confidentiality of respondents’ answers. Methods relating to the first kind
+of assurance, for example computer security and staff protocols for the management of
+data within the survey agency, fall outside the scope of this paper.
+
+
+
+There are various kinds of statistical outputs from surveys. The most traditional are
+tables of descriptive estimates, such as totals, means and proportions. The release of such
+l
+
+
+
+estimates from surveys of households and individuals have typically not been considered
+to represent a major threat to confidentiality, in particular because of the protection
+provided by sampling. 
+
+
+Tabular outputs from the kinds of establishment surveys
+conducted by government have, however, long been deemed risky, especially because of
+the threat of disclosure of information about large businesses in cells of tables which are
+sampled with a 100\% sampling fraction. SDC methods for such tables have a long history
+and will be outlined in Section 2.
+
+While the traditional model of delivering all the estimates from a survey in a single
+report continues to meet certain needs, there has been increasing demand for more
+ﬂexible survey outputs, often for multiple users, where the set of population parameters
+of interest is not pre-specified. There are several reasons why it may not be possible to
+pre-specify all the parameters. 
+
+Data analysis is an iterative process and what analyses are
+of most interest may only become clear after initial exploratory analyses of the data.
+Moreover, given the considerable expense of running surveys, it is natural for many
+commissioners of surveys to seek to facilitate the use of the data by multiple users. But it
+is usually impossible to pre-specify all possible users and their needs in advance. 
+
+A
+natural way to provide ﬂexible outputs from a survey to address such needs is to make
+the survey microdata available so that users can carry out the statistical analyses that
+interest them.
+
+The release of such microdata raises serious confidentiality protection issues,
+however. Of course, statistical analyses of survey data do not require that the identities of
+the survey units are known. Names, addresses and contact information for individuals or
+establishment can be stripped from the data to form an anonymised microdata file. The
+problem, however, is that such basic anonymisation is often insufficient to protect
+confidentiality, and it is necessary therefore to employ one of a range of alternative
+approaches to SDC and this will be discussed further in Section 3.
+
+%----------------------------------------------------------------------------------%
+\subsection*{1.2 Concepts of confidentiality, disclosure and disclosure risk}
+To be precise about what is meant by ‘protecting confidentiality’ requires discussion
+of definitions. These usually involve the notion of a hypothetical intruder who might seek
+to breach conﬁdentiality. 
+There are thus three key parties: 
+\begin{itemize}
+\item[(i)] the respondent who provides the data, 
+\item[(ii)] the agency which collects the data, releases statistical outputs and
+designs the SDC strategy, and 
+\item[(iii)] the hypothetical intruder who has access to these
+outputs and seeks to use them to disclose information about the respondent.
+\end{itemize}
+
+ One
+important notion of disclosure is identity disclosure or identification, which would occur
+if the intruder linked a known individual (or other unit) to an individual microdata record
+or other element of the statistical output. Another important notion is \textbf{\textit{attribute disclosure}},
+which would occur if the intruder could determine the value of some survey variable for
+an identified individual (or other unit) using the statistical output. 
+
+More generally,
+prediction disclosure would occur if the intruder could predict the value of some survey
+variable for an identiﬁed individual with some uncertainty. When assessing the potential
+for disclosure for a particular statistical output, it is usual to refer to the disclosure risk.
+
+This might be defined as the probability of disclosure with respect to specified sources of
+uncertainty. Or the term might be used loosely to emphasize not only the uncertainty
+about potential disclosure but also the potential harm that might arise from disclosure
+(Lambert, 1993). The conﬁdentiality of the answers provided by a respondent might be
+2
+
+
+
+said to be protected if the disclosure risk for this respondent and the respondent’s answers
+is sufﬁciently low. We shall discuss disclosure risk in more detail in sections 2 and 3.
+For further discussion of deﬁnitions of disclosure see Duncan and Lambert (1986; 1989)
+and Skinner (1992).
+%-------------------------------------------------------------------------------%
+\subsection*{1.3 Approaches to protecting confidentiality}
+If the disclosure risk is not deemed to be sufficiently low, then it will be necessary to
+employ some method to reduce the risk. There are broadly two approaches, which are
+referred to here as sqfe setting and safe data (Marsh et al. 1994). 
+
+The safe setting
+approach imposes restrictions on the set of possible users of the statistical output and/or
+on the ways that the output can be used. For example, users might be required to sign a
+licencing agreement or might only be able to access microdata by visiting a secure
+laboratory or by submitting requests remotely (National Research Council, 2005). The
+safe data approach, on the other hand, involves some modification to the statistical
+output. 
+
+For example, the degree of geographical detail in a microdata file from a national
+social survey might be limited so that no area containing less than 100,000 households is
+identified. In this paper we focus on the safe data approach and generally refer to
+methods for modifying the statistical output as SDC methods.
+%-------------------------------------------------------------------------------%
+\subsection*{1.4 SDC methods. utilitv and data quality}
+SDC methods vary according to the form of the statistical output. Some simple
+approaches are:
+\begin{itemize}
+\item reduction of detail, for example the number of categories of a categorical
+variable might be reduced in a cross-classified table or in microdata;
+\item suppression, for example the entry in a table might be replaced by an asterisk,
+indicating that the entry has been suppressed for confidentiality reasons.
+\end{itemize}
+%----------------------------------------------------------------------------------------%
+
+In each of these cases, the SDC method will lead to some loss of infarmation for the
+user of the statistical output. Thus, the method will reduce the number of population
+parameters for which a user can obtain survey estimates. Other kinds of SDC methods
+might not affect the number of parameters which can be estimated but may affect the
+quality of the estimates that can be produced. 
+
+For example, if random noise is added to an
+income variable to protect confidentiality then this may induce bias or variance inﬂation
+in associated survey estimates. The general term utility may be used to cover both the
+information provided by the statistical outputs, e.g. the range of estimates or analyses
+which can be produced, and the quality of this information, e.g. the extent of errors in
+these estimates. It should, of course, be recognized that survey data are subject to many
+sources of error, even prior to the application of SDC methods, and the impact of SDC
+methods on data quality therefore needs to be considered in this context.
+
+Utility generally needs to be considered from the perspective of a user of the
+statistical outputs, who represents a key fourth party to add to the three parties referred to
+earlier: the respondent, the agency and the intruder.
+%---------------------------------------------------------------------------------------%
+\subsection*{1.5 SDC as an optimisation problem: the risk-utilitv trade-off}
+The key challenge in SDC is how to deal with the trade-off between disclosure risk
+and utility. In general, the more the disclosure risk is reduced by an SDC method, the
+lower will be the expected utility of the output. This trade-off may be formulated as an
+optimisation problem. 
+
+Let D be the (anonymized) survey data and let f(D), be the
+statistical output, resulting from the use of an SDC method. Let R[ f (D)] be a measure of
+the disclosure risk of the output and let U [ f (D)] be a measure of the utility of the
+output. Then the basic challenge of SDC might be represented as the constrained
+optimisation problem :
+for given D and 8, find an SDC method, $f (.)$, which:
+maximises U[f(D)], subject to $R[f(D)] < 5$.
+
+The elements of this problem need some clarification:
+\begin{itemize}
+\item[f(.)] : the SDC method - a wide variety of these have been proposed and we shall refer to
+some of these in this paper;
+\item R(.)] : the disclosure risk function - we shall discuss ways in which this function may be
+defined; this is certainly not straightforward, e.g. because of its dependence on
+assumptions about the intruder and because of the challenge of combining the
+threats of disclosure for multiple respondents into a scalar function;
+\item[U (.)] : the utility function - this will also not be straightforward to specify as a scalar
+function, given the potential multiple uses of the output;
+\end{itemize}
+%----------------------------------------------------------------------------------%
+8 maximum acceptable risk: in principle, one might expect the agency to provide this
+value in the light of its assurances to respondents. However, in practice, agencies
+find it very difﬁcult to specify a value of 5, other than Zero, i.e. no disclosure risk.
+Unfortunately, for most definitions of disclosure risk, the only way to achieve no
+disclosure risk is by not releasing any output and this is rarely a solution of interest!
+%------------------------------------------------------------------------------------------%
+Given these difficulties in specifying R(.) and U (.) as scalar functions and in
+specifying a value for E, the above optimization problem serves mainly as conceptual
+motivation. In practice, different SDC methods can be evaluated and compared by
+considering the values of alternative measures of risk and utility. For given measures of
+each, it can sometimes be useful to construct an RU map (Duncan et al., 2001), where a
+measure of risk is plotted against a measure of utility for a set of candidate SDC methods.
+
+The points on this map are expected to display a general positive relationship beween risk
+and utility, but one might still find that, for given values of risk, some methods have
+greater utility than others and thus are to be preferred. This approach avoids having to
+assume a single value of 6.
+%=====================================================%
+\newpage
+\section*{2. Tabular Outputs}
+\subsection*{2.1 Disclosure risk in social survevs and the protection provided bv sampling}
+The main developments in SDC methods for tabular outputs have been motivated by
+the potential risks of disclosure arising when 100\% sampling has been employed, such as
+in censuses or in administrative data. Frequency tables based upon such data sources
+may often include small counts, as low as Zero or one, e.g. in tables of numbers of deaths
+by area by cause of death. Such tables might lead to identity disclosure, e.g. if it is public
+knowledge that someone has died, then it might be possible to identify that person as a
+count of one in a table of deaths using some known characteristics of that person.
+%-------------------------------------------------------------%
+
+Attribute disclosure might also occur. For example, it might be possible to find out the
+cause of the person’s death if the table cross-classifies this cause by other variables
+potentially known to an intruder.
+\begin{itemize}
+\item In social surveys, however, the use of sampling greatly reduces the risks of such kinds
+of disclosure for two reasons. Firstly, the presence of sampling requires different kinds of
+statistical outputs. Thus, the entries in tables for categorical variables tend to be weighted
+proportions (possibly within domains defined by rows or columns) and not unweighted
+sample counts. 
+\item Even if a user of the table could work out the cell counts (e. g. because the
+survey employs equal weights and the sample base has been provided), the survey agency
+will often ensure that the published cells do not contain very small counts, where the
+estimates would be deemed too unreliable due to sampling error. 
+\item For example, the agency
+might suppress cell entries where the sample count in the cell falls below some threshold,
+e.g. 50 persons in a national social survey. This should prevent the kinds of situations of
+most concem with 100\% data. Sometimes, agencies use techniques of small area
+estimation in domains with small sample counts and these techniques may also act to
+reduce disclosure risk.
+%---------------------------------------------------------%
+\item Secondly, the presence of sampling should reduce the precision with which an
+intruder could achieve predictive disclosure. For example, suppose that an intruder could
+find out from a survey table that, among 100 respondents falling into a certain domain, 99
+of them have a certain attribute and suppose that the intruder knows someone in the
+population who falls into this domain. 
+\item Then the intruder cannot predict that this person
+has the attribute with probability 0.99, since this person need not be a respondent and
+prediction is subject to sampling uncertainty. This conclusion depends, however, on the
+identities of the survey respondents being kept confidential by the agency, preventing the
+intruder knowing whether the known person is a respondent, referred to as \textbf{response
+knowledge} by Bethlehem et al. (1980). 
+
+\item In general, it seems very important that agencies
+do adopt this practice since it greatly reduces disclosure risk, while not affecting the
+statistical utility of the outputs. In some exceptional cases, it may be difficult to achieve
+this completely. For example, in a survey of children it will usually be necessary to
+obtain the consent of a child’s parent (or other adult) in order for the child to take part in
+the survey. The child might be assured that their responses will be kept conﬁdential from
+their parent. However, when examining the outputs of the survey, the parent (as intruder)
+would know that their child was a respondent.
+\end{itemize}
+
+%---------------------------------------------------------%
+For the reasons given above, disclosure will not generally be of concern in the release
+of tables of estimates from social surveys, where the sample inclusion probabilities are
+small (say never exceeding 0.1). See also Federal Committee on Statistical Methodology
+(2005, pp. l2-14).
+
+\subsection*{2.2. Disclosure risk in establishment survevs}
+A common form of output from an establishment survey consists of a table of
+estimated totals, cross-classified by characteristics of the establishment. Each estimate
+takes the form  =ZSw,I‘_,y, , where w, is the survey weight, IL, is a 0-1 indicator for
+cell c in the cross-classification and y, is the survey variable for the in‘ establishment in
+the samples. For example, y, might be a measure of output and the cells might be
+formed by cross-classifying industrial activity and a measure of size.
+5
+
+
+\subsection*{Prediction disclosure}
+The relevant definition of disclosure in such a setting will often be a form of
+prediction disclosure. Prediction disclosure for a specific cell c might be defined under
+the following set-up and assumptions:
+\begin{itemize}
+\item the intruder is one of the establishments in the cell which has the aim of predicting
+the value y, for one of the other establishments in the cell or, more generally, the
+intruder consists of a coalition of m of the N‘ establishments in the cell with the same
+predictive aim;
+\item the intruder knows the identities of all establishments within the cell (since, for
+example, they might represent businesses competing in a similar market).
+\end{itemize}
+
+Given such assumptions, prediction disclosure might be said to occur if the intruder is
+able to predict the value yt with a specified degree of precision. In order to clarify the
+notion of precision, we focus in the next subsection on the important case where the units
+in the cell all fall within completely enumerated strata. Thus, w, =1 when I“ =1 so that
+la, =21] y, , where UL is the set of all establishments in cell c and Np is the size of UL .
+In this case the intruder faces no uncertainty due to sampling and this might therefore be
+treated as the worst case.
+%----------------------------------------------------------------------------------------------------%
+\subsection*{2.2.1 Prediction disclosure in the absence of sampling}
+In the absence of sampling, prediction is normally considered from a deterministic
+perspective and is represented by an interval (between an upper and lower bound) within
+which the intruder knows that a value y, must lie. The precision of prediction is
+represented by the difference between the true value and one of the bounds. It is supposed
+that the intruder undertakes prediction by combining prior information with the reported
+value Y6.
+One approach to specifying the prior information is used in the prior-posterior rule
+(Willenborg and de Waal, 2001), also called the pq rule, which depends upon two
+constants, p and q, set by the agency. The constant q is used to specify the precision of
+prediction based upon the prior information alone. Under the pq rule, it is assumed that
+intruder can infer the yl value for each establishment in the cell to within q%. Thus, the
+agency assumes that, prior to the table being published, the intruder could know that a
+value y. falls within the interval [(1—q/l0O)y,,(l+q/l00)y,]. The combination of this
+t
+prior information with the output IZU yl can then be used by the intruder to obtain
+sharper bounds on a true value. For example, let ym syw $...$ ym) be the order
+statistics and suppose that the intruder is the establishment with the second largest value,
+ym _,). Then this intruder can determine an upper bound for the largest value yw) by
+subtracting its own value ym, _1, together with the sum of the lower bounds for
+ym,..., y(N _2) from  The precision of prediction using this upper bound is given by
+difference between this upper bound and the true value yum, which is (q/100)2Z] 2 ya) .
+This cell would be called sensitive under the pq rule, i.e. judged disclosive, if this
+difference was less than 12% of the true value, i.e. if
+6
+
+
+
+(p/lO0)y(N()—(q/lOO)ZZl’2y(,) >0. <1)
+The expression on the left hand side of (l) is a special case of a linear sensitivity
+measure, which more generally takes the form R‘ =2: a,yW , where the a, are specified
+weights. The cell is said to be sensitive if R‘. >0. In this case, prediction disclosure
+would be deemed to occur. A widely used special case of the pq rule is the 12% rule,
+which arises from setting q=100, i.e. no prior information is assumed. Another
+commonly used linear sensitivity measure arises with the (n,k) or dominance rule. See
+Willenborg and de Waal (2001), Cox (2001), Giessing (2001) and Federal Committee on
+Statistical Methodology (2005) for further discussion.
+%------------------------------------------------------------------------------------------------%
+\subsection*{2.2.2 Prediction disclosure in the presence of sampling}
+More generally, all cell units may not be completely enumerated. In this case,  will
+be subject to sampling error and, in general, this will lead to additional disclosure
+protection, provided the intruder does not know whether other establishments (other than
+those in the coalition) are sampled or not. 
+
+The definition of risk in this setting appears to
+need further research. Willenborg and de Waal (2001, section 6.2.5) present some ideas.
+An alternative model-based stochastic approach might assume that before the release of
+the table, the prior information about the y, can be represented by a linear regression
+model depending upon publicly available covariate values x, with a speciﬁed residual
+variance. 
+
+The predictive distribution of y, given xi could then be updated using the
+known value(s) of yl. for the intruder and the reported 2., which might be assumed to
+follow the distribution $Yr \sim \mathcal{N} [Y(,v(l?()],$ where v(l;(.) is the reported variance estimate of
+la. Prediction disclosure could then be measured in terms of the resulting residual
+variance in the prediction of yl.
+%-------------------------------------------------------------------------------------------------------%
+\subsection*{2.3. SDC methods for tabular outputs}
+If a cell in a table is deemed sensitive, i.e. the cell value represents an unacceptably high
+disclosure risk, a number of SDC approaches may be used.
+\begin{description}
+\item[Redefinition of cells:] The cells are redefined to remove sensitive cells, e.g. by combining
+sensitive cells with other cells or by combining categories of the cross-classified
+variables. This is also called table redesign (Willenborg and de Waal, 2001).
+\item[Cell suppression:] the value of a sensitive cell is suppressed. Depending upon the nature
+of the table and its published margins, it may also be necessary to suppress the values of
+‘complementary’ cells to prevent an intruder being able to deduce the value of the cell
+from other values in the table. 
+\end{description}
+%---------------------------------------------------------------------------------------------------------%
+There is a large literature on approaches to choosing
+complementary cells which ensure disclosure protection. See e.g. Willenborg and de
+Waal (2001), Cox (2001) and Giessing (2001) and references therein.
+Cell modification: the cell values may be modiﬁed in some way. It will generally be
+necessary to modify not only the values in the sensitive cells but also values in some
+complementary non-sensitive cells, for the same reason as in cell suppression.
+Modification may be detenninistic, e.g. Cox et al. (2004), or stochastic, e.g. Willenborg
+7

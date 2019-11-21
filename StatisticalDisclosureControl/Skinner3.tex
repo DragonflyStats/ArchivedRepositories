@@ -1,0 +1,294 @@
+
+
+Expressions for the risk measures in (8) and (9) in terms of ,5 are provided by Skinner
+and Holmes (1998) and Elamir and Skinner (2006). Assumptions about the sampling
+scheme are required to estimate /1’. Under Bernoulli sampling with inclusion probability
+71', it follows from (6) that fk ll, ~ Po(7r2., ). Assuming also (10), ﬂ may be estimated
+by standard maximum likelihood methods. 
+
+A simple extension of this argument also
+applies under Poisson sampling where the inclusion probability rrk may vary with respect
+to the key variables, for example if a stratifying variable is included among the key
+variables. In this case, we have fk I), ~ Po(/112.‘). Skinner and Shlomo (2008) discuss
+methods for the specification of the model in (10). Skinner (2007) discusses the possible
+dependence of the measure on the search method employed by the intmder.
+%===========================================%
+\subsection*{3.4. SDC methods}
+In this section we summarize a number of SDC methods for survey microdata.
+%===========================================%
+\noindent \textbf{Transformation of variables to reduce detail}\\ Categorical key variables may be
+transformed, in particular, by combining categories. For example, the variable household
+size might be top coded by creating a single maximum category, such as 8+. Continuous
+key variables may be banded to form ordinal categorical variables by specifying a series
+of cut-points between which the intervals define categories. 
+The protection provided by combining categories of key variables can be assessed following the methods in sections
+3.2. and 3.3. See also Reiter (2005). Provided the transformation is clear and explicit,
+this SDC method has the advantage that the reduction of utility is clear to the data user,
+who may suffer loss of information but the validity of analyses is not damaged.
+%===========================================%
+\noindent \textbf{Stochastic perturbation of variables}\\ The values of potential key variables are
+perturbed in a stochastic way. In the case of continuous variables perturbation might
+involve the addition of noise, analogous to the addition of measurement error (Sullivan and Fuller, 1989; Fuller, 1993). In the case of categorical variables, perturbation may consist of misclassification, termed the \textbf{Post Randornisation Method (PRAM)} by
+Gouweleeuw et al. (1998). 
+
+Perturbation may be undertaken in a way to preserve specified features of the microdata, e.g. the means and standard deviations of variables in the perturbed microdata may be the same as in the original microdata, but in practice there
+will inevitably be unspecified features of the microdata which are not reproduced. For example, the estimated correlation between a perturbed variable and an unperturbed variable will often be downwardly biased if an analyst uses the perturbed data but ignores
+the fact that perturbation has taken place. 
+
+%===========================================%
+An altemative is to provide users with the
+precise details of the perturbation method, including parameter values such as the
+standard deviation of the noise or the entries in the misclassification matrix, so that they
+may ‘undo’ the impact of perturbation when undertaking their analyses. See e.g. Van den
+Hout and Van der Heijden (2002) in the case of PRAM or Fuller (1993) in the case of
+added noise. In principle, this may permit valid analyses although there will usually be a
+loss of precision and the practical disadvantages are significant.
+%===========================================%
+Synthetic microdata: This approach is similar to the previous one, except that the aim
+is to avoid requiring special methods of analysis. Instead, the values of variables in the
+file are replaced by values generated from a model in a way that is designed for the
+analysis of the synthetic data, as if it were the true data, to generate consistent point
+estimates (under the assumption that the model is valid). The model is obtained from
+fitting to the original microdata. In order to enable valid standard errors as well as
+consistent point estimators, Raghunathan et al. (2003) propose that multiple copies of the
+synthetic microdata are generated in such a way that multiple imputation methodology
+can be used. See Reiter (2002) for discussion of complex designs. Abowd and Lane
+(2004) discuss release strategies combining remote access to one or more such synthetic
+microdata files with much more restricted access to the original microdata in a safe
+setting.
+%===========================================%
+Selective perturbation. Often concern focuses only on records deemed to be risky and
+it may be expected that utility will be greater if only a subset of risk records is perturbed.
+In addition to creating stochastically perturbed or synthetic values for only targeted
+records, it is also possible just to create missing values in these records, called local
+ruppresrion by Willenborg and de Waal (2001), or both to create missing values and to
+replace these by imputed values, called blank and impure by Federal Committee on
+Statistical Methodology (2005). A major problem with such methods is that they are
+likely to create biases if the targetted values are unusual. The data user will typically not
+be able to quantify these biases, especially when the records selected for blanking depend
+on the values of the variable(s) which are to made missing. Reiter (2003) discusses how
+valid inference may be conducted if multiple imputed values are generated in a specified
+way for the selected records. He refers to the resulting data as partially synthetic
+microdata.
+%===========================================%
+\noindent \textbf{Record Swapping}\\
+The previous methods focus on the perturbation of the values of
+the variables for all or a subset of records. The method of record swapping involves,
+instead, the values of one or more key variables being swapped between records. The
+choice of records between which values are swapped may be controlled so that certain
+bivariate or multivariate frequencies are maintained (Dalenius and Reiss, 1982) in
+particular by only swapping records sharing certain characteristics (Willenborg and de
+Waal, 2001, sect. 5.6). In general, however, it will not be possible to control all
+multivariate relationships and record swapping may damage utility in an analogous way
+to misclassification (Skinner and Shlomo, 2007). Reiter (2005) discusses the impact of
+swapping on identification risk.
+%===========================================%
+Microaggregation. This method (Defays and Anwar, 1998) is relevant for continuous
+variables, such as in business survey microdata, and in its basic form consists of ordering
+the values of each variable and forming groups of a specified size k (the first group
+contains the $k$ smallest values, the second group the next k smallest values and so on).
+
+The method replaces the values by their group means, separately for each variable. An
+advantage of the method is that the modification to the data will usually be greatest for
+outlying values, which might also be deemed the most risky. It is difficult, however, for
+the user to assess the biasing impact of the method on analyses.
+
+SDC methods will generally be applied after the editing phase of the survey, during
+which data may be modified to meet certain edit constraints. The application of some
+SDC methods may, however, lead to failure of some of these constraints. Shlomo and de
+Waal (2006) discuss how SDC methods may be adapted to take account of editing
+considerations.
+
+%===========================================%
+\newpage
+\section{3.5 SDC for survev weights and other design information}
+Survey weights and other complex design information are often released with survey
+microdata in order that valid analyses can be undertaken. It is possible, however, that
+such design information may contribute to disclosure risk. For example, suppose a survey
+is stratified by a categorical variable X with different sampling fractions in different
+categories of X. Then, if the nature of the sampling design is published (as is common), it
+may be possible for the intruder to determine the categories of X from the survey weight.
+Thus, the survey design variable may effectively become a key variable. See de Waal and
+Willenborg (1997) and Willenborg and de Waal (2001, sect. 5.7) for further discussion of
+how survey weights may lead to design variables becoming key variables. 
+
+Note that this does not imply that survey weights should not be released; it just means that disclosure
+risk assessments should take account of what information survey weights may convey.
+Willenborg and de Waal (2001, sect. 5.7.3) and Mitra and Reiter (2006) propose some approaches to adjusting weights to reduce risk.
+
+In addition to the release of survey weights, it is common to release either stratum or
+primary sampling unit (PSU) labels or replicate labels, to enable variances to be estimated. These labels will generally be arbitrary and will not, in themselves, convey any identifying information. Nevertheless, as for survey weights, the possibility that they
+could be used to convey information indirectly needs to be considered. For example, if the PSUs are defined by areas for which public information is available, e.g. a property tax rate, and the microdata file includes area-level variables, then it is possible that these variables may enable a PSU to be linked to a known area. As another example, suppose that a PSU is an institution, such as a school, then school level variables on the microdata file, such as the school enrolment size, might enable the PSU to be linked to a known institution. Even for individual level microdata variables, it is possible that sample-based
+estimates of the total or mean of such variables for a stratum, say, could be matched to
+published values, allowing for sampling uncertainty.
+%===========================================%
+A standard simple approach to avoiding releasing PSU or replicate identifiers is to
+provide information on design effects or generalized variance functions instead. Such
+methods are often inadequate, however, for the full range of uses of survey microdata
+(Yung, 1997). Some possible more sophisticate approaches include the use of adjusted
+bootstrap replicate weights (Yung, 1997), adjusted pseudo-replicates or pseudo PSU
+identifiers (Dohrmann et al., 2002), or combined stratum variance estimators (Lu et al.,
+2006).
+%===========================================%
+\subsection{4. Conclusion}
+The development of SDC methodology continues to be stimulated by a wide range of
+practical challenges and by ongoing innovations in the ways that survey data are used,
+with no signs of diminishing concerns about confidentiality. There has been a tendency
+for some SDC methods to be developed in somewhat ad hoc way to address speciﬁc
+problems and one aim of this paper has been to draw out some principles and general
+approaches which can guide a more unified methodological development. 
+
+Statistical modelling has provided one important framework for this purpose. Other fields with the
+potential to inﬂuence the systematic development of SDC methodology in the future
+include data mining, in particular methods related to record linkage, and approaches to
+privacy protection in computer science and database technology.
+
+%===========================================%
+
+References
+Abowd, J .M. and Lane, J. (2004) New approaches to confidentiality protection: synthetic
+data, remote access and research data centers. In J. Domingo-Ferrer and V. Torra
+(eds.) Privacy in Statistical Databases. Lecture Notes in Computer Science 3050
+Berlin: Springer, pp. 290-297.
+Bethlehem, J .G., Keller, W.J. and Pannekoek, J. (1990) Disclosure control for microdata.
+J. Amer. Statist. Ass. 85, 38-45.
+Blien, U., Wirth, H. and Muller, M. (1992) Disclosure risk for microdata stemming from
+official statistics. Statist. Neerland., 46, 69-82.
+Bunge, J. and Fitzpatrick, M. (1993) Estimating the number of species: a review. J. Amer.
+Statist. Ass. 88, 364-373.
+Chen, G, and Keller-McNulty, S. (1998) Estimation of identification disclosure risk in
+microdata. J. Off Statist. 14, 79-95.
+Cox, L.H. (2001) Disclosure risk for tabular economic data. In P.Doyle, J.I. Lane, J.J.M.
+Theeuwes and L.V. Zayatz (eds.) Conﬁdentiality, Disclosure and Data Access:
+Theory and Practical Applications for Statistical Agencies. Amsterdam: Elsevier, pp.
+167-183.
+Cox, L.H., Kelly, J.P. and Patil, R. (2004) Balancing quality and confidentiality for
+multivariate tabular data. In J. Domingo-Ferrer and V. Torra (eds.) Privacy in
+Statistical Databases. Lecture Notes in Computer Science 3050 Berlin: Springer, pp.
+87-98.
+De Waal, A.G. and Willenborg, L.C.R..l. (1997) Statistical disclosure control and
+sampling weights. J. Oﬁ’. Statist. 13, 417-434.
+Dalenius, T. and Reiss, S.P. (1982) Data-swapping: a technique for disclosure control. J.
+Statist. Plan. Inf 6, 73-85.
+Defays, D. and Anwar, M.N. (1998) Masking microdata using micro-aggregation. J. Oﬁ‘.
+Statist. 14, 449-461.
+Dobra A., Karr A.F. and Sanil A.P. (2003) Preserving confidentiality of high-dimensional
+tabulated data: statistical and computational issues. Statistics and Computing, 13, 363-
+370.
+Dohrmann, S., Curtin, L.R., Mohadjer, L., Montaquila, J . and Le, T. (2002) National
+Health and Nutrition Examination Survey: limiting the risk of data disclosure using
+replication techniques in variance estimation. Proc. Surv. Res. Meth. Sect. Am. Statist.
+Ass., 807-812.
+Duncan, G.T. and Lambert, D. (1986) Disclosure-limited data dissemination. J. Amer.
+Statist. Ass. 81, 10-28.
+Duncan, G.T. and Lambert, D. (1989) The risk of disclosure for microdata. J. Bus. Econ.
+Statist. 7, 207-217.
+Duncan, G.T., Fienberg, S.E., Krishnan, R., Padman, R. and Roehrig, S.F. (2001)
+Disclosure limitation methods and information loss for tabular data. In P.Doyle, J .I.
+Lane, J .1 .M. Theeuwes and L.V. Zayatz (eds.) Conﬁdentiality, Disclosure and Data
+Access: Theory and Practical Applications for Statistical Agencies. Amsterdam:
+Elsevier, pp. 135-166.
+Elamir, E.A.H. and Skinner, C.J. (2006) Record level measures of disclosure risk for
+survey microdata. J. Off Statist. 22, 525-539.
+Evans, T., Zayatz, L. and Slanta, J. (1998) Using noise for disclosure limitation of
+establishment tabular data. J. Oﬁ‘. Statist. 14, 537-551.
+Federal Committee on Statistical Methodology (2005) Report on Statistical Disclosure
+Limitation Methodology (Statistical Policy Working Paper 22, 2"“ Version)
+Washington, D.C.: U.S. Office for Management and Budget.
+Fienberg, S.E. and Makov, U.E. (1998) Confidentiality, uniqueness and disclosure
+limitation for categorical data. J. Off Statist. 14, 385-397.
+Fuller, W.A. (1993) Masking procedures for microdata disclosure limitation. J. Off.
+Statist. 9, 383-406.
+Giessing, S. (2001) Nonperturbative disclosure control methods for tabular data. In
+P.D0yle, J.I. Lane, J.J.M. Theeuwes and L.V. Zayatz (eds.) Conﬁdentiality,
+Disclosure and Data Access: Theory and Practical Applications for Statistical
+Agencies. Amsterdam: Elsevier, pp. 185-213.
+Giessing, S. and Dittrich, S. (2006) Harmonizing table protection: results of a study. In J.
+Domingo-Ferrer and L. Franconi (eds.) Privacy in Statistical Databases. Lecture
+Notes in Computer Science 4302 Berlin: Springer, pp. 35-47.
+Goodman, L.A. (1949) On the estimation of the number of classes in a population. Ann.
+Math. Statist., 20, 572-579.
+GouWeleeuW,J.M., Kooiman,P., Wi1lenborg,L.C.R.J. and de Wolf, P.-P. (1998) Post
+randomisation for statistical disclosure control: theory and implementation, J. Oﬁ‘.
+Statist. 14, 463-478.
+Greenberg and Zayatz (1992) Strategies for measuring risk in public use microdata files.
+Statist. Neerland., 46, 33-48.
+Lambert, D. (1993) Measures of disclosure risk and harm. J. Oﬁ’. Statist. 9, 313-331.
+Lu, W.W., Brick, M. and Sitter, R.R. (2006) Algorithms for constructing combined strata
+variance estimators. J. Amer. Statist. Ass. 101, 1680-1692.
+Marsh, C., Dale, A. and Skinner, C.J. (1994) Safe data versus safe setting: access to
+microdata from the British Census. Int. Statist. Rev. 62, 35-53.
+Massell, P., Zayatz, L. and Funk, J. (2006) Protecting the confidentiality of survey tabular
+data by adding noise to the underlying microdata: application to the Commodity Flow
+Survey. In J. Domingo-Ferrer and L. Franconi (eds.) Privacy in Statistical Databases.
+Lecture Notes in Computer Science 4302 Berlin: Springer, pp. 304-317.
+Mitra,R. and Reiter,J.P. (2006) Adjusting survey weights when altering identifying
+design variables via synthetic data. In J. Domingo-Ferrer and L. Franconi (eds.)
+Privacy in Statistical Databases. Lecture Notes in Computer Science 4302 Berlin;
+Springer, pp. 177-188.
+National Research Council (2005) Expanding Access to Research Data: Reconciling
+Risks and Opportunities. Panel on Data Access for Research Purposes, Committee on
+National Statistics. Washington, DC: The National Academies Press.
+National Statistics (2004), Code of Practice: Protocol on Data Access and
+Conﬁdentiality, Norwich, United Kingdom: Her Majesty’s Stationary Office.
+Paass, G. (1988) Disclosure risk and disclosure avoidance for microdata, J. Bus. Econ.
+Statist. 6, 487-500.
+Raghunathan, T.E., Reiter, J. P., and Rubin, D.R. (2003) Multiple imputation for
+statistical disclosure limitation, J. Off Statist. 19, 1-16.
+Reiter, J .P. (2002) Satisfying disclosure restrictions with synthetic data sets, J. Oﬁ‘.
+Statist. 18, 531-543.
+Reiter, J .P. (2003) Inference for partially synthetic, public use microdata sets. Survey
+Methodology, 29, 181-188.
+Reiter, J . P. (2005) Estimating risks of identification disclosure in microdata, J. Amer.
+Statist. Assoc., 100, 1 103-1 1 12.
+Salazar, J .1 . (2003) Partial cell suppression: a new methodology for statistical disclosure
+control. Statistics and Computing, 13, 13-21.
+Samuels, S.M. (1998) A Bayesian species-sampling-inspired approach to the uniques
+problem in microdata disclosure risk assessment. J. Oﬂl Statist., 14, 373-383.
+Shlomo, N. and de Waal, T. (2006) Protection of Micro-data Subject to Edit Constraints
+Against Statistical Disclosure. Southampton, UK, Southampton Statistical Sciences
+Research Institute, 36pp. (S3RI Methodology Working Papers, M06/ 16)
+Skinner, C.J. (1992) On identification disclosure and prediction disclosure for microdata.
+Statist. Neerland. 46, 21-32.
+Skinner, C.]., Marsh, C., Openshaw. S. and Wymer, C. (1994) Disclosure control for
+census microdata. J. OﬂI Statist. 10, 31-51.
+Skinner, C.J. (2007) The probability of identification: applying ideas from forensic
+science to disclosure risk assessment. J. Roy. Statist. Soc, Ser. A, 170, 195-212.
+Skinner, C.J. and Holmes, D.J. (1993) Modelling population uniqueness. International
+Seminar on Statistical Conﬁdentiality, Proceedings, European Community Statistical
+Office, Luxembourg, 175-199.
+Skinner, C.J. and Holmes, D.J. (1998) Estimating the re-identification risk per record in
+microdata. J. Oﬁ‘. Statist. 14, 361-372.
+Skinner, C.J. and Carter, R.G. (2003) Estimation of a measure of disclosure risk for
+survey microdata under unequal probability sampling. Survey Methodology, 29, 177-
+180.
+Skinner, C.]. and Elliot, M.J. (2002) A measure of disclosure risk for microdata, J. Roy.
+Statist. Soc., Ser. B, 64, 855-867.
+Skinner, C.J. and Shlomo, N. (2008) Assessing identification risk in survey microdata
+using log-linear models. Journal of American Statistical Association, 103, in press.
+Skinner, CJ. and Shlomo, N. (2007) Assessing the disclosure protection provided by
+misclassification and record swapping. Paper presented at 56m Session of
+Intemational Statistical Institute, Lisbon; to appear in Bulletin of International
+Statistical Institute.
+Sullivan, G.R. and Fuller, W.A. (1989) The use of measurement error to avoid disclosure.
+Proc. Surv. Res. Meth. Sect. Am. Statist. Ass. 802-807.
+Van den Hout, A., and Van der Heijden, P. G. M. (2002) Randomized response,
+statistical disclosure control, and misclassification: a review. International Statistical
+Review, 70, 269-288.
+Willenborg, L. and de Waal, T. (2001) Elements of Statistical Disclosure Control. New
+York: Springer.
+19
+
+
+
+Winkler, W.E. (2004) Re-identification methods for masked microdata. In J. Domingo-
+Ferrer and V. Torra (eds.) Privacy in Statistical Databases. Lecture Notes in
+Computer Science 3050 Berlin: Springer, pp. 216-230.
+Yung, W. (1997) Variance estimation for public use files under confidentiality
+constraints. Proe. Surv. Res. Meth. Sect. Am. Statist. Ass., 434-439.
+Zayatz (1991) Estimation of the number of unique population elements using a sample
+Proc. Surv. Res. Meth. Sect. Am. Statist. Ass. 369-373.
+20
+
+
+

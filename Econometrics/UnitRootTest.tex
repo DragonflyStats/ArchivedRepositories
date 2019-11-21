@@ -1,0 +1,33 @@
+Unit root test
+
+In statistics, a unit root test tests whether a time series variable is non-stationary and possesses a unit root. The null hypothesis is generally defined as the presence of a unit root and the alternative hypothesis is either stationarity, trend stationarity or explosive root depending on the test used.
+
+%======================================================%
+General approach
+In general, the approach to unit root testing implicitly assumes that the time series to be tested {\displaystyle [y_{t}]_{t=1}^{T}} {\displaystyle [y_{t}]_{t=1}^{T}} can be written as,
+
+{\displaystyle y_{t}=D_{t}+z_{t}+\varepsilon _{t}} {\displaystyle y_{t}=D_{t}+z_{t}+\varepsilon _{t}}
+
+where,
+
+{\displaystyle D_{t}} {\displaystyle D_{t}} is the deterministic component (trend, seasonal component, etc.)
+{\displaystyle z_{t}} {\displaystyle z_{t}} is the stochastic component.
+{\displaystyle \varepsilon _{t}} {\displaystyle \varepsilon _{t}} is the stationary error process.
+The task of the test is to determine whether the stochastic component contains a unit root or is stationary.[1]
+
+%======================================================%
+Main tests
+A commonly used test that is valid in large samples is the augmented Dickey–Fuller test. The optimal finite sample tests for a unit root in autoregressive models were developed by Denis Sargan and Alok Bhargava by extending the work by John von Neumann, and James Durbin and Geoffrey Watson. In the observed time series cases, for example, Sargan-Bhargava statistics test the unit root null hypothesis in first order autoregressive models against one-sided alternatives, i.e., if the process is stationary or explosive under the alternative hypothesis.
+%======================================================%
+
+Other popular tests include:
+
+Phillips–Perron test
+KPSS test (in which the null hypothesis is trend stationarity rather than the presence of a unit root)
+ADF-GLS test
+Zivot–Andrews test
+Unit root tests are closely linked to serial correlation tests. However, while all processes with a unit root will exhibit serial correlation, not all serially correlated time series will have a unit root. Popular serial correlation tests include:
+
+Breusch–Godfrey test
+Ljung–Box test
+Durbin–Watson test

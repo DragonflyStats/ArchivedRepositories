@@ -1,0 +1,37 @@
+The Chow test, proposed by econometrician Gregory Chow in 1960, is a test of whether the coefficients in two linear regressions on different data sets are equal. In econometrics, it is most commonly used in time series analysis to test for the presence of a structural break at a period which can be assumed to be known a priori (for instance, a major historical event such as a war). In program evaluation, the Chow test is often used to determine whether the independent variables have different impacts on different subgroups of the population.
+
+
+%% Graphics
+structural break	program evaluation
+Chow test structural break.png
+
+Chow test substructures.png
+
+
+At {\displaystyle x=1.7} x=1.7 there is a structural break, regression on the subintervals {\displaystyle [0,1.7]} [0,1.7] and {\displaystyle [1.7,4]} [1.7,4] delivers a better modelling than the combined regression(dashed) over the whole interval.
+
+Comparison of two different programs (red, green) existing in a common data set, separate regressions for both programs deliver a better modelling than a combined regression (black).
+
+Suppose that we model our data as
+
+{\displaystyle y_{t}=a+bx_{1t}+cx_{2t}+\varepsilon .\,} y_{t}=a+bx_{{1t}}+cx_{{2t}}+\varepsilon .\,
+If we split our data into two groups, then we have
+
+{\displaystyle y_{t}=a_{1}+b_{1}x_{1t}+c_{1}x_{2t}+\varepsilon .\,} y_{t}=a_{1}+b_{1}x_{{1t}}+c_{1}x_{{2t}}+\varepsilon .\,
+and
+
+{\displaystyle y_{t}=a_{2}+b_{2}x_{1t}+c_{2}x_{2t}+\varepsilon .\,} y_{t}=a_{2}+b_{2}x_{{1t}}+c_{2}x_{{2t}}+\varepsilon .\,
+The null hypothesis of the Chow test asserts that {\displaystyle a_{1}=a_{2}} a_{1}=a_{2}, {\displaystyle b_{1}=b_{2}} b_{1}=b_{2}, and {\displaystyle c_{1}=c_{2}} c_{1}=c_{2}, and there is the assumption that the model errors {\displaystyle \varepsilon } \varepsilon  are independent and identically distributed from a normal distribution with unknown variance.
+
+Let {\displaystyle S_{C}} S_{C} be the sum of squared residuals from the combined data, {\displaystyle S_{1}} S_{1} be the sum of squared residuals from the first group, and {\displaystyle S_{2}} S_{2} be the sum of squared residuals from the second group. {\displaystyle N_{1}} N_{1} and {\displaystyle N_{2}} N_{2} are the number of observations in each group and {\displaystyle k} k is the total number of parameters (in this case, 3). Then the Chow test statistic is
+
+{\displaystyle {\frac {(S_{C}-(S_{1}+S_{2}))/k}{(S_{1}+S_{2})/(N_{1}+N_{2}-2k)}}.} {\displaystyle {\frac {(S_{C}-(S_{1}+S_{2}))/k}{(S_{1}+S_{2})/(N_{1}+N_{2}-2k)}}.}
+The test statistic follows the F distribution with {\displaystyle k} k and {\displaystyle N_{1}+N_{2}-2k} N_{1}+N_{2}-2k degrees of freedom.
+
+Remarks
+
+The global sum of squares (SSE) if often called Restricted Sum of Squares (RSSM) as we basically test a constrained model where we have 2K assumptions (with K the number of regressors).
+Some software like SAS will use a predictive Chow test when the size of a subsample is less than the number of regressors.
+
+
+\end{document}

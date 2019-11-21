@@ -1,0 +1,56 @@
+% % % % Project 
+%%%- http://www.ihsn.org/home/node/32
+
+\documentclass[SDCmaster.tex]{subfiles}
+\begin{document}
+\begin{frame}
+In the last 20 years, many initiatives to develop knowledge and share expertise and resources in the field of SDC have flourished. Some of these initiatives are solely academic, others are led by national statistics offices, and still others combine communities interested in SDC. Notably, much has been achieved in SDC by several European projects, starting with the 4th Framework SDC project (1996-1998) and continuing with the 5th Framework CASC project (2000-2003), CENEX project (2006), and two ESSnet projects (2008-2013) on statistical disclosure control and remote access to microdata in a secure environment. These workstreams have given rise to mu-argus, which has been for a long time the only software available for microdata protection. Despite these initiatives, only limited guidance and technical assistance on SDC has been made available to NSOs.
+\end{frame}
+%=====================================%
+
+\begin{frame}
+The prevalence of popular statistical analysis software in NSOs drove the IHSN to create well-documented specialized programs for Stata, SPSS, and SAS. This helped avoid long-term maintenance and support issues; most users and their organizations do not want or cannot invest in new software training. Moreover, using available specialized SDC software had not been fully satisfactory, due to (1) concerns about the sustainability of available development and support; (2) poor documentation; (3) lack of user friendliness; and, most important, (4) issues of performance and relevance to large survey datasets.
+\end{frame}
+%=====================================%
+
+\begin{frame}
+With the support and involvement of various experts, the IHSN developed a collection of plug-ins for C++ that support optimal performance. The plug-ins were successfully tested on Stata 8, 9, and 10, SPSS 16+, and Windows/Linux at the command line. They were developed and optimized for the following anonymization techniques, which are extensively used and described in the literature):<.p>
+\end{frame}
+%=====================================%
+
+\begin{frame}
+Risk measurement
+1.	SUDA-DIS risk measurement
+2.	Mu-Argus weighted sample risk measurement (individual and hierarchical)
+3.	k-anonymity
+4.	l-diversity
+\end{frame}
+%=====================================%
+
+\begin{frame}
+Risk reduction
+\begin{enumerate}
+\item Local recoding (based on maximum weighted matching algorithm)
+\item  k-anonymity (using the Hilbert space filling curve)
+\item  Numerical rank swapping
+\item  Noise addition
+\item  MDAV (fixed length micro aggregation algorithm)
+\item  PRAM
+\item  Sampling (implementing two sampling methods: systematic and balanced; sampling can be used to create subsamples with sampling probability depending on sensitive numeric variables or the risk measurement itself)
+\end{enumerate}
+\end{frame}
+%=====================================%
+
+\begin{frame}
+
+In recent years, statistical software environment R has become more comprehensive and relevant in academic and official statistics circles, for advanced statistical purposes. Today, R is now the leading open source statistical software. With its increasing popularity, R is becoming a standard programming language in its field. Since it’s assumed that this trend will continue, implementing IHSN C++ plug-ins into R has several benefits, which include:
+\end{frame}
+%=====================================%
+
+\begin{frame}
+The C++ code can be used within a free and open-source statistical software environment
+These new methods are provided within increasingly popular statistical software
+The integration of C++ code allows for fast computations in R
+\end{frame}
+%=====================================%
+\end{document}
