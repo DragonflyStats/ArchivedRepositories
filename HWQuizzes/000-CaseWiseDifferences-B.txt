@@ -1,0 +1,230 @@
+n=7
+
+Before <- sample(95:115,n,T)
+diff <- sample(-4:8,n,T)
+while( sd(diff) != floor(sd(diff)) ) { diff <- sample(-4:8,n,T)}
+After=Before+diff
+cat("Before: ", Before, "\n", "After: ", After, "\n","\n","Mean: ", mean(diff), "\n", "sd: ", sd(diff), "\n","\n")
+
+
+%=======================================================================================%
+\begin{frame}[fragile]
+
+
+\begin{framed}
+\begin{verbatim}
+
+Before:  102 101 107 104 111 115 96 108 
+ After:  109 102 113 111 108 119 103 107 
+
+\end{verbatim}
+\end{framed}
+
+Make your calculation on the basis
+Given that the mean of the case-wise difference is
+
+
+% Mean = 3.5
+% SD = 4
+\end{frame}
+%=======================================================================================%
+\begin{frame}[fragile]
+
+
+\begin{framed}
+\begin{verbatim}
+
+
+
+Before:  95 114 99 112 105 95 105 97 
+ After:  101 110 97 114 110 102 108 96 
+ 
+ Mean:  2 
+ sd:  4 
+ 
+\end{frame}
+%=======================================================================================%
+\begin{frame}[fragile]
+
+
+\begin{framed}
+\begin{verbatim}
+
+Before:  111 100 112 102 107 112 111 108 
+ After:  110 103 114 109 114 108 110 107 
+ 
+ Mean:  1.5 
+ sd:  4 
+ 
+\end{frame}
+%=======================================================================================%
+\begin{frame}[fragile]
+
+
+\begin{framed}
+\begin{verbatim}
+
+Before:  104 107 110 109 101 113 115 114 
+ After:  112 105 110 106 104 115 121 120 
+ 
+ Mean:  2.5 
+ sd:  4 
+\end{frame}
+%=======================================================================================%
+\begin{frame}[fragile]
+
+
+\begin{framed}
+\begin{verbatim}
+
+Before:  108 107 103 96 95 110 111 113 
+ After:  104 111 108 97 97 118 108 116 
+ 
+ Mean:  2 
+ sd:  4 
+ 
+\end{frame}
+%=======================================================================================%
+\begin{frame}[fragile]
+
+
+\begin{framed}
+\begin{verbatim}
+Before:  105 97 101 114 95 99 98 102 
+ After:  105 105 102 116 102 97 104 100 
+ 
+ Mean:  2.5 
+ sd:  4 
+ 
+\end{frame}
+%=======================================================================================%
+\begin{frame}[fragile]
+
+
+\begin{framed}
+\begin{verbatim}
+Before:  112 110 97 104 104 102 96 98 
+ After:  113 118 93 104 104 98 100 97 
+ 
+ Mean:  0.5 
+ sd:  4 
+ 
+\end{frame}
+%=======================================================================================%
+\begin{frame}[fragile]
+
+
+\begin{framed}
+\begin{verbatim}
+Before:  96 110 104 106 107 97 112 101 
+ After:  104 106 106 112 111 95 112 103 
+ 
+ Mean:  2 
+ sd:  4 
+ 
+\end{frame}
+%=======================================================================================%
+\begin{frame}[fragile]
+
+
+\begin{framed}
+\begin{verbatim}
+Before:  96 98 98 97 108 112 105 109 
+ After:  92 95 104 98 111 118 102 111 
+ 
+ Mean:  1 
+ sd:  4 
+
+\end{frame}
+%=======================================================================================%
+\begin{frame}[fragile]
+
+
+\begin{framed}
+\begin{verbatim}
+
+
+Before:  107 109 102 109 111 114 99 97 114 
+ After:  113 110 104 107 111 113 106 100 116 
+ 
+ Mean:  2 
+ sd:  3 
+
+
+
+\end{frame}
+%=======================================================================================%
+\begin{frame}[fragile]
+
+
+\begin{framed}
+\begin{verbatim}
+Before:  113 101 111 107 97 110 104 
+ After:  111 103 113 106 104 114 106 
+ 
+ Mean:  2 
+ sd:  3 
+ 
+\end{frame}
+%=======================================================================================%
+\begin{frame}[fragile]
+
+
+\begin{framed}
+\begin{verbatim}
+Before:  115 107 104 99 95 100 115 
+ After:  116 113 101 102 97 99 114 
+ 
+ Mean:  1 
+ sd:  3 
+ 
+\end{frame}
+%=======================================================================================%
+\begin{frame}[fragile]
+
+
+\begin{framed}
+\begin{verbatim}
+> cat("Before: ", Before, "\n", "After: ", After, "\n","\n","Mean: ", mean(diff), "\n", "sd: ", sd(diff), "\n","\n")
+Before:  115 97 96 98 111 114 104 
+ After:  111 100 92 97 114 118 110 
+ 
+ Mean:  1 
+ sd:  4 
+ 
+\end{frame}
+%=======================================================================================%
+\begin{frame}[fragile]
+
+
+\begin{framed}
+\begin{verbatim}
+Before:  114 106 101 112 96 112 111 
+ After:  110 108 102 119 97 108 115 
+ 
+ Mean:  1 
+ sd:  4 
+\end{frame}
+%=======================================================================================%
+\begin{frame}[fragile]
+
+
+\begin{framed}
+\begin{verbatim}
+Before:  104 107 108 108 99 108 113 
+ After:  111 103 112 110 106 115 118 
+ 
+ Mean:  4 
+ sd:  4 
+ 
+\end{frame}
+%=======================================================================================%
+\begin{frame}[fragile]
+
+
+\begin{framed}
+\begin{verbatim}Before:  109 97 103 113 113 104 98 
+ After:  116 93 103 115 120 109 102 
+ 
+ Mean:  3 
+ sd:  4 

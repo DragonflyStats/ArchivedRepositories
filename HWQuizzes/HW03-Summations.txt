@@ -1,0 +1,131 @@
+
+sink("HW2-A.txt")
+
+for (i in 1:3){
+
+X = sample(20:70,8)
+Y = sample(1:150,8)
+SumX = sum(X)
+
+while(cor(X,Y)<0.5){Y = sample(1:150,8)}
+SumY = sum(Y)
+cat("\n")
+cat("\n")
+cat("Compute the sum of the X values (Sx)")
+cat("\n")
+cat("\n")
+cat("X :",X)
+cat("\n")
+cat("Y :",Y)
+cat("\n")
+cat("\n")
+cat("Write your answer here : {",SumX,"}.")
+
+}
+
+sink()
+
+
+sink("HW2-B.txt")
+
+for (i in 1:20){
+
+X = sample(20:70,8)
+Y = sample(1:150,8)
+SumX = sum(X)
+
+while(cor(X,Y)<0.5){Y = sample(1:150,8)}
+SumY = sum(Y)
+cat("\n")
+cat("\n")
+cat("Compute the sum of the Y values (Sy)")
+cat("\n")
+cat("\n")
+cat("X :",X)
+cat("\n")
+cat("Y :",Y)
+cat("\n")
+cat("\n")
+cat("Write your answer here : {",SumY,"}.")
+
+}
+
+sink()
+
+
+sink("HW2-C.txt")
+
+for (i in 1:3){
+
+X = sample(20:70,8)
+Y = sample(1:150,8)
+SumX = sum(X)
+
+while(cor(X,Y)<0.5){Y = sample(1:150,8)}
+SumY = sum(Y)
+cat("\n")
+cat("\n")
+cat("Compute the sum of the X values (Sx)")
+cat("\n")
+cat("\n")
+cat("X :",X)
+cat("\n")
+cat("Y :",Y)
+cat("\n")
+cat("\n")
+cat("Write your answer here : {",SumX,"}.")
+
+}
+
+sink()
+
+sink("HW2-D.txt")
+
+for (i in 1:20){
+
+Y = sample(45:90,8)
+X = sample(1:49,8)
+
+
+while(cor(X,Y)<0.5){Y = sample(1:49,8)}
+SumYsq = sum(Y^2)
+cat("\n")
+cat("\n")
+cat("Compute the sum of the squares of the Y values ( Sum(Y Squared) ).")
+cat("\n")
+cat("\n")
+cat("X :",sprintf("%4.0f", X))
+cat("\n")
+cat("Y :",sprintf("%4.0f", Y))
+cat("\n")
+cat("\n")
+cat("Write your answer here : {",(SumYsq-10),"|",(SumYsq+10),"}.")
+
+}
+
+
+sink("HW2-E.txt")
+
+for (i in 1:30){
+
+X = sample(1:60,8)
+Y = sample(1:40,8)
+SumXY= sum(X*Y)
+
+while(cor(X,Y)<0.5){Y = sample(1:40,8)}
+SumXY= sum(X*Y)
+cat("\n")
+cat("\n")
+cat("Compute the sum of the squares of the product of the X and Y values ( Sum(XY) ).")
+cat("\n")
+cat("\n")
+cat("X :",sprintf("%4.0f", X))
+cat("\n")
+cat("Y :",sprintf("%4.0f", Y))
+cat("\n")
+cat("\n")
+cat("Write your answer here : {",(SumXY-10),"|",(SumXY+10),"}.")
+
+}
+
+sink()

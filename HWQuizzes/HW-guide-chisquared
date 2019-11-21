@@ -1,0 +1,19 @@
+
+The main tasks are
+
+\begin{enumerate}
+\item To compute the expected values
+\item To compute the test statistic
+\item To determine the critical value.
+\end{itemize}
+
+
+\subsection*{Remember}
+
+\begin{itemize}
+\item The Chi Square Test is one-tailed only, as far as this module is concerned. 
+\item We will use only a 5% significance level.
+\end{itemize}
+
+%--------------------------------------------------%
+\end{document}

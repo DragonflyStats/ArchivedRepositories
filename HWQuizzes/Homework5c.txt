@@ -1,0 +1,330 @@
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.14 20.60 19.80 19.64 19.64 20.16 20.50 19.78 19.78 
+ After  : 19.74 21.40 20.20 19.74 19.94 20.56 20.10 19.58 19.68 
+ Write your answer here:	{   0.095 | 0.105 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 19.84 20.14 20.16 20.32 19.62 20.10 20.16 20.30 20.04 
+ After  : 20.14 20.04 20.06 21.02 19.32 20.50 20.76 21.00 19.64 
+ Write your answer here:	{   0.195 | 0.205 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.00 20.34 19.90 20.26 20.50 20.12 20.40 19.66 19.74 
+ After  : 19.90 20.34 20.70 20.96 20.50 20.12 20.60 20.16 20.34 
+ Write your answer here:	{   0.295 | 0.305 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.50 20.32 19.82 20.20 20.46 20.34 20.44 19.86 19.72 
+ After  : 20.20 20.82 19.52 20.70 20.26 19.94 20.04 20.56 20.52 
+ Write your answer here:	{   0.095 | 0.105 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 19.92 20.40 19.60 19.88 20.46 20.52 20.16 20.36 19.66 
+ After  : 20.52 20.40 20.20 20.08 21.26 20.42 19.96 20.56 19.36 
+ Write your answer here:	{   0.195 | 0.205 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.20 20.50 20.32 19.62 19.84 19.68 19.60 20.60 20.42 
+ After  : 20.40 20.50 21.12 20.22 20.24 19.68 19.50 21.00 20.82 
+ Write your answer here:	{   0.295 | 0.305 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 19.76 20.42 20.06 20.48 19.98 19.84 20.16 20.02 20.44 
+ After  : 19.96 20.32 20.86 20.48 20.48 20.34 19.86 20.72 20.84 
+ Write your answer here:	{   0.295 | 0.305 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 19.92 20.36 19.94 20.38 19.92 20.12 20.24 19.76 19.74 
+ After  : 20.02 21.16 20.54 20.58 20.72 20.82 20.74 19.36 20.04 
+ Write your answer here:	{   0.395 | 0.405 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 19.74 20.44 20.60 20.04 20.48 20.06 20.20 20.10 20.30 
+ After  : 20.44 20.74 20.30 20.74 20.78 20.56 20.50 20.40 20.20 
+ Write your answer here:	{   0.295 | 0.305 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.50 20.42 20.36 20.30 19.82 20.40 20.22 20.22 19.70 
+ After  : 21.20 20.42 20.06 20.80 20.02 20.40 20.02 20.32 20.50 
+ Write your answer here:	{   0.195 | 0.205 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.34 19.88 20.20 20.38 20.36 20.40 19.82 20.46 19.90 
+ After  : 20.84 20.08 20.70 19.98 21.06 20.90 19.92 21.16 19.80 
+ Write your answer here:	{   0.295 | 0.305 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.18 20.16 20.30 20.44 19.84 20.38 19.68 20.40 20.06 
+ After  : 20.88 19.76 19.90 20.74 19.84 20.08 19.28 21.20 19.76 
+ Write your answer here:	{   -0.005 | 0.005 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.36 19.66 19.88 20.24 19.82 20.28 20.32 20.00 20.12 
+ After  : 20.86 19.46 20.28 20.74 19.42 20.08 19.92 20.00 20.82 
+ Write your answer here:	{   0.095 | 0.105 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.30 19.98 20.60 20.40 19.72 19.90 20.58 20.02 20.34 
+ After  : 20.50 20.18 20.20 21.00 19.52 20.70 20.18 19.62 20.84 
+ Write your answer here:	{   0.095 | 0.105 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 19.62 20.18 20.32 20.22 20.54 20.52 19.78 20.04 20.26 
+ After  : 19.32 20.28 20.42 20.12 20.14 20.22 20.48 20.44 20.06 
+ Write your answer here:	{   -0.005 | 0.005 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.46 19.88 19.70 19.76 19.92 20.24 20.04 20.52 20.12 
+ After  : 20.26 19.78 20.40 20.26 20.32 19.94 20.64 21.12 20.62 
+ Write your answer here:	{   0.295 | 0.305 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.12 20.50 20.56 19.80 20.26 20.36 20.00 20.24 19.60 
+ After  : 20.22 20.30 21.26 20.10 20.96 20.96 20.20 19.94 20.20 
+ Write your answer here:	{   0.295 | 0.305 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.14 20.32 20.28 19.96 20.16 20.48 20.30 20.28 20.52 
+ After  : 19.94 20.82 20.08 19.96 20.46 20.88 20.40 20.58 20.22 
+ Write your answer here:	{   0.095 | 0.105 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.10 20.20 20.04 20.22 19.74 20.56 20.58 19.80 20.08 
+ After  : 19.70 20.20 20.34 20.52 20.54 20.16 20.18 20.60 20.88 
+ Write your answer here:	{   0.195 | 0.205 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 19.70 20.24 20.36 20.00 20.12 19.88 19.80 20.30 19.78 
+ After  : 19.00 19.64 20.66 17.20 21.52 18.28 16.90 17.40 21.48 
+ Write your answer here:	{   -0.905 | -0.895 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.04 20.16 20.56 19.86 19.68 20.26 20.58 20.00 19.96 
+ After  : 20.54 20.16 21.16 20.06 20.38 20.16 21.38 20.00 19.96 
+ Write your answer here:	{   0.295 | 0.305 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.42 20.00 20.02 19.94 20.20 19.86 20.16 19.72 20.08 
+ After  : 18.52 18.60 16.42 19.64 22.20 18.06 17.46 20.62 20.78 
+ Write your answer here:	{   -0.905 | -0.895 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.52 20.40 20.38 19.78 20.46 20.46 20.54 19.88 19.76 
+ After  : 21.32 20.80 20.28 19.48 20.06 21.26 20.24 19.88 19.76 
+ Write your answer here:	{   0.095 | 0.105 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 19.82 19.74 20.12 20.14 20.12 20.56 19.92 19.66 20.08 
+ After  : 20.22 19.44 20.02 20.64 20.32 21.36 19.92 20.26 19.78 
+ Write your answer here:	{   0.195 | 0.205 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.14 19.98 19.84 20.26 19.86 20.38 20.40 19.64 20.42 
+ After  : 20.94 19.88 19.94 20.46 19.86 21.18 20.70 19.74 20.02 
+ Write your answer here:	{   0.195 | 0.205 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.58 20.52 19.82 19.78 20.10 19.90 20.52 20.00 20.38 
+ After  : 21.28 20.62 20.12 19.68 20.50 20.60 20.52 20.10 20.88 
+ Write your answer here:	{   0.295 | 0.305 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.06 20.14 20.46 19.98 20.10 19.76 20.28 20.34 19.70 
+ After  : 20.56 20.84 20.36 20.78 20.90 19.86 20.68 20.54 19.90 
+ Write your answer here:	{   0.395 | 0.405 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 19.90 20.60 20.22 19.60 20.60 19.64 20.42 19.78 20.04 
+ After  : 19.60 21.10 19.92 20.40 21.30 19.54 20.32 19.78 20.64 
+ Write your answer here:	{   0.195 | 0.205 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 20.50 20.44 19.64 19.90 20.52 20.36 19.96 20.00 20.30 
+ After  : 20.90 21.14 20.04 20.00 20.52 20.06 20.66 19.90 21.10 
+ Write your answer here:	{   0.295 | 0.305 } 
+ 
+ Use three decimal places. 
+ 
+
+ Compute the Mean of the Case-wise Differences: 
+ 
+ (Work on the basis of After-Before) 
+ 
+ Before : 19.60 20.28 19.74 20.34 19.94 19.96 20.54 20.08 19.76 
+ After  : 19.40 20.28 19.84 20.94 20.74 20.56 21.04 20.08 20.06 
+ Write your answer here:	{   0.295 | 0.305 } 
+ 
+ Use three decimal places. 
+ 

@@ -1,0 +1,35 @@
+
+sink("Trimean1.txt")
+for(i in 1:20){
+
+X = sample(100:900,500,replace=T)
+SummaryX = summary(X)
+TM = (SummaryX[2] + SummaryX[3] + SummaryX[3] + SummaryX[5])/4
+
+cat("Consider the following summary statistics for dataset X:")
+cat("\n\n")
+cat("* The minimum value of X is",SummaryX[1],".")
+cat("\n")
+cat("* The first quartile of X is",SummaryX[2],".")
+cat("\n")
+cat("* The median value of X is",SummaryX[3],".")
+cat("\n")
+cat("* The mean value of X is",SummaryX[4],".")
+cat("\n")
+cat("* The third quartile of X is",SummaryX[5],".")
+cat("\n")
+cat("* The maximum value of X is",SummaryX[6],".")
+cat("\n")
+cat("\n")
+cat("Compute the trimean of X. Write your answer here: {",(TM-2),"|",(TM+2),"}.")
+cat("\n(Use two decimal places)")
+cat("\n\n\n\n")
+
+
+}
+
+
+
+
+
+

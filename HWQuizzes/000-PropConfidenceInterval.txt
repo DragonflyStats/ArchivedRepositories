@@ -1,0 +1,79 @@
+
+Suppose we are given the following information about the sample::
+ - The Sample Proportion is 0.7
+ - The Sample Size is 100
+You may use 1.96 as the quantile.
+Calculate the Upper Limit of the 95% Confidence Interval.
+Write your answer here:{0.784818484|0.794818484}
+
+
+Suppose we are given the following information about the sample::
+ - The Sample Proportion is 0.6
+ - The Sample Size is 225
+You may use 1.96 as the quantile.
+Calculate the Upper Limit of the 95% Confidence Interval.
+Write your answer here:{0.659013332|0.669013332}
+
+
+Suppose we are given the following information about the sample::
+ - The Sample Proportion is 0.65
+ - The Sample Size is 150
+You may use 1.96 as the quantile.
+Calculate the Upper Limit of the 95% Confidence Interval.
+Write your answer here:{0.721331033|0.731331033}
+
+
+Suppose we are given the following information about the sample::
+ - The Sample Proportion is 0.8
+ - The Sample Size is 120
+You may use 1.96 as the quantile.
+Calculate the Upper Limit of the 95% Confidence Interval.
+Write your answer here:{0.866569081|0.876569081}
+
+
+Suppose we are given the following information about the sample::
+ - The Sample Proportion is 0.55
+ - The Sample Size is 130
+You may use 1.96 as the quantile.
+Calculate the Upper Limit of the 95% Confidence Interval.
+Write your answer here:{0.630520848|0.640520848}
+
+
+Suppose we are given the following information about the sample::
+ - The Sample Proportion is 0.35
+ - The Sample Size is 200
+You may use 1.96 as the quantile.
+Calculate the Upper Limit of the 95% Confidence Interval.
+Write your answer here:{0.411104614|0.421104614}
+
+
+Suppose we are given the following information about the sample::
+ - The Sample Proportion is 0.64
+ - The Sample Size is 140
+You may use 1.96 as the quantile.
+Calculate the Upper Limit of the 95% Confidence Interval.
+Write your answer here:{0.714512112|0.724512112}
+
+
+Suppose we are given the following information about the sample::
+ - The Sample Proportion is 0.72
+ - The Sample Size is 140
+You may use 1.96 as the quantile.
+Calculate the Upper Limit of the 95% Confidence Interval.
+Write your answer here:{0.789376771|0.799376771}
+
+
+Suppose we are given the following information about the sample::
+ - The Sample Proportion is 0.55
+ - The Sample Size is 80
+You may use 1.96 as the quantile.
+Calculate the Upper Limit of the 95% Confidence Interval.
+Write your answer here:{0.654018118|0.664018118}
+
+
+Suppose we are given the following information about the sample::
+ - The Sample Proportion is 0.45
+ - The Sample Size is 120
+You may use 1.96 as the quantile.
+Calculate the Upper Limit of the 95% Confidence Interval.
+Write your answer here:{0.53401292|0.54401292}

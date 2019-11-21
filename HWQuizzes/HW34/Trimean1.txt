@@ -1,0 +1,280 @@
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 101 .
+* The first quartile of X is 283.5 .
+* The median value of X is 489 .
+* The mean value of X is 488.354 .
+* The third quartile of X is 680.25 .
+* The maximum value of X is 900 .
+
+Compute the trimean of X. Write your answer here: { 483.4375 | 487.4375 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 101 .
+* The first quartile of X is 282 .
+* The median value of X is 512 .
+* The mean value of X is 501.666 .
+* The third quartile of X is 698 .
+* The maximum value of X is 900 .
+
+Compute the trimean of X. Write your answer here: { 499 | 503 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 101 .
+* The first quartile of X is 293 .
+* The median value of X is 478 .
+* The mean value of X is 487.888 .
+* The third quartile of X is 675 .
+* The maximum value of X is 899 .
+
+Compute the trimean of X. Write your answer here: { 479 | 483 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 100 .
+* The first quartile of X is 291.75 .
+* The median value of X is 477 .
+* The mean value of X is 488.378 .
+* The third quartile of X is 682 .
+* The maximum value of X is 900 .
+
+Compute the trimean of X. Write your answer here: { 479.9375 | 483.9375 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 100 .
+* The first quartile of X is 284.75 .
+* The median value of X is 500 .
+* The mean value of X is 492.144 .
+* The third quartile of X is 676.5 .
+* The maximum value of X is 900 .
+
+Compute the trimean of X. Write your answer here: { 488.3125 | 492.3125 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 100 .
+* The first quartile of X is 302.75 .
+* The median value of X is 491 .
+* The mean value of X is 495.448 .
+* The third quartile of X is 704 .
+* The maximum value of X is 899 .
+
+Compute the trimean of X. Write your answer here: { 495.1875 | 499.1875 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 101 .
+* The first quartile of X is 263.5 .
+* The median value of X is 486 .
+* The mean value of X is 483.482 .
+* The third quartile of X is 682.25 .
+* The maximum value of X is 899 .
+
+Compute the trimean of X. Write your answer here: { 477.4375 | 481.4375 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 100 .
+* The first quartile of X is 337.75 .
+* The median value of X is 532.5 .
+* The mean value of X is 520.076 .
+* The third quartile of X is 717 .
+* The maximum value of X is 900 .
+
+Compute the trimean of X. Write your answer here: { 527.9375 | 531.9375 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 102 .
+* The first quartile of X is 329.75 .
+* The median value of X is 518.5 .
+* The mean value of X is 516.6 .
+* The third quartile of X is 717.5 .
+* The maximum value of X is 895 .
+
+Compute the trimean of X. Write your answer here: { 519.0625 | 523.0625 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 104 .
+* The first quartile of X is 311 .
+* The median value of X is 508 .
+* The mean value of X is 509.692 .
+* The third quartile of X is 700 .
+* The maximum value of X is 900 .
+
+Compute the trimean of X. Write your answer here: { 504.75 | 508.75 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 100 .
+* The first quartile of X is 301.75 .
+* The median value of X is 505 .
+* The mean value of X is 504.462 .
+* The third quartile of X is 720.5 .
+* The maximum value of X is 892 .
+
+Compute the trimean of X. Write your answer here: { 506.0625 | 510.0625 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 100 .
+* The first quartile of X is 281 .
+* The median value of X is 502 .
+* The mean value of X is 497.48 .
+* The third quartile of X is 712.25 .
+* The maximum value of X is 900 .
+
+Compute the trimean of X. Write your answer here: { 497.3125 | 501.3125 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 100 .
+* The first quartile of X is 321 .
+* The median value of X is 521 .
+* The mean value of X is 517.172 .
+* The third quartile of X is 710.75 .
+* The maximum value of X is 900 .
+
+Compute the trimean of X. Write your answer here: { 516.4375 | 520.4375 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 100 .
+* The first quartile of X is 306.75 .
+* The median value of X is 522.5 .
+* The mean value of X is 508.022 .
+* The third quartile of X is 705.25 .
+* The maximum value of X is 900 .
+
+Compute the trimean of X. Write your answer here: { 512.25 | 516.25 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 100 .
+* The first quartile of X is 332.75 .
+* The median value of X is 531.5 .
+* The mean value of X is 507.236 .
+* The third quartile of X is 696.25 .
+* The maximum value of X is 900 .
+
+Compute the trimean of X. Write your answer here: { 521 | 525 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 103 .
+* The first quartile of X is 275 .
+* The median value of X is 510.5 .
+* The mean value of X is 492.75 .
+* The third quartile of X is 694.25 .
+* The maximum value of X is 900 .
+
+Compute the trimean of X. Write your answer here: { 495.5625 | 499.5625 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 103 .
+* The first quartile of X is 305.75 .
+* The median value of X is 510.5 .
+* The mean value of X is 505.576 .
+* The third quartile of X is 693.25 .
+* The maximum value of X is 900 .
+
+Compute the trimean of X. Write your answer here: { 503 | 507 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 100 .
+* The first quartile of X is 308.25 .
+* The median value of X is 511 .
+* The mean value of X is 501.182 .
+* The third quartile of X is 692.5 .
+* The maximum value of X is 900 .
+
+Compute the trimean of X. Write your answer here: { 503.6875 | 507.6875 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 100 .
+* The first quartile of X is 295 .
+* The median value of X is 474 .
+* The mean value of X is 484.08 .
+* The third quartile of X is 669 .
+* The maximum value of X is 897 .
+
+Compute the trimean of X. Write your answer here: { 476 | 480 }.
+(Use two decimal places)
+
+
+
+Consider the following summary statistics for dataset X:
+
+* The minimum value of X is 101 .
+* The first quartile of X is 326.75 .
+* The median value of X is 530 .
+* The mean value of X is 517.388 .
+* The third quartile of X is 724.25 .
+* The maximum value of X is 899 .
+
+Compute the trimean of X. Write your answer here: { 525.75 | 529.75 }.
+(Use two decimal places)
+
+
+

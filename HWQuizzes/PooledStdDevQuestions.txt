@@ -1,0 +1,630 @@
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  165 
+ The sample standard deviation is : 7 
+ The sample size is : 16 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  195 
+ The sample standard deviation is : 9 
+ The sample size is : 14 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   7.831 | 8.151 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  180 
+ The sample standard deviation is : 8 
+ The sample size is : 10 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  215 
+ The sample standard deviation is : 7 
+ The sample size is : 9 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   7.395 | 7.697 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  135 
+ The sample standard deviation is : 11 
+ The sample size is : 12 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  170 
+ The sample standard deviation is : 8 
+ The sample size is : 12 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   9.425 | 9.81 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  105 
+ The sample standard deviation is : 8 
+ The sample size is : 13 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  140 
+ The sample standard deviation is : 10 
+ The sample size is : 13 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   8.874 | 9.236 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  145 
+ The sample standard deviation is : 11 
+ The sample size is : 12 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  160 
+ The sample standard deviation is : 6 
+ The sample size is : 8 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   9.19 | 9.565 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  120 
+ The sample standard deviation is : 8 
+ The sample size is : 14 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  155 
+ The sample standard deviation is : 11 
+ The sample size is : 11 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   9.234 | 9.611 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  175 
+ The sample standard deviation is : 6 
+ The sample size is : 13 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  210 
+ The sample standard deviation is : 6 
+ The sample size is : 13 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   5.88 | 6.12 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  155 
+ The sample standard deviation is : 9 
+ The sample size is : 15 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  165 
+ The sample standard deviation is : 6 
+ The sample size is : 11 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   7.732 | 8.048 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  125 
+ The sample standard deviation is : 8 
+ The sample size is : 14 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  160 
+ The sample standard deviation is : 10 
+ The sample size is : 14 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   8.874 | 9.236 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  165 
+ The sample standard deviation is : 7 
+ The sample size is : 15 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  185 
+ The sample standard deviation is : 11 
+ The sample size is : 12 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   8.803 | 9.162 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  195 
+ The sample standard deviation is : 10 
+ The sample size is : 13 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  225 
+ The sample standard deviation is : 8 
+ The sample size is : 16 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   8.765 | 9.123 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  145 
+ The sample standard deviation is : 11 
+ The sample size is : 14 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  175 
+ The sample standard deviation is : 10 
+ The sample size is : 16 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   10.267 | 10.686 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  175 
+ The sample standard deviation is : 7 
+ The sample size is : 11 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  190 
+ The sample standard deviation is : 11 
+ The sample size is : 12 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   9.126 | 9.498 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  195 
+ The sample standard deviation is : 8 
+ The sample size is : 14 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  205 
+ The sample standard deviation is : 11 
+ The sample size is : 12 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   9.304 | 9.683 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  110 
+ The sample standard deviation is : 7 
+ The sample size is : 12 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  120 
+ The sample standard deviation is : 8 
+ The sample size is : 7 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   7.221 | 7.516 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  130 
+ The sample standard deviation is : 11 
+ The sample size is : 15 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  140 
+ The sample standard deviation is : 7 
+ The sample size is : 13 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   9.181 | 9.556 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  120 
+ The sample standard deviation is : 10 
+ The sample size is : 13 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  130 
+ The sample standard deviation is : 8 
+ The sample size is : 12 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   8.917 | 9.28 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  155 
+ The sample standard deviation is : 8 
+ The sample size is : 16 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  175 
+ The sample standard deviation is : 11 
+ The sample size is : 14 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   9.321 | 9.701 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  130 
+ The sample standard deviation is : 7 
+ The sample size is : 14 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  150 
+ The sample standard deviation is : 11 
+ The sample size is : 12 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   8.874 | 9.236 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  115 
+ The sample standard deviation is : 9 
+ The sample size is : 14 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  145 
+ The sample standard deviation is : 9 
+ The sample size is : 12 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   8.82 | 9.18 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  160 
+ The sample standard deviation is : 11 
+ The sample size is : 17 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  175 
+ The sample standard deviation is : 11 
+ The sample size is : 13 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   10.78 | 11.22 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  135 
+ The sample standard deviation is : 9 
+ The sample size is : 13 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  155 
+ The sample standard deviation is : 8 
+ The sample size is : 16 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   8.29 | 8.628 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  150 
+ The sample standard deviation is : 6 
+ The sample size is : 13 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  170 
+ The sample standard deviation is : 7 
+ The sample size is : 11 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   6.344 | 6.603 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  170 
+ The sample standard deviation is : 8 
+ The sample size is : 12 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  190 
+ The sample standard deviation is : 6 
+ The sample size is : 11 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   6.976 | 7.26 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  175 
+ The sample standard deviation is : 7 
+ The sample size is : 16 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  200 
+ The sample standard deviation is : 8 
+ The sample size is : 13 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   7.312 | 7.61 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  175 
+ The sample standard deviation is : 10 
+ The sample size is : 13 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  205 
+ The sample standard deviation is : 6 
+ The sample size is : 14 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   8.005 | 8.332 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  115 
+ The sample standard deviation is : 6 
+ The sample size is : 14 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  130 
+ The sample standard deviation is : 11 
+ The sample size is : 13 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   8.588 | 8.939 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  145 
+ The sample standard deviation is : 8 
+ The sample size is : 13 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  175 
+ The sample standard deviation is : 11 
+ The sample size is : 13 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   9.425 | 9.81 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  145 
+ The sample standard deviation is : 6 
+ The sample size is : 12 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  165 
+ The sample standard deviation is : 8 
+ The sample size is : 7 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   6.638 | 6.909 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ XX Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  135 
+ The sample standard deviation is : 7 
+ The sample size is : 12 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  145 
+ The sample standard deviation is : 7 
+ The sample size is : 9 
+ 
+ XX Compute the Pooled Standard Deviation 
+ 
+ XX Write your answer here:	{   6.86 | 7.14 } 
+ 
+ XX Use three decimal places. 
+ 

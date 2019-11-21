@@ -1,0 +1,570 @@
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 48 35 43 57 27 32 37 56 29 46 
+ Y: 32 30 37 40 22 14 25 29 16 24 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1032 
+  - Syy :  634.9 
+  - Sxy :  587 
+  - Sample size (n) :  10 
+  - Sample mean of X :  41 
+  - Sample mean of Y :  26.9 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.5574225 | 0.5801744 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 39 35 54 24 48 25 58 34 22 59 
+ Y: 23 24 29 24 33 13 40 24 15 26 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1811.6 
+  - Syy :  556.9 
+  - Sxy :  798.2 
+  - Sample size (n) :  10 
+  - Sample mean of X :  39.8 
+  - Sample mean of Y :  25.1 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.4317929 | 0.4494171 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 45 50 56 49 56 50 20 24 59 58 
+ Y: 40 29 33 24 33 29 16 21 31 33 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1710.1 
+  - Syy :  430.9 
+  - Sxy :  642.7 
+  - Sample size (n) :  10 
+  - Sample mean of X :  46.7 
+  - Sample mean of Y :  28.9 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.3683095 | 0.3833425 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 58 51 42 56 52 58 46 53 49 33 
+ Y: 40 25 20 37 37 40 24 26 38 13 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  547.6 
+  - Syy :  828 
+  - Sxy :  584 
+  - Sample size (n) :  10 
+  - Sample mean of X :  49.8 
+  - Sample mean of Y :  30 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   1.045142 | 1.087801 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 38 53 23 28 53 48 38 58 37 32 
+ Y: 27 40 17 26 38 30 13 30 15 21 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1233.6 
+  - Syy :  768.1 
+  - Sxy :  694.4 
+  - Sample size (n) :  10 
+  - Sample mean of X :  40.8 
+  - Sample mean of Y :  25.7 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.5516472 | 0.5741634 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 44 48 59 43 29 41 31 39 47 52 
+ Y: 20 27 38 28 14 29 23 17 31 31 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  738.1 
+  - Syy :  477.6 
+  - Sxy :  490.6 
+  - Sample size (n) :  10 
+  - Sample mean of X :  43.3 
+  - Sample mean of Y :  25.8 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.651386 | 0.6779732 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 32 46 59 42 32 57 51 24 47 27 
+ Y: 26 35 29 30 15 35 31 14 29 10 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1384.1 
+  - Syy :  738.4 
+  - Sxy :  846.2 
+  - Sample size (n) :  10 
+  - Sample mean of X :  41.7 
+  - Sample mean of Y :  25.4 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.5991446 | 0.6235995 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 48 24 42 25 42 49 20 27 55 45 
+ Y: 30 12 31 24 16 28 12 13 25 37 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1400.1 
+  - Syy :  729.6 
+  - Sxy :  709.4 
+  - Sample size (n) :  10 
+  - Sample mean of X :  37.7 
+  - Sample mean of Y :  22.8 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.4965445 | 0.5168117 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 21 24 28 30 31 32 43 58 33 23 
+ Y: 14 18 24 11 21 21 39 37 30 16 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1084.1 
+  - Syy :  808.9 
+  - Sxy :  770.7 
+  - Sample size (n) :  10 
+  - Sample mean of X :  32.3 
+  - Sample mean of Y :  23.1 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.696694 | 0.7251305 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 23 32 49 48 36 28 55 24 51 30 
+ Y: 17 13 26 25 17 25 25 14 34 15 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1302.4 
+  - Syy :  422.9 
+  - Sxy :  554.4 
+  - Sample size (n) :  10 
+  - Sample mean of X :  37.6 
+  - Sample mean of Y :  21.1 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.4171622 | 0.4341892 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 29 52 43 56 29 48 60 39 58 21 
+ Y: 13 29 29 24 22 29 25 20 36 19 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1678.5 
+  - Syy :  382.4 
+  - Sxy :  572 
+  - Sample size (n) :  10 
+  - Sample mean of X :  43.5 
+  - Sample mean of Y :  24.6 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.3339648 | 0.3475961 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 32 57 41 53 54 21 31 29 42 42 
+ Y: 11 38 17 39 28 10 28 19 28 31 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1289.6 
+  - Syy :  948.9 
+  - Sxy :  891.2 
+  - Sample size (n) :  10 
+  - Sample mean of X :  40.2 
+  - Sample mean of Y :  24.9 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.6772457 | 0.7048883 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 22 52 59 20 60 57 54 47 48 35 
+ Y: 13 30 30 11 33 17 33 33 16 10 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1960.4 
+  - Syy :  894.4 
+  - Sxy :  975.6 
+  - Sample size (n) :  10 
+  - Sample mean of X :  45.4 
+  - Sample mean of Y :  22.6 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.4877005 | 0.5076066 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 58 34 54 28 49 53 28 54 29 45 
+ Y: 40 10 26 21 22 35 22 28 19 28 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1333.6 
+  - Syy :  638.9 
+  - Sxy :  680.8 
+  - Sample size (n) :  10 
+  - Sample mean of X :  43.2 
+  - Sample mean of Y :  25.1 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.5002879 | 0.5207079 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 53 31 24 41 45 21 40 37 60 50 
+ Y: 39 30 14 35 37 20 26 16 35 29 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1401.6 
+  - Syy :  712.9 
+  - Sxy :  738.8 
+  - Sample size (n) :  10 
+  - Sample mean of X :  40.2 
+  - Sample mean of Y :  28.1 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.5165696 | 0.5376541 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 46 43 24 33 21 27 48 42 59 22 
+ Y: 30 28 24 31 20 18 37 33 29 21 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1510.5 
+  - Syy :  340.9 
+  - Sxy :  532.5 
+  - Sample size (n) :  10 
+  - Sample mean of X :  36.5 
+  - Sample mean of Y :  27.1 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.3454816 | 0.3595829 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 57 43 56 37 27 57 30 50 56 46 
+ Y: 37 19 39 18 18 25 13 16 26 25 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1164.9 
+  - Syy :  680.4 
+  - Sxy :  650.6 
+  - Sample size (n) :  10 
+  - Sample mean of X :  45.9 
+  - Sample mean of Y :  23.6 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.5473328 | 0.5696729 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 31 35 23 36 53 27 40 60 21 37 
+ Y: 17 33 26 33 30 10 28 38 12 30 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1382.1 
+  - Syy :  810.1 
+  - Sxy :  760.9 
+  - Sample size (n) :  10 
+  - Sample mean of X :  36.3 
+  - Sample mean of Y :  25.7 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.5395283 | 0.5615498 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 28 56 20 29 38 43 22 43 22 58 
+ Y: 17 35 15 26 14 34 13 22 11 23 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1746.9 
+  - Syy :  660 
+  - Sxy :  753 
+  - Sample size (n) :  10 
+  - Sample mean of X :  35.9 
+  - Sample mean of Y :  21 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.4224283 | 0.4396703 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 22 34 21 27 58 20 28 40 31 48 
+ Y: 31 19 11 13 36 14 14 25 30 40 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1398.9 
+  - Syy :  996.1 
+  - Sxy :  854.3 
+  - Sample size (n) :  10 
+  - Sample mean of X :  32.9 
+  - Sample mean of Y :  23.3 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.5984802 | 0.622908 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 35 45 43 23 29 30 60 40 47 43 
+ Y: 15 24 21 17 25 10 36 24 24 27 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1024.5 
+  - Syy :  460.1 
+  - Sxy :  524.5 
+  - Sample size (n) :  10 
+  - Sample mean of X :  39.5 
+  - Sample mean of Y :  22.3 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.5017179 | 0.5221962 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 39 43 56 37 22 31 21 28 20 43 
+ Y: 23 20 33 18 16 22 15 15 23 26 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1234 
+  - Syy :  284.9 
+  - Sxy :  444 
+  - Sample size (n) :  10 
+  - Sample mean of X :  34 
+  - Sample mean of Y :  21.1 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.3526094 | 0.3670016 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 50 54 39 43 27 24 41 32 53 32 
+ Y: 36 23 26 29 15 11 26 26 38 18 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1026.5 
+  - Syy :  657.6 
+  - Sxy :  664 
+  - Sample size (n) :  10 
+  - Sample mean of X :  39.5 
+  - Sample mean of Y :  24.8 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.6339211 | 0.6597954 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 30 21 23 44 20 54 23 28 41 42 
+ Y: 24 12 15 29 22 40 12 38 26 34 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1252.4 
+  - Syy :  939.6 
+  - Sxy :  811.8 
+  - Sample size (n) :  10 
+  - Sample mean of X :  32.6 
+  - Sample mean of Y :  25.2 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.6352316 | 0.6611594 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 54 59 33 44 27 59 39 35 53 36 
+ Y: 25 38 24 37 21 33 20 20 30 18 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1210.9 
+  - Syy :  492.4 
+  - Sxy :  566.6 
+  - Sample size (n) :  10 
+  - Sample mean of X :  43.9 
+  - Sample mean of Y :  26.6 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.4585581 | 0.4772748 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 22 60 42 36 25 22 60 55 43 53 
+ Y: 10 33 18 21 23 17 31 27 21 40 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  2063.6 
+  - Syy :  694.9 
+  - Sxy :  955.2 
+  - Sample size (n) :  10 
+  - Sample mean of X :  41.8 
+  - Sample mean of Y :  24.1 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.4536228 | 0.472138 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 24 49 28 27 60 43 52 44 33 41 
+ Y: 24 38 21 18 40 25 35 25 20 36 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1268.9 
+  - Syy :  603.6 
+  - Sxy :  734.8 
+  - Sample size (n) :  10 
+  - Sample mean of X :  40.1 
+  - Sample mean of Y :  28.2 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.5675026 | 0.5906659 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 45 44 39 44 20 31 20 35 21 22 
+ Y: 26 28 37 35 11 28 20 26 19 13 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1024.9 
+  - Syy :  660.1 
+  - Sxy :  667.7 
+  - Sample size (n) :  10 
+  - Sample mean of X :  32.1 
+  - Sample mean of Y :  24.3 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.6384486 | 0.6645078 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 24 29 41 22 52 51 58 30 32 59 
+ Y: 14 10 23 20 34 39 38 21 18 21 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1815.6 
+  - Syy :  887.6 
+  - Sxy :  942.6 
+  - Sample size (n) :  10 
+  - Sample mean of X :  39.8 
+  - Sample mean of Y :  23.8 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.5087839 | 0.5295506 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 49 59 47 23 43 29 40 28 31 54 
+ Y: 28 40 26 12 23 29 14 14 20 29 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  1330.1 
+  - Syy :  684.5 
+  - Sxy :  727.5 
+  - Sample size (n) :  10 
+  - Sample mean of X :  40.3 
+  - Sample mean of Y :  23.5 
+ 
+ XX Compute the slope estimate (denoted b1) 
+ XX Write your answer here:	{   0.5360123 | 0.5578904 } 
+ 
+ XX Use three decimal places. 
+ 

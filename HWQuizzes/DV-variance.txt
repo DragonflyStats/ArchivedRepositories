@@ -1,0 +1,376 @@
+
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.25  0.15  0.3  0.2
+
+The expected value of X, denoted E(X), is: 3.25 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 1.6825 | 1.6925 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.15  0.35  0.2  0.1  0.2
+
+The expected value of X, denoted E(X), is: 2.85 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 1.8225 | 1.8325 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.2  0.3  0.25  0.15
+
+The expected value of X, denoted E(X), is: 3.15 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 1.4225 | 1.4325 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.2  0.1  0.2  0.25  0.25
+
+The expected value of X, denoted E(X), is: 3.25 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 2.0825 | 2.0925 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.15  0.45  0.1  0.2
+
+The expected value of X, denoted E(X), is: 3.15 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 1.4225 | 1.4325 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.1  0.15  0.25  0.4
+
+The expected value of X, denoted E(X), is: 3.75 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 1.7825 | 1.7925 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.15  0.15  0.3  0.3
+
+The expected value of X, denoted E(X), is: 3.55 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 1.7425 | 1.7525 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.3  0.3  0.1  0.1  0.2
+
+The expected value of X, denoted E(X), is: 2.6 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 2.235 | 2.245 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.15  0.2  0.35  0.1  0.2
+
+The expected value of X, denoted E(X), is: 3 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 1.695 | 1.705 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.25  0.15  0.15  0.2  0.25
+
+The expected value of X, denoted E(X), is: 3.05 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 2.3425 | 2.3525 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.2  0.4  0.15  0.15
+
+The expected value of X, denoted E(X), is: 3.05 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 1.3425 | 1.3525 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.15  0.25  0.1  0.4  0.1
+
+The expected value of X, denoted E(X), is: 3.05 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 1.6425 | 1.6525 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.35  0.15  0.1  0.1  0.3
+
+The expected value of X, denoted E(X), is: 2.85 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 2.8225 | 2.8325 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.3  0.1  0.15  0.2  0.25
+
+The expected value of X, denoted E(X), is: 3 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 2.495 | 2.505 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.35  0.1  0.25  0.1  0.2
+
+The expected value of X, denoted E(X), is: 2.7 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 2.305 | 2.315 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.3  0.1  0.25  0.25  0.1
+
+The expected value of X, denoted E(X), is: 2.75 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 1.8825 | 1.8925 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.35  0.3  0.1  0.15
+
+The expected value of X, denoted E(X), is: 2.85 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 1.4225 | 1.4325 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.1  0.35  0.3  0.15
+
+The expected value of X, denoted E(X), is: 3.3 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 1.305 | 1.315 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.25  0.25  0.15  0.25
+
+The expected value of X, denoted E(X), is: 3.2 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 1.755 | 1.765 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.3  0.2  0.2  0.2
+
+The expected value of X, denoted E(X), is: 3.1 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 1.685 | 1.695 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.25  0.25  0.2  0.1  0.2
+
+The expected value of X, denoted E(X), is: 2.75 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 2.0825 | 2.0925 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.3  0.25  0.2  0.1  0.15
+
+The expected value of X, denoted E(X), is: 2.55 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 1.9425 | 1.9525 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.25  0.15  0.35  0.1  0.15
+
+The expected value of X, denoted E(X), is: 2.75 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 1.7825 | 1.7925 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.15  0.1  0.15  0.5
+
+The expected value of X, denoted E(X), is: 3.8 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 2.055 | 2.065 }.
+(Use four decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.3  0.15  0.35  0.1  0.1
+
+The expected value of X, denoted E(X), is: 2.55 .
+
+What is the variance of X, Var(X).
+ 
+Write your answer here: { 1.6425 | 1.6525 }.
+(Use four decimal places.)

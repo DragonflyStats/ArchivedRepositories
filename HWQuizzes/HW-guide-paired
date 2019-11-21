@@ -1,0 +1,38 @@
+
+
+\section*{Paired t-tests}
+
+\subsection*{Calculations}
+
+For the online quiz, you will be required to be able to perform the 
+
+\begin{itemize}
+\item 
+
+\item The mean of the case-wise differences.
+
+\item The standard deviation of the case-wise differences.
+
+
+\item The lower bound of a 95\% confidence interval.
+\begin{itemize}
+\item[$\ast$]  For the sake of brevity, you will be told the quantile explicity in the homework quiz. 
+\item[$\ast$]  In general, you should know how to determine it from Murdoch Barnes Table 7.
+\end{itemize}
+
+\end{itemize}
+
+\subsection*{End of Semester Exam}
+This homework is partial preparation for the end of semester exam.
+For the end of semester exam, you will be asked to 
+\begin{itemize}
+\item Compute and interpret 95\% confidence intervals for case-wise differences.
+\item Perform the paired $t-$test
+\end{itemize}
+
+%==================%
+\subsection*{Formula}
+
+
+%==================%
+\subsection*{Interpretation}

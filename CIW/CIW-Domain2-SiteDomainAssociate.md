@@ -1,0 +1,22 @@
+Domain 2: Site Development Associate 
+=================================================
+- 2.1 Demonstrate knowledge required to create a Web page. 
+- 2.2 Add images and graphical formatting to HTML files, and create and edit images and audio. 
+- 2.3 Identify and use design and color principles for Web pages. 
+- 2.4 Create a basic HTML form that accepts user input. 
+- 2.6 Define Extensible Markup Language (XML), and identify its features and appropriate use. 
+- 2.7 Identify essential Web site navigation issues, and ensure page/site accessibility. 
+- 2.8 Define and apply essential aspects of the Cascading Style Sheets (CSS) standard, including CSS versions 1, 2 and 3. 
+- 2.9 Use the most current version of Hypertext Markup Language (HTML5) to create Web pages. 
+- 2.10 Identify technologies for enhancing the user's Web experience, including programming languages, multimedia technologies. 
+- 2.11 Use GUI-based HTML editing software to create Web pages. 
+- 2.12 Test and analyze Web site performance issues. 
+- 2.13 Identify steps in the Web site planning and development process. 
+- 2.14 Identify essential issues in developing and maintaining a Web site, including project management, testing, legal issues. 
+- 2.15 Plan and deliver oral presentations of your Web site, during and after site development. 
+- 2.16 Define electronic commerce (e-commerce) and related technologies and concepts necessary to develop a secure, useful interface (i.e., storefront). 
+- 2.17 Demonstrate knowledge of languages commonly used to provide database connectivity to Web sites. 
+- 2.18 Identify the benefits and drawbacks of running your own Web server versus using a service provider. 
+- 2.19 Identify common strategies for managing an end user's experience and improving site creativity. 
+- 2.20 Consider copyright and ethical issues when creating Web pages. 
+- 2.21 Design Web pages to industry standards.

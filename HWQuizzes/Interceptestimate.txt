@@ -1,0 +1,228 @@
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 52 68 50 59 83 39 26 30 63 68 69 39 
+ Y: 27 45 33 48 45 28 23 25 49 24 43 27 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  3393.667 
+  - Syy :  1174.25 
+  - Sxy :  1411.5 
+  - Sample size (n) :  12 
+  - Sample mean of X :  53.833 
+  - Sample mean of Y :  34.75 
+ 
+ XX Compute the intercept estimate (denoted b0) 
+ XX Write your answer here:	{   12.11235 | 12.60673 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 42 51 83 57 21 52 59 22 84 88 49 51 
+ Y: 27 24 46 34 26 42 42 10 44 44 18 42 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  5224.917 
+  - Syy :  1574.25 
+  - Sxy :  2222.25 
+  - Sample size (n) :  12 
+  - Sample mean of X :  54.917 
+  - Sample mean of Y :  33.25 
+ 
+ XX Compute the intercept estimate (denoted b0) 
+ XX Write your answer here:	{   9.695106 | 10.09082 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 51 65 81 25 87 43 61 40 45 81 54 46 
+ Y: 31 41 36 21 41 22 50 17 33 43 18 25 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  3948.917 
+  - Syy :  1313 
+  - Sxy :  1631.5 
+  - Sample size (n) :  12 
+  - Sample mean of X :  56.583 
+  - Sample mean of Y :  31.5 
+ 
+ XX Compute the intercept estimate (denoted b0) 
+ XX Write your answer here:	{   7.960073 | 8.284974 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 72 74 51 85 89 74 88 21 20 47 28 66 
+ Y: 43 34 36 43 37 37 46 15 32 22 16 34 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  7214.917 
+  - Syy :  1146.917 
+  - Sxy :  2327.583 
+  - Sample size (n) :  12 
+  - Sample mean of X :  59.583 
+  - Sample mean of Y :  32.917 
+ 
+ XX Compute the intercept estimate (denoted b0) 
+ XX Write your answer here:	{   13.42077 | 13.96855 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 75 46 63 20 90 43 79 31 20 80 61 60 
+ Y: 34 11 42 32 44 30 37 12 11 40 33 33 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  6196.667 
+  - Syy :  1572.917 
+  - Sxy :  2315.667 
+  - Sample size (n) :  12 
+  - Sample mean of X :  55.667 
+  - Sample mean of Y :  29.917 
+ 
+ XX Compute the intercept estimate (denoted b0) 
+ XX Write your answer here:	{   8.931996 | 9.296568 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 72 67 37 44 59 68 47 21 56 83 51 59 
+ Y: 41 46 15 18 15 26 29 17 43 45 24 33 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  3098.667 
+  - Syy :  1590.667 
+  - Sxy :  1590.667 
+  - Sample size (n) :  12 
+  - Sample mean of X :  55.333 
+  - Sample mean of Y :  29.333 
+ 
+ XX Compute the intercept estimate (denoted b0) 
+ XX Write your answer here:	{   0.91 | 0.9471429 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 65 39 26 54 52 23 25 20 45 21 80 45 
+ Y: 50 49 17 19 36 19 18 13 38 31 49 35 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  4068.25 
+  - Syy :  2075.667 
+  - Sxy :  2076.5 
+  - Sample size (n) :  12 
+  - Sample mean of X :  41.25 
+  - Sample mean of Y :  31.167 
+ 
+ XX Compute the intercept estimate (denoted b0) 
+ XX Write your answer here:	{   9.909765 | 10.31425 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 35 61 83 38 25 58 57 31 76 54 77 47 
+ Y: 25 44 43 16 20 38 38 28 34 32 40 10 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  3961 
+  - Syy :  1332.667 
+  - Sxy :  1648 
+  - Sample size (n) :  12 
+  - Sample mean of X :  53.5 
+  - Sample mean of Y :  30.667 
+ 
+ XX Compute the intercept estimate (denoted b0) 
+ XX Write your answer here:	{   8.239488 | 8.575794 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 40 37 79 56 38 49 38 82 22 25 42 66 
+ Y: 36 20 47 38 44 27 14 37 10 12 37 38 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  4131.667 
+  - Syy :  1836 
+  - Sxy :  1944 
+  - Sample size (n) :  12 
+  - Sample mean of X :  47.833 
+  - Sample mean of Y :  30 
+ 
+ XX Compute the intercept estimate (denoted b0) 
+ XX Write your answer here:	{   7.343952 | 7.643705 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 22 52 28 51 65 44 26 55 70 64 47 68 
+ Y: 16 30 30 28 35 28 18 38 49 21 22 42 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  3058.667 
+  - Syy :  1086.25 
+  - Sxy :  1297 
+  - Sample size (n) :  12 
+  - Sample mean of X :  49.333 
+  - Sample mean of Y :  29.75 
+ 
+ XX Compute the intercept estimate (denoted b0) 
+ XX Write your answer here:	{   8.654032 | 9.007258 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 42 21 76 75 29 26 49 25 67 78 75 24 
+ Y: 27 13 47 33 20 25 28 39 26 43 40 15 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  6208.917 
+  - Syy :  1314.667 
+  - Sxy :  2072.667 
+  - Sample size (n) :  12 
+  - Sample mean of X :  48.917 
+  - Sample mean of Y :  29.667 
+ 
+ XX Compute the intercept estimate (denoted b0) 
+ XX Write your answer here:	{   13.07051 | 13.604 } 
+ 
+ XX Use three decimal places. 
+ 
+XX A regression model was fitted using the following data sets: 
+ 
+ X: 32 88 90 40 42 82 58 23 34 65 40 35 
+ Y: 14 42 47 13 24 45 29 21 34 31 18 31 
+ 
+ XX Suppose you are given the following pieces of information 
+ 
+  - Sxx :  6084.917 
+  - Syy :  1472.917 
+  - Sxy :  2439.583 
+  - Sample size (n) :  12 
+  - Sample mean of X :  52.417 
+  - Sample mean of Y :  29.083 
+ 
+ XX Compute the intercept estimate (denoted b0) 
+ XX Write your answer here:	{   7.906918 | 8.229649 } 
+ 
+ XX Use three decimal places. 
+ 

@@ -1,0 +1,510 @@
+
+ XX Interpret the following Pearson Correlation Coefficient:  -0.184 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 6 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  -0.277 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 6 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  0.388 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 4 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  0.46 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 3 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  0.512 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 3 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  -0.516 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 7 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  -0.86 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 8 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  0.878 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 2 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  -0.8 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 8 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  0.049 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 5 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  -0.217 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 6 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  0.952 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 1 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  0.318 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 4 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  0.683 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 3 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  0.676 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 3 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  0.2 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 4 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  0.853 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 2 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  -0.219 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 6 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  0.212 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 4 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  -0.888 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 8 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  -0.806 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 8 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  -0.942 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 9 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  0.933 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 1 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  -0.239 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 6 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  0.745 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 2 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  -0.471 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 7 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  0.147 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 4 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  0.998 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 1 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  0.668 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 3 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 
+
+ XX Interpret the following Pearson Correlation Coefficient:  -0.788 
+ 
+ XX Use the following classification system:  
+  1 - Very Strong Positive Linear Relationship 
+  2 - Strong Positive Linear Relationship 
+  3 - Mildly Strong Positive Linear Relationship 
+  4 - Weak Positive Linear Relationship 
+  5 - No evidence of Linear Relationsip 
+  6 - Weak Negative Linear Relationship 
+  7 - Mildly Strong Negative Linear Relationship 
+  8 - Strong Negative Linear Relationship 
+  9 - Very Strong Negative Linear Relationship 
+ 
+ XX Write Your Answer Here: { 8 }. 
+ XX Your answer should be an integer between 1 and 9 
+ 

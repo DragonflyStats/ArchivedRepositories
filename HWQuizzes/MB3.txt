@@ -1,0 +1,180 @@
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  1.26 ) 
+ 
+ XX Write your answer here: { 0.1028347 | 0.1048347 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  0.64 ) 
+ 
+ XX Write your answer here: { 0.2600863 | 0.2620863 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  1.47 ) 
+ 
+ XX Write your answer here: { 0.06978088 | 0.07178088 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  1.29 ) 
+ 
+ XX Write your answer here: { 0.09752533 | 0.09952533 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  1.78 ) 
+ 
+ XX Write your answer here: { 0.03653798 | 0.03853798 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  1.17 ) 
+ 
+ XX Write your answer here: { 0.1200005 | 0.1220005 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  2.06 ) 
+ 
+ XX Write your answer here: { 0.01869927 | 0.02069927 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  1.63 ) 
+ 
+ XX Write your answer here: { 0.05055075 | 0.05255075 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  0.32 ) 
+ 
+ XX Write your answer here: { 0.3734842 | 0.3754842 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  1.84 ) 
+ 
+ XX Write your answer here: { 0.03188412 | 0.03388412 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  1.36 ) 
+ 
+ XX Write your answer here: { 0.08591496 | 0.08791496 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  1.2 ) 
+ 
+ XX Write your answer here: { 0.1140697 | 0.1160697 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  1.15 ) 
+ 
+ XX Write your answer here: { 0.1240719 | 0.1260719 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  1.18 ) 
+ 
+ XX Write your answer here: { 0.1180001 | 0.1200001 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  1.61 ) 
+ 
+ XX Write your answer here: { 0.05269893 | 0.05469893 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  2.5 ) 
+ 
+ XX Write your answer here: { 0.005209665 | 0.007209665 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  0.82 ) 
+ 
+ XX Write your answer here: { 0.2051081 | 0.2071081 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  0.33 ) 
+ 
+ XX Write your answer here: { 0.3697 | 0.3717 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  0.95 ) 
+ 
+ XX Write your answer here: { 0.1700561 | 0.1720561 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  1.77 ) 
+ 
+ XX Write your answer here: { 0.03736357 | 0.03936357 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  0.76 ) 
+ 
+ XX Write your answer here: { 0.2226273 | 0.2246273 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  1.75 ) 
+ 
+ XX Write your answer here: { 0.03905916 | 0.04105916 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  0.38 ) 
+ 
+ XX Write your answer here: { 0.3509727 | 0.3529727 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  0.4 ) 
+ 
+ XX Write your answer here: { 0.3435783 | 0.3455783 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  1.64 ) 
+ 
+ XX Write your answer here: { 0.04950258 | 0.05150258 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  0.43 ) 
+ 
+ XX Write your answer here: { 0.3325978 | 0.3345978 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  0.98 ) 
+ 
+ XX Write your answer here: { 0.1625431 | 0.1645431 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  1.62 ) 
+ 
+ XX Write your answer here: { 0.05161614 | 0.05361614 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  0.69 ) 
+ 
+ XX Write your answer here: { 0.2440971 | 0.2460971 } 
+ 
+ XX Use Murdoch Barnes Tables 3 to determine the following probability: 
+ 
+  P( Z >  2.29 ) 
+ 
+ XX Write your answer here: { 0.01001066 | 0.01201066 } 
+ 

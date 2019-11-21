@@ -1,0 +1,384 @@
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 7 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.435 | 2.459 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 8 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.353 | 2.376 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 9 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.294 | 2.318 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 10 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.251 | 2.273 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 11 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.217 | 2.239 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 12 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.19 | 2.212 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 13 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.168 | 2.19 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 14 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.15 | 2.171 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 15 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.134 | 2.156 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 16 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.121 | 2.142 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 17 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.109 | 2.131 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 18 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.099 | 2.12 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 19 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.09 | 2.111 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 20 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.083 | 2.103 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 21 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.076 | 2.096 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 22 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.069 | 2.09 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 23 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.064 | 2.084 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 24 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.058 | 2.079 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 25 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.054 | 2.074 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 26 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.049 | 2.07 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 27 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.045 | 2.066 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 28 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.042 | 2.062 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 29 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.038 | 2.059 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 
+
+ XX Given that a statistical procedure  
+ 
+ is two-tailed 
+ uses a significance level of 5 percent (0.05) 
+ has a sample size of: 30 
+ 
+ 
+ XX State the relevant quantile from the Student t-distribution 
+ XX Write your answer here:{   2.035 | 2.055 } 
+ 
+ XX Use three decimal places. 
+ 
+ XX See Murdoch Barnes Table 7 
+ 
+ 

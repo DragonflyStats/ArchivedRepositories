@@ -1,0 +1,99 @@
+sink("DRVtables.txt")
+library(xtable)
+
+for (i in 1:20){
+set.seed(1000+i)
+ncol = sample(2:4,1)
+nrow = sample(2:5,1)
+
+Xval = sort(sample(c(-2,-1,1:3),nrow))
+Yval = sort(sample(c(-2,-1,1:3),ncol))
+
+while( (nrow*ncol) >= 12){nrow = sample(2:4,1)}
+dim = (nrow*ncol)
+
+prob = sample((1:5/20),dim,replace=TRUE)
+
+while( sum(prob) != 1 ){prob = sample((1:5/20),dim,replace=TRUE)}
+
+prob = matrix(prob,ncol=ncol,byrow=TRUE)
+
+Xprobs = rowSums(prob)
+Yprobs = colSums(prob)
+
+Xval = sort(sample(c(-2,-1,1:3),nrow))
+Yval = sort(sample(c(-2,-1,1:3),ncol))
+
+probs <- cbind(prob,(Xprobs))
+probs <- rbind(probs, c(Yprobs,1))
+probs <- data.frame(round(probs,2))
+
+names(probs) <- c(as.character(Yval),"Total")
+col1 <- c(as.character(Xval),"Total")
+
+rownames(probs)=col1
+%cat("\n %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% \% ")
+cat("\n")
+cat("table",i)
+cat("\n")
+print(xtable(probs))
+cat("\n")
+cat("\\newpage")
+cat("\n")
+
+
+
+
+
+Vals = kronecker(Xval,t(Yval))
+Ex=sum(Xprobs * Xval)
+Ex.sq  =sum(Xprobs * (Xval^2)) 
+Varx = Ex.sq - (Ex)^2
+
+Ey=sum(Yprobs * (Yval))
+Ey.sq=sum(Yprobs * (Yval^2))
+Vary = Ey.sq - (Ey)^2
+
+Exy = sum(prob*Vals)
+COVxy = Exy -(Ex*Ey)
+CORRxy = COVxy/(sqrt(Vary*Vary))
+
+cat("\n")
+cat("1. Compute the expected value of X ,i.e. E(X).")
+cat("\n")
+cat("Write Your answer here:{",(Ex-0.05),"|",(Ex+0.05),"}. (use 2 decimal places)")
+cat("\n")
+cat("\n")
+cat("2. Compute the variance of X ,i.e. Var(X).")
+cat("\n")
+cat("Write Your answer here:{",(Varx-0.05),"|",(Varx+0.05),"}. (use 4 decimal places)")
+cat("\n")
+cat("\n")
+cat("3. Compute the expected value of Y ,i.e. E(Y).")
+cat("\n")
+cat("Write Your answer here:{",(Ey-0.05),"|",(Ey+0.05),"}. (use 2 decimal places)")
+cat("\n")
+cat("\n")
+cat("4. Compute the variance of Y ,i.e. Var(Y).")
+cat("\n")
+cat("Write Your answer here:{",(Vary-0.05),"|",(Vary+0.05),"}. (use 4 decimal places)")
+cat("\n")
+cat("\n")
+cat("5. Compute the expected value of the product of X and Y ,i.e. E(XY).")
+cat("\n")
+cat("Write Your answer here:{",(Exy-0.05),"|",(Exy+0.05),"}. (use 2 decimal places)")
+cat("\n")
+cat("\n")
+cat("6. Compute the covariance of X and Y ,i.e. COV(X,Y).")
+cat("\n")
+cat("Write Your answer here:{",(COVxy-0.05),"|",(COVxy+0.05),"}. (use 4 decimal places)")
+cat("\n")
+cat("\n")
+cat("7. Compute the correlation of X and Y ,i.e. COr(X,Y).")
+cat("\n")
+cat("Write Your answer here:{",(CORRxy-0.05),"|",(CORRxy+0.05),"}. (use 4 decimal places)")
+cat("\n")
+cat("\n")
+cat("-----------------------------------------------------------------------------------")
+}
+sink()

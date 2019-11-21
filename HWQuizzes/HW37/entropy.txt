@@ -1,0 +1,130 @@
+Consider a digital communication system, X, that uses alphabet[A,B,C,D].
+
+* The probability of symbol A is 0.34 .
+* The probability of symbol B is 0.26 .
+* The probability of symbol C is 0.25 .
+* The probability of symbol D is 0.15 .
+
+What is the entropy of X? (use base 2).
+Write your answer here: { 1.93 | 1.97 }.
+(Use two decimal places.)
+
+
+
+Consider a digital communication system, X, that uses alphabet[A,B,C,D].
+
+* The probability of symbol A is 0.35 .
+* The probability of symbol B is 0.31 .
+* The probability of symbol C is 0.3 .
+* The probability of symbol D is 0.04 .
+
+What is the entropy of X? (use base 2).
+Write your answer here: { 1.74 | 1.78 }.
+(Use two decimal places.)
+
+
+
+Consider a digital communication system, X, that uses alphabet[A,B,C,D].
+
+* The probability of symbol A is 0.39 .
+* The probability of symbol B is 0.38 .
+* The probability of symbol C is 0.22 .
+* The probability of symbol D is 0.01 .
+
+What is the entropy of X? (use base 2).
+Write your answer here: { 1.59 | 1.63 }.
+(Use two decimal places.)
+
+
+
+Consider a digital communication system, X, that uses alphabet[A,B,C,D].
+
+* The probability of symbol A is 0.39 .
+* The probability of symbol B is 0.39 .
+* The probability of symbol C is 0.13 .
+* The probability of symbol D is 0.09 .
+
+What is the entropy of X? (use base 2).
+Write your answer here: { 1.73 | 1.77 }.
+(Use two decimal places.)
+
+
+
+Consider a digital communication system, X, that uses alphabet[A,B,C,D].
+
+* The probability of symbol A is 0.4 .
+* The probability of symbol B is 0.23 .
+* The probability of symbol C is 0.21 .
+* The probability of symbol D is 0.16 .
+
+What is the entropy of X? (use base 2).
+Write your answer here: { 1.89 | 1.93 }.
+(Use two decimal places.)
+
+
+
+Consider a digital communication system, X, that uses alphabet[A,B,C,D].
+
+* The probability of symbol A is 0.42 .
+* The probability of symbol B is 0.33 .
+* The probability of symbol C is 0.14 .
+* The probability of symbol D is 0.11 .
+
+What is the entropy of X? (use base 2).
+Write your answer here: { 1.78 | 1.82 }.
+(Use two decimal places.)
+
+
+
+Consider a digital communication system, X, that uses alphabet[A,B,C,D].
+
+* The probability of symbol A is 0.46 .
+* The probability of symbol B is 0.25 .
+* The probability of symbol C is 0.16 .
+* The probability of symbol D is 0.13 .
+
+What is the entropy of X? (use base 2).
+Write your answer here: { 1.8 | 1.84 }.
+(Use two decimal places.)
+
+
+
+Consider a digital communication system, X, that uses alphabet[A,B,C,D].
+
+* The probability of symbol A is 0.37 .
+* The probability of symbol B is 0.36 .
+* The probability of symbol C is 0.21 .
+* The probability of symbol D is 0.06 .
+
+What is the entropy of X? (use base 2).
+Write your answer here: { 1.76 | 1.8 }.
+(Use two decimal places.)
+
+
+
+Consider a digital communication system, X, that uses alphabet[A,B,C,D].
+
+* The probability of symbol A is 0.45 .
+* The probability of symbol B is 0.24 .
+* The probability of symbol C is 0.19 .
+* The probability of symbol D is 0.12 .
+
+What is the entropy of X? (use base 2).
+Write your answer here: { 1.81 | 1.85 }.
+(Use two decimal places.)
+
+
+
+Consider a digital communication system, X, that uses alphabet[A,B,C,D].
+
+* The probability of symbol A is 0.47 .
+* The probability of symbol B is 0.32 .
+* The probability of symbol C is 0.15 .
+* The probability of symbol D is 0.06 .
+
+What is the entropy of X? (use base 2).
+Write your answer here: { 1.67 | 1.71 }.
+(Use two decimal places.)
+
+
+

@@ -1,0 +1,182 @@
+
+
+Suppose that probability of an event is 0.177 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 2.488 | 2.508 }.
+(Use three decimal places.)
+
+
+
+Suppose that probability of an event is 0.685 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 0.536 | 0.556 }.
+(Use three decimal places.)
+
+
+
+Suppose that probability of an event is 0.396 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 1.326 | 1.346 }.
+(Use three decimal places.)
+
+
+
+Suppose that probability of an event is 0.702 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 0.5 | 0.52 }.
+(Use three decimal places.)
+
+
+
+Suppose that probability of an event is 0.193 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 2.363 | 2.383 }.
+(Use three decimal places.)
+
+
+
+Suppose that probability of an event is 0.586 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 0.761 | 0.781 }.
+(Use three decimal places.)
+
+
+
+Suppose that probability of an event is 0.778 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 0.352 | 0.372 }.
+(Use three decimal places.)
+
+
+
+Suppose that probability of an event is 0.95 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 0.064 | 0.084 }.
+(Use three decimal places.)
+
+
+
+Suppose that probability of an event is 0.555 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 0.839 | 0.859 }.
+(Use three decimal places.)
+
+
+
+Suppose that probability of an event is 0.692 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 0.521 | 0.541 }.
+(Use three decimal places.)
+
+
+
+Suppose that probability of an event is 0.133 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 2.901 | 2.921 }.
+(Use three decimal places.)
+
+
+
+Suppose that probability of an event is 0.158 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 2.652 | 2.672 }.
+(Use three decimal places.)
+
+
+
+Suppose that probability of an event is 0.886 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 0.165 | 0.185 }.
+(Use three decimal places.)
+
+
+
+Suppose that probability of an event is 0.939 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 0.081 | 0.101 }.
+(Use three decimal places.)
+
+
+
+Suppose that probability of an event is 0.785 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 0.339 | 0.359 }.
+(Use three decimal places.)
+
+
+
+Suppose that probability of an event is 0.372 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 1.417 | 1.437 }.
+(Use three decimal places.)
+
+
+
+Suppose that probability of an event is 0.572 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 0.796 | 0.816 }.
+(Use three[1] 2.144787
+s.)
+
+
+
+Suppose that probability of an event is 0.817 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 0.282 | 0.302 }.
+(Use three decimal places.)
+
+
+
+Suppose that probability of an event is 0.689 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 0.527 | 0.547 }.
+(Use three decimal places.)
+
+
+
+Suppose that probability of an event is 0.481 .
+
+What is the corresponding information? (Use base 2).
+
+Write your answer here:{ 1.046 | 1.066 }.
+(Use three decimal places.)
+
+[1] 2.144787

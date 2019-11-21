@@ -1,0 +1,181 @@
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.15  0.2  0.15  0.25
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.25 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.2  0.2  0.15  0.1
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.35 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.2  0.3  0.15  0.15
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.2 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.3  0.1  0.25  0.1
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.25 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.2  0.15  0.15  0.1
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.4 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.1  0.25  0.2  0.2
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.25 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.1  0.3  0.2  0.25
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.15 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.15  0.2  0.15  0.35
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.15 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.2  0.2  0.3  0.2
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.1 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.1  0.2  0.1  0.25
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.35 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.3  0.2  0.3  0.1
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.1 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.15  0.15  0.15  0.25
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.3 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.1  0.15  0.1  0.3
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.35 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.35  0.2  0.15  0.15
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.15 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.2  0.3  0.15  0.1
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.25 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.1  0.25  0.1  0.15
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.4 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.1  0.1  0.15  0.2
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.45 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.1  0.2  0.1  0.15
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.45 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.1  0.25  0.2  0.15
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.3 }.
+(Use two decimal places.)
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+
+It generates 1, 2, 3 and 4 with the following probabilities:
+      0.3  0.15  0.1  0.3
+
+What is the probability of the number 5 being generated.
+ 
+Write your answer here: { 0.15 }.
+(Use two decimal places.)

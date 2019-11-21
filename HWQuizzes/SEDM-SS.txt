@@ -1,0 +1,550 @@
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  100 
+ The sample standard deviation is : 7 
+ The sample size is : 15 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  120 
+ The sample standard deviation is : 9 
+ The sample size is : 13 
+ 
+ The Pooled Standard Deviation is 7.99 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   2.967 | 3.088 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  190 
+ The sample standard deviation is : 6 
+ The sample size is : 12 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  200 
+ The sample standard deviation is : 11 
+ The sample size is : 10 
+ 
+ The Pooled Standard Deviation is 8.62 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   3.617 | 3.765 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  190 
+ The sample standard deviation is : 11 
+ The sample size is : 13 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  215 
+ The sample standard deviation is : 7 
+ The sample size is : 14 
+ 
+ The Pooled Standard Deviation is 9.14 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   3.45 | 3.591 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  175 
+ The sample standard deviation is : 9 
+ The sample size is : 15 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  205 
+ The sample standard deviation is : 7 
+ The sample size is : 10 
+ 
+ The Pooled Standard Deviation is 8.28 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   3.313 | 3.448 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  195 
+ The sample standard deviation is : 6 
+ The sample size is : 15 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  225 
+ The sample standard deviation is : 10 
+ The sample size is : 12 
+ 
+ The Pooled Standard Deviation is 8.01 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   3.04 | 3.164 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  105 
+ The sample standard deviation is : 11 
+ The sample size is : 16 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  130 
+ The sample standard deviation is : 10 
+ The sample size is : 11 
+ 
+ The Pooled Standard Deviation is 10.61 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   4.073 | 4.239 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  200 
+ The sample standard deviation is : 6 
+ The sample size is : 14 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  210 
+ The sample standard deviation is : 7 
+ The sample size is : 15 
+ 
+ The Pooled Standard Deviation is 6.54 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   2.382 | 2.479 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  125 
+ The sample standard deviation is : 8 
+ The sample size is : 10 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  145 
+ The sample standard deviation is : 8 
+ The sample size is : 7 
+ 
+ The Pooled Standard Deviation is 8 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   3.864 | 4.021 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  140 
+ The sample standard deviation is : 6 
+ The sample size is : 12 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  165 
+ The sample standard deviation is : 8 
+ The sample size is : 16 
+ 
+ The Pooled Standard Deviation is 7.22 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   2.702 | 2.812 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  195 
+ The sample standard deviation is : 9 
+ The sample size is : 16 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  210 
+ The sample standard deviation is : 8 
+ The sample size is : 13 
+ 
+ The Pooled Standard Deviation is 8.57 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   3.136 | 3.264 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  125 
+ The sample standard deviation is : 10 
+ The sample size is : 12 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  160 
+ The sample standard deviation is : 7 
+ The sample size is : 9 
+ 
+ The Pooled Standard Deviation is 8.86 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   3.829 | 3.985 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  140 
+ The sample standard deviation is : 8 
+ The sample size is : 12 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  160 
+ The sample standard deviation is : 8 
+ The sample size is : 13 
+ 
+ The Pooled Standard Deviation is 8 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   3.139 | 3.267 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  170 
+ The sample standard deviation is : 10 
+ The sample size is : 14 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  180 
+ The sample standard deviation is : 9 
+ The sample size is : 11 
+ 
+ The Pooled Standard Deviation is 9.58 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   3.783 | 3.937 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  155 
+ The sample standard deviation is : 9 
+ The sample size is : 15 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  165 
+ The sample standard deviation is : 10 
+ The sample size is : 14 
+ 
+ The Pooled Standard Deviation is 9.49 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   3.456 | 3.597 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  100 
+ The sample standard deviation is : 7 
+ The sample size is : 11 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  115 
+ The sample standard deviation is : 6 
+ The sample size is : 9 
+ 
+ The Pooled Standard Deviation is 6.57 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   2.894 | 3.012 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  135 
+ The sample standard deviation is : 7 
+ The sample size is : 15 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  150 
+ The sample standard deviation is : 6 
+ The sample size is : 14 
+ 
+ The Pooled Standard Deviation is 6.54 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   2.382 | 2.479 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  100 
+ The sample standard deviation is : 10 
+ The sample size is : 15 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  130 
+ The sample standard deviation is : 6 
+ The sample size is : 10 
+ 
+ The Pooled Standard Deviation is 8.66 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   3.465 | 3.606 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  135 
+ The sample standard deviation is : 8 
+ The sample size is : 12 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  150 
+ The sample standard deviation is : 8 
+ The sample size is : 9 
+ 
+ The Pooled Standard Deviation is 8 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   3.457 | 3.598 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  190 
+ The sample standard deviation is : 8 
+ The sample size is : 12 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  220 
+ The sample standard deviation is : 9 
+ The sample size is : 10 
+ 
+ The Pooled Standard Deviation is 8.46 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   3.55 | 3.695 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  135 
+ The sample standard deviation is : 10 
+ The sample size is : 16 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  155 
+ The sample standard deviation is : 8 
+ The sample size is : 14 
+ 
+ The Pooled Standard Deviation is 9.13 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   3.274 | 3.408 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  190 
+ The sample standard deviation is : 11 
+ The sample size is : 10 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  220 
+ The sample standard deviation is : 7 
+ The sample size is : 8 
+ 
+ The Pooled Standard Deviation is 9.46 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   4.398 | 4.577 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  170 
+ The sample standard deviation is : 10 
+ The sample size is : 15 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  200 
+ The sample standard deviation is : 6 
+ The sample size is : 13 
+ 
+ The Pooled Standard Deviation is 8.39 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   3.116 | 3.243 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  150 
+ The sample standard deviation is : 7 
+ The sample size is : 12 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  165 
+ The sample standard deviation is : 7 
+ The sample size is : 7 
+ 
+ The Pooled Standard Deviation is 7 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   3.263 | 3.396 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  165 
+ The sample standard deviation is : 9 
+ The sample size is : 16 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  195 
+ The sample standard deviation is : 6 
+ The sample size is : 13 
+ 
+ The Pooled Standard Deviation is 7.81 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   2.858 | 2.975 } 
+ 
+ XX Use three decimal places. 
+ 
+
+ Suppose we have summary statistics for two samples: 
+ 
+ Sample 1 
+ ------------ 
+ The sample mean is:  195 
+ The sample standard deviation is : 11 
+ The sample size is : 12 
+ 
+ Sample 2 
+ ------------ 
+ The sample mean is:  210 
+ The sample standard deviation is : 7 
+ The sample size is : 8 
+ 
+ The Pooled Standard Deviation is 9.64 
+ 
+ XX Compute the Standard Error for Difference In Means 
+ XX Write your answer here:	{   4.312 | 4.488 } 
+ 
+ XX Use three decimal places. 
+ 

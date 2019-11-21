@@ -1,0 +1,326 @@
+
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.25  0.1  0.25  0.1  0.3
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 3.05 | 3.15 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.25  0.25  0.25  0.15
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 3.05 | 3.15 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.25  0.35  0.1  0.2  0.1
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 2.5 | 2.6 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.2  0.15  0.2  0.2  0.25
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 3.1 | 3.2 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.5  0.2  0.1  0.1  0.1
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 2.05 | 2.15 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.35  0.2  0.15  0.2
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 2.95 | 3.05 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.35  0.15  0.15  0.2  0.15
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 2.6 | 2.7 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.15  0.3  0.15  0.15  0.25
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 3 | 3.1 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.3  0.2  0.1  0.15  0.25
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 2.8 | 2.9 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.25  0.25  0.1  0.3  0.1
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 2.7 | 2.8 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.25  0.15  0.35  0.1  0.15
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 2.7 | 2.8 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.3  0.1  0.2  0.3  0.1
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 2.75 | 2.85 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.15  0.35  0.3  0.1  0.1
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 2.6 | 2.7 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.2  0.2  0.15  0.35  0.1
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 2.9 | 3 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.15  0.2  0.25  0.3
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 3.45 | 3.55 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.5  0.1  0.2  0.1
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 2.65 | 2.75 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.35  0.25  0.1  0.2
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 2.9 | 3 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.2  0.1  0.1  0.3  0.3
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 3.35 | 3.45 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.25  0.25  0.15  0.25
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 3.15 | 3.25 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.15  0.2  0.25  0.2  0.2
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 3.05 | 3.15 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.3  0.15  0.15  0.3  0.1
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 2.7 | 2.8 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.2  0.3  0.1  0.3
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 3.25 | 3.35 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.35  0.1  0.15  0.15  0.25
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 2.8 | 2.9 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.25  0.1  0.15  0.3  0.2
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 3.05 | 3.15 }.
+(Use two decimal places.)
+
+
+
+A random number generator generates 5 numbers:  [1, 2, 3, 4, 5].
+Consider these outcomes as a random variable named X.
+
+It generates each of these numbers with the following probabilities:
+      0.1  0.25  0.35  0.15  0.15
+
+What is the expected value of X, E(X).
+ 
+Write your answer here: { 2.95 | 3.05 }.
+(Use two decimal places.)

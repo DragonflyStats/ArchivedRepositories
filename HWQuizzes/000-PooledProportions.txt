@@ -1,0 +1,133 @@
+Suppose we have two statistical information on two samples:
+
+Sample 1
+The sample proportion is 0.7,
+and the sample size is 70.
+
+Sample 2
+The sample mean is 0.6,
+and the sample size is 50.
+
+
+Compute the pooled proportion
+Write your answer here:{0.648333333|0.668333333}
+Use four decimal places.
+
+
+
+Suppose we have two statistical information on two samples:
+
+Sample 1
+The sample proportion is 0.7,
+and the sample size is 85.
+
+Sample 2
+The sample mean is 0.65,
+and the sample size is 55.
+
+
+Compute the pooled proportion
+Write your answer here:{0.670357143|0.690357143}
+Use four decimal places.
+
+
+
+Suppose we have two statistical information on two samples:
+
+Sample 1
+The sample proportion is 0.75,
+and the sample size is 56.
+
+Sample 2
+The sample mean is 0.666,
+and the sample size is 45.
+
+
+Compute the pooled proportion
+Write your answer here:{0.702574257|0.722574257}
+Use four decimal places.
+
+
+
+Suppose we have two statistical information on two samples:
+
+Sample 1
+The sample proportion is 0.72,
+and the sample size is 50.
+
+Sample 2
+The sample mean is 0.66,
+and the sample size is 60.
+
+
+Compute the pooled proportion
+Write your answer here:{0.677272727|0.697272727}
+Use four decimal places.
+
+
+
+Suppose we have two statistical information on two samples:
+
+Sample 1
+The sample proportion is 0.76,
+and the sample size is 50.
+
+Sample 2
+The sample mean is 0.66,
+and the sample size is 72.
+
+
+Compute the pooled proportion
+Write your answer here:{0.690983607|0.710983607}
+Use four decimal places.
+
+
+
+Suppose we have two statistical information on two samples:
+
+Sample 1
+The sample proportion is 0.75,
+and the sample size is 52.
+
+Sample 2
+The sample mean is 0.66,
+and the sample size is 69.
+
+
+Compute the pooled proportion
+Write your answer here:{0.688677686|0.708677686}
+Use four decimal places.
+
+
+
+Suppose we have two statistical information on two samples:
+
+Sample 1
+The sample proportion is 0.75,
+and the sample size is 64.
+
+Sample 2
+The sample mean is 0.7,
+and the sample size is 70.
+
+
+Compute the pooled proportion
+Write your answer here:{0.713880597|0.733880597}
+Use four decimal places.
+
+
+
+Suppose we have two statistical information on two samples:
+
+Sample 1
+The sample proportion is 0.75,
+and the sample size is 68.
+
+Sample 2
+The sample mean is 0.7,
+and the sample size is 50.
+
+
+Compute the pooled proportion
+Write your answer here:{0.718813559|0.738813559}
+Use four decimal places.

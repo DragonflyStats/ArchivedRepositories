@@ -1,0 +1,217 @@
+F1 Web Careers
+F2 Careers for convergent networks
+F3 Network Basics
+F4 Network Connectivity
+F5 Network Standards
+F6 Internet Protocols
+F7 Accessing resources 
+
+F1 - WEB CAREERS
+F2 - CAREERS FOR CONVERGENT NETWORKS
+database administrators
+server administrators
+network engineers
+security managers / consultants analysts
+helpdesk technician
+repair technicians
+F3 - NETWORK BASICS  
+LANS & WANS
+F4 - NETWORK CONNECTIVITY
+computer
+operating system
+TCP/IP software
+client software
+internet connection  
+IP address
+
+Wireless Connections
+
+#### F5 - Network Standards
+IEEE 802.11  - wireless technology
+IEEE 802.11b - Wireless Fidelity (WiFi)
+IEEE 802.11a
+T carriers
+E carriers
+DSL (digital subscriber lines)
+rate adaptive DSL (RADSL)
+high bit rate DSL (HDSL)
+XDSL
+#### F6 - INTERNET PROTOCOLS
+IP PROTOCOLS
+e.g. 192.016.95.04
+4 billion combinations
+HTTP PROTOCOL
+File Transfer Protocol (FTP)
+SMTP - Simple Mail Transfer Protocol
+POP3
+IMAP4 - Internet message access protocol
+NNTP - network News Transfer Protocol
+Remote Access Protocols
+POINT TO POINT PROTOCOL
+Multilink PPP
+PPP Over Ethernet (PPPoE)
+### F7 - ACCESSING RESOURCES
+URLs
+Root level server - server at highes level of the DNS
+Some are restricted, Some, like dot-com, are not.
+Domains - '.com', '.biz ', ' .pro'
+locational - '.ie','.uk','.fr'
+
+
+
+CIW 2 - Revision notes
+
+Section
+F
+G
+H
+I
+
+
+
+I1 Introducing web databases
+I2 Querying data
+I3 Introducing search engines
+I4 Search engine Techniques
+
+
+
+
+CIW Foundation
+A1 Evolution of the Network
+A2 Network Basics
+A3 OSI reference model
+A4 Network Protocols
+A5 Network Topologies
+A6 Network Configurations
+A7 Network Equipment
+A8 Remote Connectivity Devices
+A9 Transmission media
+A10 Wireless networking
+A11 LAN Standards
+A12 Wireless networking Standards
+A13 WAN Standards
+B1 Internet Architecture and Protocols
+B2 Moving Data through the Internet
+B3 Identifying hosts and devices
+B4 Configuring devices on the network
+B5 Configuring an IP address
+B6 Communicating with hosts
+B7 Troubleshooting TCP/IP
+A10 Wireless Technologies
+DSSS Diresct Sequence Spread Spectrum
+FHSS Frequency Hopping Spread Spectrum
+AdHoc Mode
+Infrastruture mode - Systems connnect through a centralized Access point - The Wireless Access Point (WAP)
+WAP provides Network Protection and Centralized acccess control
+Wardriving - searching for and using unprotected wireless networks
+[WEP] Wired Equivalent Protocol
+
+A11
+MAC addresses
+IEEE 802.3u Fast Internet
+IEEE 802.3z and 803.3ab Gigabit Ethernet
+F. IEEE 8.2.12 100VG AnyLan
+Appletalk
+FDDI
+A12 Wirelss Networlking Standards
+A13 WAN Standards
+` T carrier System
+
+B1 Internet Archtiecture and Protocols
+B2
+B3 Identying hosts and devices
+B4 Configuring devices on the network
+B5 Configuring an IP
+B6 Communicating with Hosts
+B7 Troublshooting TCP Ip
+C1
+C2
+C3
+C4
+C5
+C6
+C7
+D1 Common services
+D2 Communication services
+D3 Http Servers
+D4 Common web servers
+D5 Domain name servers
+D6 Proxy servers
+D7 Other Servers
+E1 Network attacks
+E2 Protecting networks
+E3 Authentication Principles
+E4 Encryption
+E5 Remote Access methods
+E6 Firewalls
+E7 Security Zones
+E8 Firewall Topology
+
+
+
+
+
+
+Section L
+
+L1 Encryption
+L2 Authentication
+L3 Firewalls
+L4 Malware
+L5 Maintaining Computers
+L6 Privacy and Security Issues
+
+
+
+A13  T carriers
+T1
+T2
+T3
+T4
+Fractional T1 is a serviceaimed at customers who dont need all the
+24 DSO Channels of a full T1 Line
+F Carrier System
+G Sonet SDH
+B2 Direct Routing/Indirect Routing
+Types of Routers - Static or Dynamic
+Interior or Exterior
+Port numbers - Well known Registered Dynamic
+B3 Identifying Hosts and Devices
+IP address> Subnet Mask > Network ID > HostID
+Class A
+Class B
+Class C
+Class D
+IPv6 - Advantages
+B4 Broadcast Addresses
+DNS
+WINS
+DHCP
+APIPA
+B5 Configuring an IP Address
+>Network and Dial Up Connections
+>Local Area Connection
+>Properties
+>Contol Panel
+>Internet Protocol
+>Properties
+B6 Communicating the Hosts
+The Hosts File
+Imhost
+DHCP Server contains a pool of IP Addresses
+B7 Troubleshooting TCP-IP
+a) Ping
+b) TRACERT
+c) Route
+d) Netstat
+e) Nbstat - used in Microsoft Systems using TCP/IP
+f) Ipconfig
+g) Winipconfig
+h) ARP
+
+D6 Linux - Dump - Restore
+D7 Resolving Software Problem
+Operating System Boot Failures
+Hardware
+Application Failures

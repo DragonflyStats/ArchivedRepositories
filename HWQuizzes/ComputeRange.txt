@@ -1,0 +1,175 @@
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 72 49 99 61 59 74 80 35 85 88 98 61 
+ 
+ XX Write your answer here:	{   64 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 63 53 68 45 39 22 41 92 27 88 77 55 
+ 
+ XX Write your answer here:	{   70 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 36 69 23 57 87 44 61 51 70 80 65 
+ 
+ XX Write your answer here:	{   64 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 72 49 57 88 83 59 31 73 75 47 66 26 
+ 
+ XX Write your answer here:	{   62 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 92 83 69 79 65 70 84 37 30 35 93 
+ 
+ XX Write your answer here:	{   63 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 88 62 31 24 77 36 54 96 95 28 35 
+ 
+ XX Write your answer here:	{   72 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 44 37 95 62 47 42 66 34 79 88 
+ 
+ XX Write your answer here:	{   61 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 23 71 32 30 60 67 36 90 92 67 89 65 25 
+ 
+ XX Write your answer here:	{   69 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 81 31 98 51 96 60 24 99 46 69 63 
+ 
+ XX Write your answer here:	{   75 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 64 99 54 79 29 62 85 47 84 90 24 92 71 25 
+ 
+ XX Write your answer here:	{   75 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 27 98 68 92 90 67 99 92 99 89 42 43 38 
+ 
+ XX Write your answer here:	{   72 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 93 77 47 80 64 69 31 34 60 72 68 64 96 
+ 
+ XX Write your answer here:	{   65 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 77 21 84 54 98 37 29 78 79 26 100 
+ 
+ XX Write your answer here:	{   79 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 78 54 60 70 81 34 53 91 45 42 36 
+ 
+ XX Write your answer here:	{   57 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 27 60 76 63 67 36 96 78 100 94 87 46 52 
+ 
+ XX Write your answer here:	{   73 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 21 79 64 31 47 60 64 37 87 24 54 41 52 55 
+ 
+ XX Write your answer here:	{   66 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 36 26 45 64 76 88 94 88 66 68 63 73 95 74 
+ 
+ XX Write your answer here:	{   69 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 69 99 37 44 96 72 66 22 88 53 43 39 21 35 
+ 
+ XX Write your answer here:	{   78 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 78 90 95 56 99 72 64 75 44 66 
+ 
+ XX Write your answer here:	{   55 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 22 50 43 32 24 43 61 21 75 55 87 
+ 
+ XX Write your answer here:	{   66 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 38 80 53 54 27 58 54 71 57 41 
+ 
+ XX Write your answer here:	{   53 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 38 44 56 86 37 62 51 72 28 48 
+ 
+ XX Write your answer here:	{   58 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 92 37 79 53 29 78 59 28 89 93 88 80 36 83 
+ 
+ XX Write your answer here:	{   65 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 76 35 55 28 59 73 100 93 43 34 67 
+ 
+ XX Write your answer here:	{   72 } 
+ 
+
+ XX Compute the Range of the following data set X: 
+ 
+ X : 45 49 73 92 80 76 86 23 81 72 
+ 
+ XX Write your answer here:	{   69 } 
+ 
