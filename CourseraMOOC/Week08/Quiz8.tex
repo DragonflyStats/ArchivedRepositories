@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+
+%opening
+\usepackage{framed}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+
+
+\section{Data Analysis : Week 8 Quiz}
+%--------------------------------------------------------------------%
+
+% False positive rate
+% MCPs / FWER / FDR /
+
+% http://www.gs.washington.edu/academics/courses/akey/56008/lecture/lecture10.pdf
+Why Multiple Testing Matters
+In general, if we perform m hypothesis tests, what is the
+probability of at least 1 false positive?
+\begin{itemize}
+\item P(Making an error) = $\alpha$
+\item P(Not making an error) = $1 - \alpha$
+\item P(Not making an error in m tests) = $(1 - \alpha)^m$
+\item P(Making at least 1 error in m tests) = $1 - (1 - \alpha)^m$
+\end{itemize}
+
+%--------------------------------------------------------------------%
+
+\subsection*{Question 1}
+Suppose this is the result of 85 hypothesis tests:
+
+![Question 1 Table](https://spark-public.s3.amazonaws.com/dataanalysis/quiz8q1.png)
+
+
+What is the 
+(observed) rate of false discoveries? What is the (observed) rate of
+false positives?
+\begin{itemize}
+\item False discovery rate = 0.25 False positive rate = 0.10  
+\item False discovery rate = 0.09 False positive rate = 0.20  
+\item False discovery rate = 0.17 False positive rate = 0.33  
+\item False discovery rate = 0.20 False positive rate = 0.09  
+\item False discovery rate = 0.33 False positive rate = 0.17
+\end{itemize}
+
+%--------------------------------------------------------------------%
+\newpage
+\subsection*{Question 2}
+Generate P-values according to the following code:
+
+\begin{framed} 
+\begin{verbatim}
+set.seed(3343)
+pValues = rep(NA,100)
+for(i in 1:100){
+  z = rnorm(20)
+  x = rnorm(20)
+  y = rnorm(20,mean=0.5*x)
+  pValues[i] = summary(lm(y ~ x))$coef[2,4]
+}
+\end{verbatim}
+\end{framed}
+
+How many are significant at the alpha = 0.1 level when controlling the family
+wise error rate using the methods described in the lectures? 
+When controlling the false discovery rate at the alpha = 0.1 level as described in the lectures?
+\begin{enumerate}
+\item FWER = 61 FDR = 7
+\item FWER = 7 FDR = 61 
+\item FWER = 5 FDR = 32  
+\item FWER = 3 FDR = 13 
+\item FWER = 3 FDR = 5  
+\item FWER = 32 FDR = 5
+\end{enumerate}
+\end{document}
