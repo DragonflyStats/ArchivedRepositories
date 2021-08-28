@@ -1,0 +1,58 @@
+Course Syllabus
+Topics covered include:
+
+The Bayesian network and Markov network representation, including extensions for reasoning over domains that change over time and over domains with a variable number of entities
+Reasoning and inference methods, including exact inference (variable elimination, clique trees) and approximate inference (belief propagation message passing, Markov chain Monte Carlo methods)
+Learning parameters and structure in PGMs
+Using a PGM for decision making under uncertainty.
+There will be short weekly review quizzes and programming assignments (Octave/Matlab) focusing on case studies and applications of PGMs to real-world problems:
+
+Credit Scoring and Factors
+Modeling Genetic Inheritance and Disease
+Markov Networks and Optical Character Recognition (OCR)
+Inference: Belief Propagation
+Markov Chain Monte Carlo and Image Segmentation
+Decision Theory: Arrhythmogenic Right Ventricular Dysplasia
+Conditional Random Field Learning for OCR
+Structure Learning for Identifying Skeleton Structure
+Human Action Recognition with Kinect
+
+
+Probabilist Graphical Models
+http://www.pgm-class.org/
+Octave or MatLab
+January 2012
+
+Markov Models
+Bayesian Models
+Ising Models
+
+A Markov network represents the joint probability distribution over events which are represented by variables
+Nodes in the network represent variables
+
+A table (also called a potential or a factor) could potentially be associated with each complete subgraph in the network graph.
+Table values are typically nonnegative
+Table values have no other restrictions
+Not necessarily probabilities
+Not necessarily < 1
+
+
+Steps for calculating the 
+probability distribution
+
+
+Method is similar to Bayesian Network
+Multiply the distribution of factors (potentials) together to get joint distribution.
+Normalize table to sum to 1.
+
+Converting between a Bayesian network and a Markov network
+
+Same data flow must be maintained in the conversion
+Sometimes new dependencies must be introduced to maintain data flow
+When converting to a Markov net, the dependencies of Markov net must be a superset of the Bayes net dependencies. 
+I(Bayes) in I(Markov)
+When converting to a Bayes net the dependencies of Bayes net must be a superset of the Markov net dependencies. 
+I(Markov) in I(Bayes)
+
+
+

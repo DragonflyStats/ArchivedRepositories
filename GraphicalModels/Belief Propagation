@@ -1,0 +1,8 @@
+Introduction To Belief Propagation
+%----------------------------------------------------------------------------%
+This tutorial introduces belief propagation in the context of factor graphs and demonstrates 
+its use in a simple model of stereo matching used in computer vision.
+
+It assumes knowledge of probability and some familiarity with MRFs (Markov random fields), but no 
+familiarity with factor graphs is assumed.
+%----------------------------------------------------------------------------%

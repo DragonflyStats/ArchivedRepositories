@@ -1,0 +1,409 @@
+Syntactic analysis
+
+Let's proceed then to syntactic analysis. The topic is too big to cover thoroughly here, so I'm just going to try to summarize the main issues and use examples to give insight into some of the problems that arise.
+
+Parsing would seem to be a rather easy mechanical process. Given a lexicon telling the computer the part of speech for a word, the computer would be able to just read through the input sentence word by word and in the end produce a structural description. But problems arise for several reasons. First of all, a word may function as different parts of speech in different contexts (sometimes a noun, sometimes a verb, for example). For example, "the fox runs through the woods" treats "fox" as a noun, whereas "the fox runs through the woods were easy for the hounds to follow" uses it as an adjective. You don't know how "fox" is used until you read the entire sentence.
+
+So we have to determine which part of speech is relevant in the particular context at hand. Second, and related to this, there may be several possible interpretations of the structure of a sentence. How are we to decide which is the correct analysis? Third, in searching for the interpretation of a sentence, there may be different ways to do this, some more efficient than others. Such problems and issues complicate what might at first seem to be a simple task.
+
+Processing a sentence syntactically involves determining the subject and predicate and the place of nouns, verbs, pronouns, etc. Given the variety of ways to construct sentences in a natural language, it's obvious that word order alone will not tell you much about these issues, and depending on word order alone would be frustrated anyway by the fact that sentences vary in length and can contain multiple clauses.
+
+I must again mention that tokenization must occur to get to the point of enabling syntactic analysis. Every programming language compiler or interpreter must have some kind of built-in tokenizer that affords recognition of the ASCII characters typed at the keyboard or input from a file as data or commands of a particular type. The language will have certain predefined data types that it can recognize: integers, floating-point numbers, characters, and perhaps strings, which are clusters of uninterpreted characters. If we are building a natural language processor by writing a program in a particular language, then we must construct a natural language tokenizer that will take strings and convert them into distinct words (in ASCII, a space is represented by an ASCII code too, so don't think of spaces as sort of empty things that the computer can just "know" separate words.) This is why tokenization on the part of the natural language processor might be seen as the first step in parsing.
+
+As an aside, we point out that Prolog, like any other programming language, has a built-in tokenizer that allows it to recognize valid data types that exist in Prolog. Insofar as Prolog can recognize these as not only tokens but also as Prolog commands, it is not just a tokenizer but a built-in reader. The built-in reader can be used to build a Prolog natural language tokenizer that can tokenize strings that consist of valid Prolog terms. Using this Prolog reader, and a built-in "operator" predicate to define other operators that can connect nouns, for instance, an elementary natural language processor can be built that can parse simple sentences. So perhaps Prolog has an advantage over other languages when it comes to building a simple natural language processor. However, the types of sentences that can be parsed is so limited that another approach must be used for anything resembling a useful natural language processor for ordinary conversation.
+
+These preliminary issues out of the way, lets discuss the notion of a grammar. We will also discuss ways to represent syntactic structure, and different parsing algorithms and types.
+
+A grammar comprises the rules for constructing sentences in the language. Allen mentions that several components distinguish a good grammar from a poor one. Generality involves the range of sentences the grammar analyzes correctly. Selectivity involves the range of non-sentences it identifies as problematic. Understandability is the simplicity of the grammar. So a good grammar will have generality, selectivity, and understandability.
+
+We must note that there are two different grammars or senses of "grammar" being considered here. First, as a method or set of rules for constructing sentences in a particular language, a grammar defines whether a sentence is constructed correctly (maybe a purported sentence is not even a sentence if it doesn't follow the grammar). Thus English grammar exists whether I construct a computer to process natural languages or not. But secondly, there is the grammar I construct in my natural language processor. These two grammars are not the same, or perhaps they are not the same uses of the term "grammar." Grammar in the first sense defines the language, and in this sense of the term "grammar" it makes no sense to say that the grammar analyzes the sentence correctly or incorrectly; grammar in this sense doesn't analyze anything. If it's defining the language itself, it can't get it wrong. Only in the second instance of "grammar," where it means the method of analysis or the rules used in my natural language processor, can it be good or bad at finding out whether the sentence is proper or improper. The language has its own grammar (sense one), and the grammar (sense two) I am developing will or will not be a good one if it makes the right judgments corresponding to accepted sentences defined by the language's own grammar.
+
+Discussions of syntactic analysis distinguish among different types of grammar, meaning grammar in this second sense of the rules being followed in the natural language processor under construction. Thus some grammars prove more useful in trying to parse natural language sentences than others do. Discussions also distinguish among different types of parser. Here is where things get complicated and sometimes unclear in the literature. Recall that we distinguished among different components that any parser will have: the grammar, the algorithm, and the oracle. Because each of these components can vary among parsers, it seems there may be several different ways to classify parsers. For example, one could classify parsers by grammar, or by algorithm, or by grammar-algorithm combination, or perhaps in some other way. There are several aspects to the algorithm of a parser, so one might even let these differences further influence the classification. Thus it seems there are potentially many different ways to classify parsers, and this leaves one confused by phrase such as "there are three types of parser�" For someone to claim that there are three types of parser, a particular classification scheme must have been adopted implicitly, or one must be speaking of common types that have historically been adopted and identified as such.
+
+For example, it is sometimes said that there are three types of parser:
+Noise-disposal parsers
+State-machine parsers (finite-state machine parsers)
+Definite clause grammar parsers (similar to phrase structure grammar parsers)
+This may be accurate, but the types seem mixed together. A noise-disposal parser does not even use a proper grammar. To say that a parser is a state-machine is to classify it on the way it works, not on the grammar it uses. To say a parser is a definite clause grammar parser is to classify it on the basis of the type of grammar it uses. If we sometimes skip around in the following discussion, it is because various types of classification are often thrown together in the literature discussions.
+
+Back to grammars. To see how grammar in a natural language works, many investigators, as a preliminary, first try to develop an understanding of a context-free grammar (CFG). Just like it sounds, a context-free grammar consists of rules that apply independent of the context, whether the context of other elements or parts of the sentence or of the larger discourse context of the sentence. Natural languages are not thought to be fully analyzable using context-free grammars, for some influences may hold among different parts of a sentence, for example, the tense and person of various parts of a sentence must agree. But context-free grammars are a good starting place for understanding the topic. We haven't discussed parsers yet, but I will note that context-free parsers are used in virtually all computer languages, and thus a natural language parser can use some of the parsing techniques developed for such contexts. And this type of parsing can parse whole phrases and not just words, which enables it to work with related groups of words.
+
+The rules of a grammar allow replacing one view of an element with particular parts that are allowed to make it up. For example, a sentence consists of a noun phrase and a verb phrase, so to analyze a sentence, these two types can replace the sentence. This decomposition can continue beyond noun phrase and verb phrase until it terminates. Thus at any given step in the analysis, each part of a sentence can be seen as a terminal or non-terminal. Terminals would be the actual individual words (you can't analyze them further) and non-terminals would be clauses or phrases that are not yet fully broken down. So a non-terminal can be defined in terms of other elements, typically recursively, until terminals are reached. For example, consider the particular sentence that can be defined in terms of a noun phrase and a verb phrase. The noun phrase is a non-terminal, which is then defined in terms of a determiner followed by a noun. The noun is a terminal, so it is not defined further, but the determiner is a non-terminal defined in terms of "the," "a," and "an," which are terminals and are not defined further. These rules for such substitution are rewrite rules or production rules of how each of the parts may be constructed from others.
+
+In the following examples, we're going to use two expressions of decomposition. The first expression occurs in the statement of the rules themselves. These are the rules of grammar; they allow substitution in any parsing. The second expression occurs when we use the rules to express the actual analysis of a particular sentence; this is what parsing is. In either case mentioned below, we're going to introduce some of the common notations that are used in discussing syntactic analysis.
+
+There are a variety of notations that may be used to represent the rewrite rules of a grammar; these notations include trees and lists that use various symbols. An example of a context-free grammar is the following, using an arrow operator to express allowable decomposition:
+
+s -> np, vp.
+vp -> tv, n.
+vp -> iv.
+np -> pron.
+pron -> [he].
+n -> [apples].
+tv -> [eats].
+iv -> [sleeps].
+Abbreviations are also used. Here "s" refers to "sentence," "np" to "noun phrase," "vp" to "verb phrase," "tv" to "transitive verb," "n" to "noun," "iv" to "intransitive verb," "pron" to "pronoun," and the terms in brackets are actual words of the vocabulary. So these might be some of the allowable rules in a grammar, and they could be applied as rewrites in a parsing.
+
+A common notation used for writing context-free grammars is Backus-Naur form. In Backus-Naur form:
+An element's name is on the left and its definition is on the right
+The name of only one element appears on the left
+The symbol ":: =" separates the name from the definition
+The definition consists of terminal and/or nonterminals separated by commas
+A vertical bar in the definition, with a value on either side, and the expression enclosed in square brackets, functions as an "or" to indicate either value can be used
+A vertical bar on the right can separate definitions, either of which can be used.
+Grammar rules state acceptable forms of sentences, etc.
+For example, a number may be defined as a digit or a plus or minus sign followed by a number:
+number :: = digit | [ + | - ] number
+Here are the Backus-Naur representations of the sentences "susan runs" and "a boy plays" :
+ :: =  
+ :: =  |  
+ :: = susan
+ :: = a
+ :: = boy
+ :: = runs | plays
+To make these clearer, we can turn the above into a set of grammar rules with a slightly different notation:
+sentence -> noun-phrase,  verb.
+noun-phrase -> name.
+noun-phrase -> determiner, noun.
+name -> [susan].
+determiner -> [a].
+noun -> [boy].
+verb -> [runs].
+verb -> [plays].
+This should be rather easy to read. A sentence can be rewritten as a noun-phrase and a verb. A noun-phrase can be a name, or a determiner and a noun, etc.
+
+Another way to represent a sentence analyzed in accordance with a context free grammar is in a list structure. In a list notation, Allen's example of "John ate the cat" is
+
+(S	(NP	(NAME John))
+	(VP	(V ate)
+		(NP	(ART the)
+			(N cat))))
+Here the sentence (S) is represented on the far left, and each stage to the right breaks it up on several lines. So moving from sentence, we break it up into a noun phrase (NP) and a verb phrase (VP), with the noun phrase consisting of the name "John," the verb phrase consisting of the verb "ate" and a noun phrase, and that noun phrase consisting of the article "the" and the noun "cat."
+
+Again, to construct a tree or a list like that above, we must know the rewrite rules that let us replace one part by its components. Recall that a grammar is a formal specification of the structures allowable in the language. A parsing technique is the method of analyzing a sentence to determine its structure, in accordance with the grammar.
+
+Let's talk more about parsing methods. As can be observed above, grammars have a special symbol called a start symbol, which might be S for sentence. A grammar can be said to derive a sentence if a sequence of rules would allow you to rewrite the start symbol into the sentence. Two processes are based on such derivations: generation, and parsing. Generation is when you start from the S symbol and obtain a sequence of words by applying the rewrite rules. These could be applied randomly if you wanted to generate just any old sentence. As we have seen, parsing identifies the structure of the sentence given a particular grammar, so its not going to proceed by randomly applying rules but rather in some systematic fashion. And it has to test the results against the actual sentence under examination as it proceeds.
+
+Besides involving the rules of the grammar, parsing will involve a particular method of trying to apply the rules to the sentences. This is the parsing algorithm. Allen defines a parsing algorithm as a procedure that searches through various ways of combining grammatical rules and finds a combination of these rules that generates a tree or list that could be the structure of the input sentence being analyzed.
+
+It seems to me there are two aspects involved in this algorithm. First, parsing searching methods can be top-down or bottom-up. A top-down strategy starts with S and searches through different ways to rewrite the symbols until it generates the input sentence (or it fails). Thus S is the start and it proceeds through a series of rewrites until the sentence under consideration is found.
+
+S
+NP VP
+NAME VP
+John VP
+John V NP
+John are NP
+John are ART N
+John ate the N
+John ate the cat
+In a bottom-up strategy, one starts with the words of the sentence and used the rewrite rules backward to reduce the sentence symbols until one is left with S.
+
+John ate the cat
+NAME ate the cat
+NAME V the cat
+NAME V ART cat
+NAME V ART N
+NP V ART N
+NP V NP
+NP VP
+S 
+A top-down parser would "think"along the following lines: "To find a sentence meaning S : vp np, find a noun phrase meaning np to the left of a verb phrase meaning vp." Bottom-up would be "If you find a noun phrase meaning np to the left of a verb phrase meaning vp, make them into a sentence meaning S : vp np." Of course the bottom-up parser would probably be starting at a lower level than this.
+
+Besides the choice of strategy direction as top-down or bottom-up, there is also the aspect of whether to proceed depth-first or breadth-first. To understand the difference between these two strategies, it helps to have worked through searching algorithms in a data structures course, but I'll try to explain the main idea. Let's apply it to a top-down instance of a different sort. Imagine different ways of breaking down the number sixteen into sixteen individual ones. Suppose we try to break this down by constructing a tree structure, with the number sixteen at the top. Under this we write two eights. Then we write two fours under the first eight. Now what do we do? We can take the first four and break that into two twos. This would be a depth-first strategy because we try to go deep before going wide. Or we can take the second eight and break this into two fours. This is breadth-first, because it tries to traverse the breadth of the tree before going deep.
+
+Basically, the parser can work either of these two ways in parsing. The algorithm will take a sentence and consider a variety of grammatical possibilities for it. For example, it considers the first possible rewrite that interprets it in some particular way, say as having two constituents. Then there will be two ways to go. It can take the first constituent and consider the possibilities for that, which might break it down into two constituents, and then take the first constituent of that part, etc. It goes all the way down those first possibilities before it back tracks one level and tries the second possibility of the lowest level rewrite. This would be a depth-first strategy. Or, after the original consideration of the first possibility with the rewrite, it can move on to the next part of the sentence directly, rather than considering all the possibilities generated for the first part of the first part of the first part, etc. This would be a breadth-first strategy. Another way to understand this is to
+
+The standard PROLOG interpretation algorithm has the same search strategy as the depth-first, top-down parsing algorithm. This makes PROLOG amenable to reformulating context-free grammar rules as clauses in PROLOG if one wishes to pursue this strategy.
+
+So we have the notion of a grammar and of a parser, and we also have the notion that parsers can pursue different parsing strategies. Let's take a step back and note some actual parsing methods discussed in many AI books. We already mentioned that books commonly discuss three types of parsers used in natural language processors:
+
+Noise-disposal parsers
+State-machine parsers (finite-state machine parsers)
+Definite clause grammar parsers (similar to phrase structure grammar parsers)
+A noise-disposal parser scans a sentence looking for selected words, which are in its defined vocabulary. When one of the words is found, the computer initiates the desired action. During the perusal, any words not in the list of those the computer is looking for are considered "noise" and discarded. It seems to me this type of parser doesn't really use a grammar in any realistic sense, for there are not rules involved, just vocabulary.
+
+Obviously a noise-disposal type of parser has a limited application. Maybe it can be used to tell a computer to open a particular file, with the computer looking for any input with the word "open" and the name of a file listed in its current directory. But even such a simple system could go wrong, for it might cause an action to occur when not desired if the user types in a sentence that used words in the selected list in a way the programmer did not envision. For example, the parser set up to "clear data" when it sees those two terms in a sentence such as "Clear the data from the database" might initiate such an action on reading "Clear the top of the data operations workspace." Here the user has intended something different than the action accomplished.
+
+The next type of parser on the above list is the state-machine parser. It starts by reading the first word in the input sentence. The words read are compared to the vocabulary, and once the type of word is ascertained, the machine predicts the possibilities for the next word. So after choosing one word, your choice for the next word will be limited to what is grammatically correct. The choice of this second word limits what can be used as a third, etc. So the state-machine parser changes its state each time it reads the next word of a sentence, until a final state is reached.
+
+This finite-state grammar approach views sentence production and analysis as a transition through a series of states. One way to represent these states is as nodes in a diagram, with arrowed lines (arcs) connecting them. The states and transitions compose the finite-state grammar, which may be called a transition network.
+
+We can see that two databases are needed for this kind of parser: one containing a vocabulary of words and their types, and the other containing the current state of the sentence bring parsed. For example, suppose the machine reads in a word and its vocabulary recognizes it as a noun. This puts the machine in a particular state to expect only certain kinds of words to follow, such as a verb. The next word is then read in, and the machine moves from one state to another. Eventually the machine will be able to report the parts of the sentence, and remove some types of possible ambiguity. The machine will be able to judge whether the sentence is grammatically correct or not because it knows the allowable type of speech for particular positions. If this program is written in Prolog, when the machine reaches a particular point in the sentence and it will not parse, then it can backtrack to an earlier point and try another interpretation of the earlier word. This takes advantage of a ability of Prolog to backtrack.
+
+The state-machine parser is based on a finite-state syntax, which "assumes" that humans produce sentences one word at a time. Some authors seem to think that this type of parser is based on a particular understanding of how humans produce sentences. Maybe it was originally, but I think that now one could build a state-machine parser for a particular application because it is useful and yet claim that humans actually build sentences in an entirely different way. As an example of how humans do make state transitions when parsing sentences, consider the following "garden path" sentences.
+
+The steel ships are transporting is expensive.
+The old man the boats.
+At first you stumble over the first sentence until you realize that the main noun in the subject is "steel." You may have taken the sentence to be about steel ships and then, when the rest of the sentence failed to parse correctly, you backtracked and recategorized "steel" from an adjective to a noun. In the second sentence you probably thought it was about an old man, but this caused you to expect a verb after "man." Finding "the" forced you to backtrack and change the categorization of "old" to a noun and "man" to a verb.
+
+It seems to me that this type of parser pursues a bottom-up, breadth-first strategy. Critics complain that a problem with this type of parser is that it has to include very many words and their lexical categorization. Many words, as in the above example, fit into more than one category, thus requiring additional information to be stored and adding complexity and time to the searching routines. But the large lexicon would presumably be needed anyway if we were trying to develop a parser to fully handle a natural language, so whether this will be a special problem caused by this type of parser will depend on what one is trying to do.
+
+It seems to me that the fact that the machine is able to predict next words as only one of a number of possible types may allow the removal of some ambiguity and enable it to classify words not in its vocabulary. But this will be rare, and so the vocabulary list is going to have to be quite large to do anything useful. And complex sentences can confuse a typical state-machine parser. For example, Chomsky noted that any sentence in English can be extended by appending or including another structure or sentence. Thus "The mouse ran into its hole" becomes "The cat knows the mouse ran into its hole" and then "The cat the dog chased knows the mouse ran into its whole" etc. ad infinitum. Finite-state grammars are not recursive and thus can stumble on long sentences thus extended, perhaps stuck on extensive backtracking.
+
+It seems to me that, given an infinitely fast computer with an infinite amount of storage space, and an infinite time to program the vocabulary, a state-machine parser would correctly interpret many sentences in the language by a sort of brute-force method. Each word read would throw the computer into a state that eliminated many possibilities, until the exact sentence had been read in and the computer was in a state that provided the interpretation of just that particular sentence. (Some types of ambiguity that could not be settled except by reference to the larger context would not be resolved. This deals with pragmatics). Of course, my machine is not that fast or large, and I don't have that much time. The impossibility of building just such a program and computer shows the unfeasibility of this approach.
+
+One author notes two opposite approaches to natural language processing. One approach tries to use all the information in a sentence, as a human would, with the goal of making the computer able to process to the degree that it could converse with a human. The other approach allows the computer to take natural language sentences, but seeks only to extract that information needed to recognize a command. The first two types of parsers we have just discussed follow this latter approach.
+
+We already mentioned that although context-free grammars are useful in parsing artificial languages, it is debatable to what extent a natural language such as English can be modeled by context-free rules. But additional complications are due to differences between natural and artificial languages. The number of grammar rules for a natural language is large. And contextual information within the sentence can be useful in analyzing a natural language. So many natural language parsers make use of a different grammar and a different parser to go with this grammar.
+
+The definite clause grammar parser, which seems to me to be a sort of phrase structure grammar parser that uses a definite clause grammar, is considered more sophisticated than the finite-state machine parser. Phrase structure grammar stems from Zelig Harris (1951), who thought of sentences as comprising structures. The parsing of such sentences requires a top-down recursive analysis of the components until terminating units (words) are reached. Thus the definite clause grammar parser will be a top-down, most likely depth-first, parser.
+
+A natural language processor using a DCG first breaks up a sentence into its component parts. It begins with the basic noun phrase and verb phrase and eventually delineates the nouns, verbs, prepositions, etc. It thus proceeds in a top-down fashion, with each pass breaking up each unit further in a recursive fashion until the entire sentence is parsed. For example, "Jack ran quickly to the house" is broken into the noun phrase "Jack" and the rest is the verb phrase. The verb phrase is then broken down into the verb "ran," the adverb "quickly," and the noun phrase "to the house." This noun phrase is further broken up into preposition and noun phrase, and the noun phrase then into article and noun. To get started, the program has a vocabulary of words, and it goes through the sentence looking for the noun phrase. It encounters the first word in the sentence to be a noun, and so the rest is considered a verb phrase. Obviously though, the vocabulary is going to have to be quite large to pick up on all possible nouns, etc.
+
+As we have noted, strictly speaking a definite clause grammar is a grammar, not a parser, and like other grammars, DCG can be used with any algorithm/oracle to make a parser. To simplify, we are assuming certain notions about the algorithm commonly used in parsers using DCG, and we get these assumptions by the literature describing DCG parsers.
+
+DCG is similar to Backus-Naur form, with the operator "- - >" replacing ":: =." This - - > symbol is a standard operator in Prolog, and Prolog converts a DCG clause into a Prolog clause to the effect that the left hand side succeeds if the right hand side succeeds, and the right hand side succeeds if etc. Thus Prolog has built into it the definite clause grammar (DCG) parsing technique. (DCGs do not take advantage of the Prolog reader and so the input stream has to be tokenized.) One can now see the advantage of using Prolog in this type of application. In fact one author states that context-free grammars and definite clause grammars are in effect Prolog programs.
+We have been trying to distinguish between the definite clause grammar part of the definite clause grammar parser and the phrase structure grammar parsing algorithm part of the definite clause grammar parser. Let's turn to the former aspect. One of the improvements that DCG allows over the context-free grammar (Backus-Naur) form in Prolog is that DCG can contain other information such as tense, number, and gender about the parts of a sentence. Recall that these had to be left out of the context-free grammar, since CFG requires that each part of a sentence be parsable independent of the other parts. The DCG allows the inclusion of additional arguments to handle this information; the parser can then tell whether the noun-phrase and verb-phrase are each singular or plural, for example, so that the parser can make sure they agree. (As well, the DCG can contain executable goals within curly braces; these goals are not executed until a statement is parsed. This has to do with how Prolog reads statements and cannot really be explained without going too far into Prolog here.)
+
+This obviously gives DCG an advantage over a context-free grammar in handling a natural language. Grammar in a natural language includes the parts of a sentence agreeing in the tense, person, gender, etc. This extra information may be considered context information, and context-free grammars will not include it. So definite clause grammars improve on context-free grammars in this regard by allowing the storage of such information. Because the grammar definitions are parsed in a recursive fashion, information interpreted at any point can be passed forward or backward to be compared to such information for other parts of the sentence. And other information can be stored too. Variables can be qualified or quantified (use of "any" for example). Verbs can be defined as transitive or intransitive (take a direct object or not).
+
+But even a DCG parser will not resolve all problems of ambiguity. Several interpretations (alternative syntactic analyses) of a sentence may be possible, due to the fact that an individual term could be a noun or a verb, for example, or the fact that pronouns may have any of several referents. The use of heuristics may be pursued to help choose between alternative syntactic analyses, although these heuristic principles may be difficult to encode as rules in a program. Here are two examples of such principles, based on psychological principles humans seem to follow:
+
+Minimal attachment principle: prefer a syntactic analysis that creates the least number of nodes on the parse tree. Thus in "the man kept the dog in the house," the interpretation is that "in the house" applies to "kept" rather than "dog." This is because the former interpretation creates fewer nodes by breaking up the verb phrase "kept the dog in the house" into a verb (kept), noun phrase (the dog), and prepositional phrase (in the house), rather than a verb (kept), and noun phrase (the dog in the house), with this last noun phrase requiring additional breakdown into noun phrase (the dog) and prepositional phrase (in the house).
+Right association (late closure): all other things being equal, interpret new constituents as part of the current constituent under construction, rather than part of some constituent higher in the parse tree. Thus in "George said that Henry left in his car," the interpretation is that Henry left in the car rather than George spoke in the car.
+Another attempt to avoid ambiguity is based not on the encoding of heuristic rules but on probability theory. The basic idea is that alternative syntactic analyses can be accorded a probability, and the algorithm can be directed to pursue interpretations having the highest probability.
+
+The end result of syntactic analysis is that the computer will arrive at a representation of the syntactic structure of the input sentence. The exact form of this representation will depend on the nature of the NLP and the language in which it is written, but it will likely consist of a series of rewrite statements that will probably carry some additional parameters or arguments to indicate some of the sentential context information about person, tense, etc.
+
+Semantic analysis
+
+Once the computer has arrived at an analysis of the input sentence's syntactic structure, a semantic analysis is needed to ascertain the meaning of the sentence. Two caveats are needed before I proceed. First, as before, the subject is more complex than can be thoroughly discussed here, so I will proceed by describing what seem to me to be the main issues and giving some examples. Second, I act as if syntactic analysis and semantic analysis are two distinct and separated procedures when in an NLP system they may in fact be interwoven.
+
+From the syntactic structure of a sentence the NLP system will attempt to produce the logical form of the sentence. Logical form is context-free in that it does not require that the sentence be interpreted within its overall context in the discourse or conversation in which it occurs. And logical form attempts to state the meaning of the sentence without reference to the particular natural language. Thus the intent seems to be to make it closer to the notion of a proposition than to the original sentence.
+
+I follow Allen's distinctions here. This context independent sense, or logical form, is the meaning. The actual context dependent sense, which ultimately must be considered after a semantic analysis, is the usage. Allen notes that it is not clear that there really is any context independent sense, but it is advantageous for NLP to try to develop one. Mapping a sentence to its logical form, or meaning, is called "semantic interpretation," and mapping the logical form to the final knowledge representation (KR) is called "contextual interpretation." We should not overemphasize the relevance of context however; obviously it is not the whole story. Much of semantic meaning is independent of context, and the type of information found in dictionaries, for example, can be used in the semantic analysis to produce the logical form. Relevant information here includes the basic semantic properties of words (they refer to relations, objects, and so forth) and the different possible senses for a word.
+
+The basic or primitive unit of meaning for semantic will be not the word but the sense, because words may have different senses, like those listed in the dictionary for the same word. One attempt to help with this is for the different senses can be organized into a set of classes of objects; this representation is called an ontology. Aristotle noted classes of substance, quantity, quality, relation, place, time, position, state, action, and affection, and Allen notes we can add events, ideas, concepts, and plans. Actions and events are especially influential. Events are important in many theories because they provide a structure of organizing the interpretation of sentences. Actions are carried out by agents. Also important is the already mentioned notion of a situation.
+
+Just noting different senses of a word does not of course tell you which one is being used in a particular sentence, and so ambiguity is still a problem for semantic interpretation. (Allen notes that some senses are more specific (less vague) than others, and virtually all senses involve some degree of vagueness in that they could theoretically be made more precise.) A word with different senses is said to have lexical ambiguity. At the semantic level one must also note the possibility of structural ambiguity. "Every boy loves a dog" is ambiguous between many dogs or one dog. This kind of semantic structural ambiguity will involve quantifier scoping.
+
+What we need, then, for a logical form language, is something that can capture sense meanings but also how they apply to objects and can combine into more complex expressions. Allen introduces a language resembling the first order predicate calculus (FOPC) that enables this. I'm not going to try and explain everything about this language, but I will go over some of the basics and give examples.
+
+In this logical form language, word senses will be the atoms or constants, and these are classified by the type of things they describe. Constants describing objects are terms, and constants describing relations and properties are predicates. A proposition is formed from a predicate followed by the appropriate number of terms that serves as its arguments. "Fido is a dog" translates as "(DOG1 FIDO1)" using the term FIDO1 and the predicate constant DOG1. There can be unary predicates (one argument), binary predicates (two arguments), and n-ary predicates. "Sue loves Jack" is (LOVES1 SUE1 JACK1). Proper names (Fido) have word senses that are terms, whereas common nouns (dog) have word senses that are unary predicates. Verbs commonly have senses that correspond to n-ary predicates. Allen points out that other systems of semantic representation besides the type he uses have ways of making similar distinctions.
+
+Continuing the similarity with FOPC, logical operators are also used. The negation operator is NOT, as in (NOT (LOVES1 SUE1 Jack1)) for "Sue does not love Jack." The logical form language will allow operators similar to the truth functional connectives in FOPC for disjunction, conjunction, and the conditional ("what is often called implication"). Since English terms for and, or, but, etc. can have connotations not captured by the operators and connectives of FOPC, the logical form language will allow for these also. He also brings in quantifiers, both the two in FOPC (universal and existential), and those of English for some, most, many, etc. Variables are also used, but not exactly like in FOPC. In FOPC a variable's assignment extends only as far as the scope of the quantifier, but in natural languages, with pronouns referring to things introduced earlier, we need variables to continue their existence beyond the initial quantifier scope. Each time a discourse variable is introduced, it is assigned a unique name and subsequent sentences can then refer back to this term.
+
+There are also a number of extensions to basic FOPC that must be made in the logical form language. These include generalized quantifiers, modal operators, and predicate operators, which we will now describe. We already mentioned that the logical form language will have more quantifiers than the two of FOPC. Quantifiers used in natural languages differ from those in FOPC in having a more restricted range and in being more complex. To capture this, Allen can use generalized quantifiers, which have the form:
+
+(quantifier variable: restriction-proposition body-proposition)
+"Most dogs bark" is interpreted as having the logical form:
+
+(MOST1 d1 : (DOG1 d1) (BARKS1 d1))
+which means that most of the objects "d1" that satisfy "(DOG1 d1)" also satisfy "(BARKS1 d1)."
+
+A type of generalized quantifier is used for the articles "the" and "a." To capture the meaning of a sentence, obviously something must do the work of these articles. For example, note that "The dog barks" is true only if there is a particular dog that barks, and the use of context will be important in identifying this particular dog, since the statement could refer to any of many dogs in the world. In logical form language, the statement would be:
+
+(THE x : (DOG1 x) (BARKS1 x)) 
+Modal operators are used to represent the meaning of intentional verbs such as believe and want, to represent tense, and for other uses. For instance, "Sue believes that Jack is happy" becomes:
+
+(BELIEVE SUE1 (HAPPY JACK1)) 
+We can also use modal operators to capture tense information. Modal tense operators include PAST, PRES, and FUT. "John sees Fido," "John saw Fido," and "John will see Fido" are thus rendered:
+
+(PRES (SEES1 JOHN1 FIDO1))
+(PAST (SEES1 JOHN1 FIDO1))
+(FUT (SEES1 JOHN1 FIDO1)) 
+Now let's turn to predicates again in this logical form language. We already mentioned that there will be unary, binary, and n-ary predicates. We also will use the notion of a predicate operator. A predicate operator takes a predicate as an argument and produces a new predicate; this is used to deal with plural forms, such as in "the dogs bark." If DOG1 is a predicate true of any dog, then (PLUR DOG1) is a predicate true of any set of dogs. "The dogs bark" is:
+
+(THE x : ((PLUR DOG1) x) (BARKS1 x)) 
+So you can see that the logical form language really does bear a resemblance to FOPC, with certain additions needed to capture the richness of a natural language that is often ignored by FOPC. Let's turn again to the question of ambiguity. Recall that the logical form language needed to be able to deal with ambiguity, which will not always be resolvable without a consideration of the larger discourse context, not available at this stage of the analysis. It will not necessarily be able to resolve ambiguity, but it needs to be able to represent it. The logical form language will be able to encode many forms of ambiguity by allowing alternative senses to be listed in cases where a single sense is allowed. A sentence may have multiple possible syntactic structures, and each of these may have multiple possible logical forms. The words in the sentence might even have multiple senses. With all this ambiguity the number of possible logical forms to be dealt with may be huge. This can be reduced by collapsing some common ambiguities and representing them in the logical form. These ambiguities can be resolved later when additional information from the rest of the sentence and more context information become available. Some authors treat the language that captures this ambiguity encoding as quasi-logical form.
+
+As an example of this ability to capture ambiguity (without resolving it), consider the word "ball, which may be a round object or a social event. "Sue watched the ball" is ambiguous and cannot be disambiguated without considering the larger discourse context, not available at the stage of semantic analysis. We can represent this sentence using a single logical form that captures both senses of ball:
+
+(THE b1 : ({BALL1 BALL2} b1) (PAST (WATCH1 SUE1 b1))) 
+We mentioned that a sentence such as "Every boy loves a dog" is ambiguous about whether there is one dog or many. This ambiguity is captured by using angle brackets, which indicate scoping abbreviation:
+
+(LOVES1 <EVERY b1 (BOY1 b1)> <A d1 (DOG1 d1)>)
+This takes the place of two separate possibilities:
+
+(EVERY b1 : (BOY1 b1) (A d1 : (DOG1 d1) (LOVES1 b1 d1)))
+(A d1 : (DOG1 d1) (EVERY b1 : (BOY1 b1) (LOVES b1 d1))) 
+The logical form language also uses event and state variables on predicates and thematic roles. The basic idea here is that a single word such as "break" might have different senses in
+
+John broke the window with the hammer.
+The hammer broke the window.
+The window broke.
+These uses of "break" have different arity (the first is ternary between John, the hammer, and the windows, while the others are binary and unary, respectively). Event variables might be used to signify the different types of event involved in the three situations. Or one could use thematic roles, in which John has the role of agent, the window has the role of theme, and hammer has the role of instrument. Other situations might require the roles of "from a location, "to a location," and the "path along a location," and even more roles can be symbolized. The description and symbolization of these events and thematic roles is too complicated for this introduction.
+
+Thus far we have written as if the process of syntactic analysis, yielding a syntactic representation in a context-free grammar or definite clause grammar, and the process of semantic analysis, which takes this syntactic representation and yields a statement in a logical form language, were two separate processes. We have used the phrase "semantic interpretation" loosely for the latter process; actually we might think of semantic interpretation as going from the sentence to the logical form or from the syntactic structure or representation to the logical form. There is a more specialized use of "semantic interpretation" involved in the use of various techniques to link syntactic and semantic analysis. In this specialized sense, the method of semantic interpretation allows logical forms to be computed while parsing. A popular version of this pursues a rule-by-rule style, with each syntactic rule corresponding to a semantic rule, so that each well-formed syntactic constituent will have a corresponding well-formed semantic (logical form) meaning constituent. But other approaches are possible, including those that attempt to produce a semantic interpretation directly from the sentence without using syntactic analysis and those that attempt to parse based on semantic structure. Just as in the case of syntactic analysis, statistics might be used to disambiguate words into the most likely sense.
+
+Pragmatics
+
+So far we have discussed the processes of arriving at the syntactic representation of a sentence or clause and the semantic meaning, the logical form, or the sentence or clause. At the level of logical form, some types of ambiguity may remain because logical form is a context-independent representation. So we have to go further in our analysis. In processing a natural language, some types of ambiguity arise that cannot be resolved without consideration of the context of the sentence utterance. General knowledge about the world may be involved as well as specific knowledge about the situation. This knowledge might be needed as well to understand the intentions of the speaker and enable one to supply background assumptions presumed by the speaker. Besides our representation of syntactic structure and logical form, then, we need a way of representing such background knowledge and reasoning. The new level of representation is knowledge representation. (KR), and the language we use for it will be a knowledge representation language (KRL).
+
+Note that some approaches differ from Allen in using the same language for the logical form and the knowledge representation, but Allen thinks using two languages is better, since logical form and knowledge representation will not do all the same things. For example, logical form will capture ambiguity but not resolve it, whereas the knowledge representation aims to resolve it. Of course, in very simple NLP systems there might not be any way to handle general world knowledge or specific discourse or situation knowledge, so the logical form is as far as the system will go.
+
+For knowledge representation, Allen uses an abstracted representation based on FOPC, but he notes that other means of representation are possible. It need not directly represent logical formulas or use theorem proving techniques as a model of inference. Rather, the knowledge representation system could be a semantic network, a connectionist model, or any other formalism that has the proper expressive power. I'm not going to discuss in depth his KRL but just note that it does resemble FOPC symbolization, with universal and existential quantification, and also truth functional connectives or operators for conjunction, disjunction, the conditional, and negation.
+
+Let's turn to some examples of the place of general knowledge. General knowledge about the world can be specified in terms of types of objects in the world, with no mention of particular individuals. (Information about particular individuals would be included in knowledge of the specific setting or situation.) General knowledge is important for resolving many ambiguities. For example, consider the following sentences:
+
+I read a story about evolution in ten minutes.
+I read a story about evolution in the last million years. 
+Obviously, the prepositional phrase ending the first sentence refers to the time it took to read the story, while the prepositional phrase ending the second sentence refers to the period of evolution itself. But how did you know this? The sentences have the same basic structure. Your background general knowledge of human life spans, reading speeds, and the theory of evolution enabled you to sort it out.
+
+When a pronoun is used in a sentence, we must determine its referent. This is known as anaphora resolution. A straightforward method is to find the most recently used possible reference, and use that. Some domain information may be helpful in determining what recently used nouns really are possible for the pronoun to match. For example:
+
+Fred went to the supermarket.  He found a bottle of milk in the dairy section, paid for it and left.
+The noun phrase most recent to the use of "it" is dairy section, but knowledge base information could tell us that people don't pay for dairy sections, so we should look for another referent.
+
+Or consider how your knowledge of the world may be used to determine the correct meanings of the sentences in the following classic example:
+
+Time flies like an arrow
+Fruit flies like a banana. 
+There may still be ambiguities lurking in these sentences, but we use general knowledge about time and fruit flies to probably interpret "flies" differently in these sentences. Of course, general knowledge is not the only kind of knowledge helpful in disambiguation. Sometimes it is the specific knowledge of the situation that enables you to sort out the referent of a noun phrase or resolve other ambiguities.
+
+Turning back to general knowledge, we note that a knowledge representation capability will include a database of sentences (the knowledge base (KB)) and a set of inference techniques that will be used to derive new sentences from the current knowledge base and information in the input sentence. Without the inference techniques the knowledge in the knowledge base will be useless. As already mentioned, the language used to define the KB will be the knowledge representation language, and while this could be the same as the logical form language, Allen thinks it should be different for reasons of efficiency. The knowledge representation language can be made concise to allow fast inferences, and a mapping function will relate the logical form language to the KRL.
+
+Here are some other important distinctions relating to knowledge representation. Relations of entailment must be distinguished from relations of implication. When a formula P must be true given the formulas in a knowledge base, the KB entails P. Implications, on the other hand, are conclusions that might typically be derived from a sentence but that could be denied in specific circumstances. For example, the sentence "Jack owns two cars" entails that Jack owns a car but only implies that he does not own three cars.
+
+To understand a natural language requires distinguishing between deductive and nondeductive inference, with the latter including inductive inference and abductive inference. The system may allow the use of default rules, which can allow exceptions (they are defeasible). The closed world assumption asserts that the knowledge base contains complete information about some predicates. If for such a predicate, a proposition containing it cannot be proven true, then its negation is assumed to be true.
+
+We already mentioned that Allen's KRL resembles FOPC in including quantification and truth-functional connectives or operators. Recall that the logical form language included more quantifiers than are in FOPC. Here is a specific difference between the logical form language and the knowledge representation language. The logical form language contains a wide range of quantifiers, while the KRL, like FOPC, uses only existential and universal quantifiers. Allen notes that if the ontology of the KRL is allowed to include sets, finite sets can be used to give the various logical form language quantifiers approximate meaning.
+
+The knowledge representation language also makes use of a way to represent stereotypical information about objects and situations, because many of the inferences we make in understanding natural language involve assumptions about what typically occurs in the situation being discussed. The way to provide for this is to encode this information in structures known as frames. A frame is a cluster of facts and objects about some typical object, situation, or action, along with specific strategies of inference for reasoning about such a situation. The parts in a frame, the facts and objects, are called slots or roles. Thus, for example, the frame for a house may have slots of kitchen, living room, etc. The frame will also specify the relationships between slots and the object represented by the frame itself. The slot notation can be extended to show relations between the frame and other propositions or events, especially preconditions, effects, and decomposition (the way an action is typically performed). The information in these frames seems to me to capture our common sense knowledge about things and events in the world.
+
+The KRL must also include a method of representing and reasoning about temporal event information, such as that contained in the tense of verbs and in adverbials (e. g., "yesterday"). The logical form language used model operators (PAST, PRES, FUT) and temporal connectives (BEFORE, DURING). Extensions to FOPC are used in the KRL to represent this type of information. For example, "t1<t2" shows that time point or interval t1 is before time point or interval t2. Tense operators are mapped to temporal relations with respect to some indexical terms referring to the present time. So if the present time is NOW1, "T1<NOW1" shows that T1 is in the past.
+
+We earlier gave some examples of the importance of general knowledge. But some problems in interpreting a natural language sentence involve bringing in not general knowledge but the more particular local discourse context (the conversation). For example, with respect to the input sentence, the syntactic and semantic structure of the preceding sentence or preceding clause, along a list of the objects mentioned in that sentence or clause, might contain crucial information. This information might allow specification of the referent of a pronoun or other definite noun phrase occurring in the input sentence, or it might provide the meaning of a verb phrase ellipsis in the input sentence that refers to a previously described event. Allen's example of anaphora resolution, as well an instance of interpreting verb ellipsis, are:
+
+Jack lost his wallet in his car.
+He looked for it for several hours. (pronoun "it" referring to "wallet" in earlier sentence)
+
+Jack forgot his wallet.
+Sam did too. (verb ellipsis referring to forgetting of wallet in previous sentence) 
+We already mentioned a simple algorithm for anaphora resolution might direct the program to look for a noun in the immediately preceding sentence or clause. The NLP system might keep track of these by grouping the possible antecedents of pronouns into a discourse entity list or history list. The simple algorithm already mentioned might then be used to require that the most recent on the list be checked as a possible referent of the pronoun in question. This checking will be more sophisticated if it involves consulting constraints, such as those based on proper gender and number, to eliminate some referents as possibilities. (Other more sophisticated algorithms could be developed too.)
+
+Besides pronouns, other expressions might need resolution. Other referring expressions might be interpreted using pattern matching techniques that find syntactic similarities between the current clause and preceding ones. For example, consider how to interpret the third sentence in this dialogue example from Allen:
+
+Did the clerk put the bananas on the shelf?
+Yes.
+The ice cream in the refrigerator?
+The pattern of the last sentence can be matched with the earlier pattern, with ice cream mapping to bananas, and refrigerator to shelf. The missing aspect of the clerk putting such items can be then supplied.
+
+Notice that the relevant local discourse context might not be just the previous sentence but some larger set, as in the bananas example. To prefigure a topic we will consider more thoroughly shortly, let us note that a more thorough discourse analysis involves identifying the intended focus of a portion of language in order to understand it. We frequently shift focus when we talk, and natural language processors must be able to see this to understand what we are talking about. When we converse we sometimes take a brief excursus that shifts focus for a moment, and we must be able to see that, for example, a noun phrase refers back to an earlier focus rather than the excursus. Terms that clue is in to this kind of excursus are "although," "incidentally," and "by the way," while phrase such as "anyway" and "getting back" indicate returns to the previous focus. To adapt an example from Ginsberg, consider:
+
+A business plan will involve much more than a marketing plan. Although development of a marketing plan has been a major topic in this course, other important areas are involved in this broader plan.
+To what does "broader plan" refer? The phrase is not a pronoun, but still we need to determine to what it refers. The most immediately preceding candidate is "marketing plan," but the use of "although" clues is in to the fact that the phrase "marketing plan" is in the middle of a brief excursus from the previous main focus of the discussion, which was about a business plan. So we see that the broader plan referred to is the business plan, not the marketing plan.
+
+One aspect that is important here is that we assume that the discourse is coherent, which allows us to determine how the sentences relate to one another. Our assumption is that a discourse would not normally consist of unrelated sentences. For example, consider:
+
+Jack took out a match.
+He lit a candle.
+Because we assume the discourse is coherent, the "he" must refer to Jack, "lit" must mean "lighting" rather than "illuminating" the candle, and the instrument used to light the candle must be the match. Of course, this is assuming the above depicts a normal set of events. Many such interpretations of coherence will be implications rather than entailments; in other words, they are defeasible and might be overridden by later information.
+
+We can now get even more specific about the notion of local discourse. The local discourse situation includes local connections between sentences. But as already mentioned in an example above, the topic of discussion may shift, change, and return to previous topics, with the utterances clustering together into units, called discourse segments, having a hierarchical structure. Often times changes in discourse segment are introduced but cue phrases such as "by the way." Natural language processing must consider this extended discourse context, including multiple segments. For example, a pronoun may refer to a referent not mentioned in the previous segment but in an earlier segment. Consider two people talking about one of them taking a third person to the airport to catch a plane. The conversation temporarily veers off into a discussion of the new car the driver had recently purchased. Then the listener breaks in with "By the way, did you get her to the plane on time?" Obviously, "her" refers not to a possible salesperson that sold the driver the new car but the person being driven to the airport. The segment about driving to the airport had shifted to a segment about a new car purchase.
+
+Allen notes that there is no consensus on how segmentation should be done or on what the segments of a particular discourse are, though almost all researchers share the intuition that some sentences group together into such units. But still two important outstanding issues are, first, techniques to analyze sentences within a segment, and second, the relation of segments to one another. We can comment on these briefly.
+
+In an NLP, a structural requirement on a segment is that sentences within the segment will share such properties as:
+
+A technique based on recency (such as a history list) to be used for referential analysis and handling ellipsis.
+A time and location characterizing the clauses, or a progression of time and location as in a narrative.
+A set of speakers and hearers.
+A fixed set of relevant background assumptions.
+There are two approaches to further delineating segments. An intentional approach holds that the sentences within the segment contribute to a common purpose or communicative goal. An informational approach holds that the sentences are related by temporal, causal, or rhetorical relations.
+
+In an NLP dealing with the presence of segments, the individual segments can be captured in discourse states, which allow the temporary suspending of one segment while a new one is pursued. A discourse state consists of:
+
+The sentences of the segment
+The local discourse context, generated from the sentences in the segment
+The semantic content of the segment sentences and the semantic relationships that make them cohere.
+The NLP then can process sentences as belonging to a particular segment and then use this information to resolve ambiguity and supply implied information.
+
+So we assume discourse segments cohere within themselves and together may constitute a discourse state, and the NLP can use this information in interpretation. Further abilities of the NLP system to interpret natural language conversations involve the notions of expectations, scripts and plans.
+
+First let's talk of expectations. With respect to an input sentence, the content of the previous sentences and any inferences made in interpreting these sentences will form what might be called the "specific setting." This specific setting information can generate a set of expectations. Expectations can be generated by information about, among other things, action and causality, causes and effects, preconditions, enabling, decomposition, and generation. A possible interpretation of the input sentence can then be compared/matched to the expectations. The goal is to match only one of the interpretations to the expectations. In the above example, the matching process will use expectations to match the story with the interpretation that the match lit the candle rather than the interpretation that the match illuminated the candle, since one normally expects a match to light a candle rather than do something else to it. But if an exact match is not possible, other considerations will enter.
+
+There are many possible situations and scenarios that will generate expectations. One way to control the generation of expectations is to store large units of information that identify common situations. These are scripts. Scripts can be described in terms of actions or states as goals, such as "taking the train to Rochester" or "getting to Rochester," and these goals might be used by the system to locate the relevant script. Related to a script is a richer framework called a plan-based model. A plan, a set of actions, is used to achieve a goal, and this notion can be used by the NLP to infer the plan of an agent based on the agent's actions. This is plan recognition or plan inference. Possible expectations can be generated based on knowledge of such plans.
+
+Plan recognition also involves the fact that understanding natural language often requires understanding of the intentions of the agents involved. We assume that people do not act randomly but have goals and their actions are part of a plan for reaching the goal. When we read "David needed money desperately. He went to his desk and took out a gun" we reason that David has some plan to use the gun to commit a crime and get some money, even though this is not explicitly stated. Or when we ask a ticket agent "Do you know when the next train leaves?" we expect the agent to tell us the time if he knows it, rather than just telling us that he does know it by saying "Yes." We assume the agent realizes we have the goal of actually learning the time, not just whether he knows it. For the natural language processor to interpret such sentences correctly it must have a lot of background information on such scenarios and be able to apply it.
+
+All this talk of expectations, scripts, and plans sounds great, but human experience is so vast that an NLP system will be hard pressed to incorporate all this into its knowledge base. Clearly much work remains to be done in the area of developing and perfecting the above techniques. As Allen says "Significant work needs to be done before these techniques can be applied successfully in realistic domains."
+
+Natural language generation
+
+This paper has focused on natural language understanding or interpretation. A natural language processor in the full sense should be able to not only interpret or understand natural language sentences, but also generate them and participate in a conversation (a natural dialogue) with another natural language processor, whether human or computer. But initiating a conversation is more than just being directed to understand it:
+
+The big question to answer in defining a conversational agent is, why should the agent ever speak? What motivates it to say anything or to attempt to comprehend the utterances that are said to it?
+
+A very simple NLP that engaged in conversation might do so because it was programmed to do so, in the manner of a database question-answering agent. Given an input question, the agent would interpret it, search for the answer in the database, and generate output providing the answer. But of course, Allen notes, this type of simple agent wouldn't be considered very intelligent or conversational. This type of agent would have no chance of passing the Turing test, for example, because it wouldn't be flexible and wouldn't seem at all able to generate an independent response or initiate a line of dialogue.
+
+Allen notes that we can give some intelligence to a system if we can act in a way that more closely matches what motivates human behavior. People act to achieve goals. A way to model this is use the concepts of perceptions (of the world), which include:
+
+beliefs (about the world),
+desires and wants (positive or negative responses to states of the world, enabling comparison of the desirability of these states),
+planning/reasoning (about ways to attain other states),
+commitment (deciding to act),
+intentions (maintain the course of action decided on), and
+acting.
+The above set of concepts is called a BDI model (belief, desire, and intention). Perception, planning, commitment, and acting are processes, while beliefs, desires, and intentions are part of the agent's cognitive state.
+
+To get the knowledge base earlier mentioned to function as the beliefs of the agent, it's best to divide up the knowledge base into belief spaces. Each proposition could be a belief. Two spaces would be useful for a conversation, one for the agent's beliefs and the other to represent its beliefs about the other agent's beliefs. In particular, the agent must be able to recognize the other agent's intentions, and for this, plan recognition can be used. Allen discusses the notion of speech acts in discussing a notion of a discourse plan that would be able to control a dialogue.
+
+The computer is going to act in a deterministic fashion in accordance with its program, so that it must be programmed when to initiate a conversation, for example. It's not going to be all that far off, then, from the simple database program alluded to earlier. Of course, some randomizing function could be built into the program, so that it can "choose" from among several alternatives in responding to or initiating dialogue. Given that with respect to the subject of human free will and choice we do not seem to have resolved the debate between libertarianism, compatibilism, and hard determinism, the fact that even a very sophisticated natural language processing computer will probably act in a deterministic fashion may not preclude it from engaging in conversation in the same way a human does.
+
+Can computers understand natural languages yet?
+
+Early efforts at NLP include the National Research Council attempt in the late forties or early fifties to develop a system that could translate among human languages. Full fluency was predicted within five years. The theory behind this optimism stemmed from the success of code-breaking efforts during World War II, which led people to believe that human languages were just different coding systems for the same meaning. Application of the appropriate transformational rules should enable conversion from one language to another. The method used an automatic dictionary lookup and application of grammar rules to rearrange the word equivalents obtained from the dictionary. There was some awareness that ambiguities and idioms might present problems, requiring the involvement of some manual editing. The mathematician Warren Weaver of the Rockefeller Foundation thought it might be necessary to first translate into an intermediate language (whether there really was such a thing underlying natural languages or it had to be created). But efforts met with no real success. For example, from the mid-fifties came the following translation of "In recent times, Boolean algebra has been successfully employed in the analysis of relay networks of the series-parallel type." The program listed alternatives when it was uncertain of the translation.
+
+(In, At, Into, For, On) (last, latter, new, latest, lowest, worst) (time, tense) for analysis and synthesis relay-contact electrical (circuit, diagram, scheme) parallel-(series, successive, consecutive, consistent) (connections, junction, combination) (with, from) (success, luck) (to be utilized, to be taken advantage of) apparatus Boolean algebra.
+
+In 1966, after spending $20 million, the NRC's Automated Language Processing Advisory Committee recommended no further funding for the project. Instead, they thought, the focus of funding should shift to the study of language understanding.
+
+We will not delve into progress in speech recognition. Perhaps the next oft-cited step in the other aspects of natural language processing was ELIZA, developed by Joseph Weizenbaum in the sixties. ELIZA could take text input, use pattern matching and substitution of "me" and "you" where needed, insert some canned leading phrases such as "Tell me more about�" and "Why do you think so," and produce output that appeared to the user to be coming from an nondirective Rogerian therapist. This program could give the appearance of doing natural language processing, but its syntactic, semantic, and pragmatic analyses were primitive or virtually non-existent, so it was really just a clever party game, which seems to have been close to Weizenbaum's original intent anyway. Because it acted like a "client-centered" therapist, ELIZA could spit back at you anything you gave it that it couldn't process. In terms of breakthroughs in NLP, it appears to me to be not all that significant, except maybe as a commentary on the replacability of therapists using the client-centered methods of Carl Rogers.
+
+In the seventies Roger Schank developed MARGIE, which reduced all English verbs to eleven semantic primitives (such as ATRANS, or Abstract Transfer, and PTRANS, or Physical Transfer). This sort of reduction enable MARGIE to make inferences about the implications of information it was given, because it would know what sorts of things would happen depending on the semantic primitive involved in the input sentence. This was developed further into the notion of Scripts, which we mentioned above. The idea was that the computer could be given background information (a SCRIPT) about what sorts of things happened in typical everyday scenarios, and it would then infer information not explicitly provided. Humans do this all the time. MARGIE gave way to SAM (Script Applier Mechanism), which was able to translate limited sentences from a variety of languages (English, Chinese, Russian, Dutch, and Spanish).
+
+In the late seventies, Scripts resulted in PAM, for Plan Applier Mechanism, from the work of Schank, Abelson, and Wilensky. PAM interpreted stories in terms of the goals of the different participants involved. Later followed a variety of variants by students of these guys, including FRUMP, which was used to summarize news stories by UPI. Still, adequate consistent translation was lacking, as when FRUMP read a story about how a political assassination had shaken America and summarized the story as about an earthquake.
+
+At the present time, a number of natural language processing programs have been developed, both by university research centers (on AI or computational linguistics) or by private companies. Most of these have very restricted domains, that is, they can only handle conversations about limited topics. Suffice it to say that with respect to a natural language processing system that can converse with a human about any topic likely to come up in conversation, we are not there yet.
+
+One problem is that it is tedious to try to get into the computer a large lexicon, and maintain and update this lexicon. Structuring the rules of a natural language grammar is also a great task. But there is also the problem of general world knowledge. Much of the problem stems from the lack of common sense knowledge on the part of the computer. Maybe Doug Lenat's CYC database, if it is every "finished," will help. But it seems to me a few reasonably competent philosophers could quickly find common sense knowledge not encoded into the database.
+
+What we need, it seems to me, is a way for the computer to learn common sense knowledge the way we do, by experiencing the world. Some researchers believe this too, and so work continues on the topic of machine learning.
+
+More current information about the state of the art on the above topics can be obtained by searching the World Wide Web using keywords such as natural language processing, natural language understanding, machine learning, computational linguistics, etc. Many universities in the US doing research on NLP have information and links, for example, the University of Texas does at http://www.cs.utexas.edu\users\ml.
+
+PT-Thinker as a Natural Language Processor
+
+PT-Thinker has a limited ability to handle English sentences, so I will comment briefly on how its parser appears to operate. I doubt that PT-Thinker has much in the way of general world knowledge, but it does have the ability to sort out elementary English sentences.
+
+As far as I can tell, the parser in PT-Thinker first tries to strip off punctuation, and terms such as "please," and it converts uppercase letters to lowercase. It has a large list of common terms classified into parts of speech. It looks for such terms, matches them to the proper part of speech, and then tries to classify the larger phrase including the term. This clues it into the sentence structure. So, for example, it looks for common questions starting terms such as "what" "how," "who," "when," etc. It can look for connectives, such as "then," "either," "both," "and," etc. to try to break up a sentence into clauses. It can recognize common greetings such as "Hello." It can also recognize common prepositions and pronouns. Recognition of these clues helps it try to match the pattern of the phrase or sentence against some common structures it knows to look for. It might take a preposition as a clue to look for a prepositional phrase, or an auxiliary verb as a clue to look for a verb phrase. It does have available a large list of verbs and nouns it can consult, including some irregular verb forms. Apparently if it has trouble resolving the referent of a pronoun it can ask the user to clarify who or what the referent is.
+
+Using this information and the best match for the structure, PT-Thinker can then accept the statement, and tell you that, and then later answer questions that refer back to that statement. It thus can enlarge its database of information for later use in the session.
+
+Since PT-thinker is written in Prolog, presumably it uses a top-down, depth-first algorithm, but personally I can't ascertain this from my scan of the parser code. It seems to have the ability to keep track of some intrasentence context information, such as person (first, second, etc.) and tense, so in this sense it doesn't look like its grammar is context free. To be frank, I would have to see more comments in the code and look at more programs like it to discern the fine points of how it works.
+
+I know what a pain in the neck it is to comment a program after it is done, and John Barker has commented some of the early parts of the program. He is under no obligation to comment it or even show it to anybody, so he really is being a good sport in letting me see the parser code. There are a lot of Prolog books available that will help you construct a parser, but even given that, John Barker's accomplishment in getting this thing to actually work is laudatory.
+
+Reference List and Bibliography
+
+Allen, James, Natural Language Understanding, second edition (Redwood City: Benjamin/Cummings, 1995). 
+
+Bratko, Ivan, Prolog, second edition (Workingham: Addison-Wesley, 1990). 
+
+Ginsberg, Matt, Essentials of Artificial Intelligence (San Mateo: Morgan Kaufmann, 1993). 
+
+Hogan, James P., Mind Matters (New York: Ballantine, 1997). 
+
+Lazarev, Gregory L., Why Prolog? (Englewood Cliffs: Prentice-Hall, 1989). 
+
+Marcus, Claudia, Prolog Programming (Reading: Addison-Wesley, 1986). 
+
+Schildt, Herbert, Advanced Turbo Prolog (Berkeley: Osborne McGraw-Hill, 1987). 
+
+Shoham, Uoav, Artificial Intelligence Techniques in Prolog (San Francisco: Morgan Kaufmann, 1994). 
+
+Steedman, Mark, "Natural Language Processing," in Margaret A. Boden, editor, Artificial Intelligence (San Diego: Academic Press, 1996). 
+
+Sterling, Leon, and Shapiro, Ehud, The Art of Prolog (Cambridge: MIT Press, 1986). 
+
+Teft, Lee, Programming in Turbo Prolog (Englewood Cliffs: Prentice-Hall, 1989). 
+
+Townsend, Carl, Advanced Techniques in Turbo Prolog (San Francisco: Sybex, 1987) 
+
+Footnotes
+
+1 Marcus, p. 236. [back]
+
+2 Steedman, p. 229. [back]

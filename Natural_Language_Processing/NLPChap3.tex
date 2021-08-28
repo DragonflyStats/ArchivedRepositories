@@ -1,0 +1,53 @@
+
+Your turn. You may also find it useful to attempt some of the exercises provided at
+the end of each chapter.
+From this chapter onwards you will be running Python sessions and using the NLTK.
+You should get into the habit of starting sessions with the following commands:
+
+>>> from __future__ import division
+>>> import nltk, re, pprint
+
+One of the features that makes the Python language suitable for natural language
+applications is the very flexible treatment of data structures such as lists, strings and
+sequences. You should be familiar with these structures from previous programming
+courses, but should ensure you understand the way they are handled in Python. For
+this chapter, only lists are relevant and you should study Bird et al. (2009, section
+1.2) before trying any of the learning activities in this chapter.5
+%------------------------------------------------------------------------------------------------------------------------------
+3.3 Corpora and other data resources
+
+As explained in the previous chapter, much natural language processing relies on
+large collections of linguistic data known as corpora (plural of corpus). A corpus can
+be simply defined as no more than a collection of language data, composed of
+written texts, transcriptions of speech or a combination of recorded speech and
+transcriptions.
+Corpora fall into three broad categories (McEnery, 2003, p.450):
+Monolingual corpora consist, as the name suggests, of data from a single
+language.
+
+Comparable corpora include a range of monolingual corpora in different
+languages, preferably with a similar level of balance and representativeness, and
+can be used for contrastive studies of those languages.
+Parallel corpora include original texts in one language with translations of those
+texts in one or more different languages. Parallel corpora can be used to train
+statistical translation systems.
+
+A corpus is generally expected to have additional characteristics: corpora are usually
+constructed so as to be balanced and representative of a particular domain (McEnery
+and Wilson, 2001, pp. 29–30). (Sometimes the term is used more loosely to cover
+any large collection of language data which need not have been compiled
+systematically, as in the phrase ‘the web as corpus’.) Sampling theory is a branch of
+statistics that deals with questions such as: how many respondents are needed in an
+opinion poll for the results to be considered to represent public opinion at large?
+
+Similar considerations arise in corpus linguistics. This is particularly important if a
+corpus is to be used for quantitative analysis of the kind described in Chapter 5: if
+the corpus data is skewed or unrepresentative then results of the analysis may not be
+reliable. These considerations may be less important if the corpus is collected for the
+literary or historical interest of the documents that make it up, as is the case with
+Project Gutenberg for example.
+
+For example, Bird et al. (2009, pp. 407–412) refer to the TIMIT corpus, an annotated
+speech corpus developed by Texas Instruments and MIT. To ensure
+representativeness, it was designed to include a wide coverage of dialect variations.
+Corpus builders need to exercise expert judgment in deciding on the sampling frame,

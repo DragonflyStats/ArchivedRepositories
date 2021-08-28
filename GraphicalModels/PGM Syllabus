@@ -1,0 +1,18 @@
+Course Syllabus
+Topics covered include:
+
+The Bayesian network and Markov network representation, including extensions for reasoning over domains that change over time and over domains with a variable number of entities
+Reasoning and inference methods, including exact inference (variable elimination, clique trees) and approximate inference (belief propagation message passing, Markov chain Monte Carlo methods)
+Learning parameters and structure in PGMs
+Using a PGM for decision making under uncertainty.
+There will be short weekly review quizzes and programming assignments (Octave/Matlab) focusing on case studies and applications of PGMs to real-world problems:
+
+Credit Scoring and Factors
+Modeling Genetic Inheritance and Disease
+Markov Networks and Optical Character Recognition (OCR)
+Inference: Belief Propagation
+Markov Chain Monte Carlo and Image Segmentation
+Decision Theory: Arrhythmogenic Right Ventricular Dysplasia
+Conditional Random Field Learning for OCR
+Structure Learning for Identifying Skeleton Structure
+Human Action Recognition with Kinect

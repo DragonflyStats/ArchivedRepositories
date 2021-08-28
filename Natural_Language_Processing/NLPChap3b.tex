@@ -1,0 +1,473 @@
+3.5.2 British National Corpus
+The BNC is created and managed by the BNC consortium, which includes Oxford
+and Lancaster universities, dictionary publishers OUP, Longmans and Chambers, and
+the British Library. It was developed between 1991 and 1994 and consists of 100
+million words: 90 per cent written and 10 per cent transcriptions of speech. This
+was one of the first corpora to include spontaneous spoken English. The corpus was
+marked up using an automated part-of-speech tagger which resulted in a significant
+saving of time and expense compared with manual annotation by competent
+speakers of the language, but means that there is inevitably a degree of error – as
+you may discover in the course of the exercise given later in this chapter.
+You can access this corpus online and perform various kinds of analysis using the
+Simple Query language. Registration is required via the following link but there is
+currently no charge:
+http://bncweb.lancs.ac.uk/bncwebSignup/user/login.php (last visited 27th
+May 2013)
+3.5.3 COBUILD Bank of English
+The COBUILD project involved Collins Dictionaries and the University of
+Birmingham. The Collins corpus is a 2.5-billion word analytical database of English.
+It contains written material from websites, newspapers, magazines and books
+published around the world, and spoken material from radio, TV and everyday
+conversations. The Bank of EnglishTMforms part of the Collins Corpus and contains
+650 million words. It was used as a basis for the Collins Advanced Learner’s
+Dictionary, grammars and various tutorial materials for learners of English. It is not
+included in the NLTK but there is limited online access via
+http://www.collinslanguage.com/wordbanks.
+34
+Corpora
+3.5.4 Penn Treebank
+The Penn Treebank with its various offshoots is one of the widely used linguistic
+resources among empirical researchers.
+It includes a collection of texts in four different formats:
+Raw text (original).
+Tagged with POS using a tagset which was developed as part of the project.
+‘Parsed’; that is, marked up with constituent structure.
+Combined, including both POS tags and constituent structure.
+The Penn Treebank project . . . has produced treebanks from the Brown, Switchboard, ATIS and Wall Street
+Journal corpora of English, as well as treebanks in Arabic and Chinese.
+Jurafsky and Martin (2009, p. 438)
+The project began at the University of Pennsylvania in the 1990s and the results
+have been used as a basis for further annotation efforts involving semantics and
+rhetorical structure. The NLTK includes a selection from the Wall Street Journal
+(WSJ) component of the Treebank, which can be accessed in each of the above
+formats and additionally with a simplified POS tagset (Bird et al., 2009, Table 5-1,
+p. 183). Here is an excerpt showing the four different formats:
+Raw text
+Pierre Vinken, 61 years old, will join the board as a
+nonexecutive director Nov. 29.
+Tagged
+[ Pierre/NNP Vinken/NNP ]
+,/,
+[ 61/CD years/NNS ]
+old/JJ ,/, will/MD join/VB
+[ the/DT board/NN ]
+as/IN
+[ a/DT nonexecutive/JJ director/NN Nov./NNP 29/CD ]
+./.
+Parsed
+( (S (NP-SBJ (NP Pierre Vinken)
+,
+(ADJP (NP 61 years) old)
+35
+CO3354 Introduction to natural language processing
+,)
+(VP will
+(VP join
+(NP the board)
+(PP-CLR as
+(NP a nonexecutive director))
+(NP-TMP Nov. 29)))
+.))
+Combined
+( (S
+(NP-SBJ
+(NP (NNP Pierre) (NNP Vinken) )
+(, ,)
+(ADJP
+(NP (CD 61) (NNS years) )
+(JJ old) )
+(, ,) )
+(VP (MD will)
+(VP (VB join)
+(NP (DT the) (NN board) )
+(PP-CLR (IN as)
+(NP (DT a) (JJ nonexecutive) (NN director) ))
+(NP-TMP (NNP Nov.) (CD 29) )))
+(. .) ))
+3.5.5 Gutenberg archive
+The NLTK includes a small selection of out-of-copyright literary texts from Project
+Gutenberg, an archive of free electronic books hosted at http://www.gutenberg.org/
+Some of the texts included are:
+Jane Austen: Emma, Persuasion
+GK Chesterton: Father Brown stories, The Man Who Was Thursday
+William Blake: Poems
+Milton: Paradise Lost
+Shakespeare: Julius Caesar, Macbeth, Hamlet
+3.5.6 Other corpora
+Some further corpora included with the NLTK are:
+The Reuters corpus distributed with the NLTK contains 10,788 news documents
+totalling 1.3m words, partitioned into ‘training’ and ‘test’ sets. This split is for
+training and testing machine learning algorithms: we return to this topic in
+Chapter 5 of this subject guide.
+36
+Corpora
+US Presidents’ inaugural and State of the Union addresses, organised as separate
+files.
+UN Declaration of Human Rights in 300+ languages. Here are a few excerpts:
+ All human beings are born free and equal in dignity and rights.
+ Abantu bonke bazalwa bekhululekile njalo belingana kumalungelo abo.
+ Todos os seres humanos nascem livres e iguais em dignidade e em direitos.
+Other corpora with online query interfaces include:
+1. The Corpus of Contemporary American English, hosted at Brigham Young
+University, is claimed to be ‘the only large and balanced corpus of American
+English’. http://corpus.byu.edu/coca/ (last visited 27th May 2013)
+2. The Intellitext project at the University of Leeds ‘aims to facilitate corpus use for
+academics working in various areas of the humanities’ and currently provides
+access to monolingual and parallel corpora in several European and Asian
+languages. http://corpus.leeds.ac.uk/it/ (last visited 27th May 2013)
+Learning activity
+1. Pick two or three of the corpora mentioned above and research them online, focusing on questions
+such as:
+how large is the corpus?
+what language(s) and genre(s) does it represent?
+when was it constructed and what is its intended use?
+what is the sampling frame?
+what level of interannotator agreement was achieved, if reported?
+2. Logon to the BNC Web (free registration needed) or another online corpus. Study the documentation
+provided and search for data to answer the following questions:
+What syntactic categories can the following words have? total, pancake, requisition, acquisition.
+The guide to Simple Query Syntax provided with the BNC warns that ‘part-of-speech tags have
+been assigned by an automatic software tool and are not always correct’. Have your answers to
+the previous question shown up any examples of incorrect classification, in your view?
+What prepositions can follow the verb talk? Give an example in each case.
+3.5.7 WordNet
+The NLTK also includes English WordNet, with 155,287 words and 117,659
+synonym sets or synsets. A synset consists of a set of synonymous words paired with
+a definition and linked to words with more general or more specific meanings. For
+example, table has various meanings:
+table.n.01 ['table', 'tabular\_array'], "a set of data arranged in
+rows and columns"
+table.n.02 ['table'], "a piece of furniture having a smooth flat top
+37
+CO3354 Introduction to natural language processing
+that is usually supported by one or more vertical legs"
+table.n.02 hyponyms: drop-leaf\_table, coffee\_table, pool\_table, altar,
+table.n.02 hypernyms: furniture
+3.6 Some basic corpus analysis
+This chapter describes some relatively simple techniques, extracting various kinds of
+data in suitable formats for human interpretation of the results. Chapters 4 and 5 of
+the subject guide will look at ways the analysis and interpretation itself can be
+automated to varying degrees.
+Concordancing involves locating every instance of a word or phrase within a text or
+corpus and presenting it in context, usually a fixed number of words before and
+after each occurrence.
+Collocations are pairs of sequences of words that occur together in a text more
+frequently than would be expected by chance, and so provide a rough indication
+of the content or style of a document.
+Conditional frequency distributions support an elementary form of statistical
+analysis. A frequency distribution counts observable events and a conditional
+frequency distribution pairs each event with a condition. Some sample
+applications are:
+Comparing the use of particular words in different genres.
+Comparing word lengths in different languages.
+3.6.1 Frequency distributions
+The following worked example displays some rudimentary stylistic analysis by
+ranking the POS tags in a corpus according to frequency.
+Calculating tag frequency
+1. Import the Brown corpus.
+2. List the different categories within the corpus.
+3. Count the number of sentences in the science fiction category.
+4. Extract all the word tokens from the science fiction category, paired with their
+tags, and store them in the variable bsf. Note that the simplified tagset is
+selected.
+5. Calculate a frequency distribution of the tags: this gives an ordered list of the
+tags paired with their frequency in the variable sf tag fd. (Only the 12 most
+frequent are shown.)
+>>> from nltk.corpus import brown
+>>> brown.categories()
+['adventure', 'belles_lettres', 'editorial', 'fiction',
+'government', 'hobbies', 'humor', 'learned', 'lore',
+38
+Some basic corpus analysis
+'mystery', 'news', 'religion', 'reviews', 'romance', 'science_fiction']
+>>> sf_sents = brown.sents(categories = 'science_fiction')
+>>> len(sf_sents)
+948
+>>> bsf = brown.tagged_words(categories = 'science_fiction',
+simplify_tags=True)
+>>> sf_tag_fd = nltk.FreqDist(tag for (word,tag) in bsf)
+>>> sf_tag_fd.keys()
+['N', 'V', 'DET', 'PRO', 'P', '.', 'ADJ', ',', 'CNJ', 'ADV', 'VD', 'NP', ]
+>>> sf_tag_fd.tabulate()
+N V DET PRO P . ADJ , CNJ ADV VD NP
+2232 1473 1345 1268 1182 1078 793 791 685 644 531 467
+Learning activity
+1. Repeat the above process for other categories such as romance, news and religion. How do the
+frequency distributions and sentence counts enable you to compare the literary styles of these
+genres? Explain any assumptions you make.
+2. Having read through Bird et al. (2009, section 2.1), with particular attention to Table 2-3 on page 50,
+answer the following questions:
+(a) Summarise the README file from the Reuters corpus.
+(b) Create a variable soysents containing all sentences from reports concerning soy products.
+(c) Display the first ten sentences in soysents.
+(d) Create a variable metalwords containing all words from reports concerning metals.
+(e) What are the most frequently mentioned metals in this collection? Caution: why might this result
+be less than 100 per cent reliable?
+3.6.2 DIY corpus: some worked examples
+NLTK’s plain text corpus reader can be used to build a ‘corpus’ from a collection of
+text files. The resulting corpus will be formatted for access as raw text, lists of words
+or lists of sentences and can be re-formatted for other functions such as
+concordancing and finding collocations.
+The first example involves a one-text ‘corpus’ of the recent report from the UK
+Equality and Human Rights Commission: How fair is Britain?
+Step 1 Download the report as a PDF from http://www.equalityhumanrights.com
+Step 2 Manually extract text using Adobe Acrobat or another PDF reader and save
+as a .txt file
+Step 3 Point the corpus reader to the directory where you have saved the text file.
+>>> import nltk
+>>> from nltk.corpus import PlaintextCorpusReader
+>>> corpus_root = 'C:\NLP-stuff\Corpora'
+>>> mycorpus = PlaintextCorpusReader(corpus_root,'.*')
+39
+CO3354 Introduction to natural language processing
+We can now use the raw, words and sents methods to display the content in
+different formats:
+>>> mycorpus.fileids()
+['howfair.txt']
+>>> mycorpus.words('howfair.txt')
+['Equality', 'and', 'Human', 'Rights', 'Commission', ]
+>>> hf_raw = mycorpus.raw('howfair.txt')
+>>> hf_raw[:100]
+'Equality and Human Rights Commission\r\nTriennial
+Review 2010\r\nExecutive Summary\r\nHow fair\r\nis Britain'
+>>> mycorpus.sents('howfair.txt')
+[['Equality', 'and', 'Human', 'Rights', 'Commission', 'Triennial',
+'Review', '2010', 'Executive', 'Summary', 'How', 'fair', 'is',
+'Britain', '?'], ...
+Concordancing and collocations
+The Text method formats the content in a way which can be accessed by the
+concordance and collocation methods. Note that concordancing will always
+return fixed-length strings which include your target text as a substring, and so may
+be cut off in the middle of a word.
+>>> fair=nltk.Text(mycorpus.words('howfair.txt'))
+>>> fair.concordance('equal')
+Building index...
+Displaying 3 of 3 matches:
+has narrowed considerably since the equal Pay Act 1970 came into force in 1975
+sonal circumstances , should have an equal opportunity to have a say in decisio
+that every individual should have an equal chance to make the most of their tal
+>>> fair.collocations()
+Building collocations list
+Human Rights; Rights Commission; Significant findings; Headline data;
+Executive Summary; less likely; ethnic minority; life expectancy;
+0845 604; domestic violence; hate crime; labour market; disabled people;
+mental health; Black Caribbean; different groups; religiously motivated;
+sexual assault; minority groups; formal childcare
+Conditional frequency distribution
+Recall that a frequency distribution is a set of ordered pairs < event; count >
+where count is the number of times event occurs. In our context event is a word-type
+and count is the number of tokens of that type in a text. A conditional frequency
+distribution is a collection of frequency distributions, each one for a different
+condition.
+For this example we add a second document to the corpus, extracted from a PDF
+‘Guide to data protection’.
+Step 1 Create a single variable text word consisting of pairs of each word-token
+with the fileid of the document it occurs in.
+40
+Summary
+Step 2 Create a conditional frequency distribution, which will tell you the frequency
+of each word in both texts.
+Step 3 Pick a sample of words which are likely to occur in both documents, and
+tabulate their comparative frequency.
+>>> text_word = [(text,word) for text in ['howfair.txt','guide.txt']
+for word in mycorpus.words(text)]
+>>> text_word[:10]
+[('howfair.txt', 'Equality'), ('howfair.txt', 'and'),
+('howfair.txt', 'Human'),('howfair.txt', 'Rights'),
+('howfair.txt', 'Commission'), ('howfair.txt', 'Triennial'),
+('howfair.txt', 'Review'), ('howfair.txt', '2010'),
+('howfair.txt', 'Executive'),
+('howfair.txt', 'Summary')]
+>>> cfd = nltk.ConditionalFreqDist(text_word)
+>>> cfd
+<ConditionalFreqDist with 2 conditions>
+>>> cfd.conditions()
+['guide.txt', 'howfair.txt']
+>>> cfd['howfair.txt']
+<FreqDist with 16391 outcomes>
+>>> cfd['guide.txt']
+<FreqDist with 47064 outcomes>
+Testing the CFD
+>>> cfd['guide.txt']['fair']
+31
+>>> cfd['howfair.txt']['fair']
+30
+>>> keywords = ['fair','police','crime','office','equal','privacy']
+>>>>cfd.tabulate(conditions=['howfair.txt','guide.txt'],
+samples=keywords)
+fair police crime office equal privacy
+howfair.txt 30 15 29 4 2 0
+guide.txt 31 16 17 2 0 26
+Learning activity
+Find some suitable electronic documents and follow the above techniques to construct a ‘mini-corpus’. The
+documents in these examples were sourced from UK government websites: you may find similar
+documents on the website of your own country’s government, or of transnational organisations like the
+European Union or the United Nations. Think of some terms which are likely to occur in several of these
+documents and compare them using a conditional frequency distribution. If you can find a lengthy report
+which is issued along with a shorter summary, it is an interesting exercise to pick some key terms and see if
+their comparative frequency is the same or similar in the original document and the summary.
+3.7 Summary
+1. A corpus is a collection of linguistic data which was not originally produced for
+the purposes of linguistic analysis. Properly speaking it should be constructed so
+as to be balanced and representative. If a corpus includes any kind of
+41
+CO3354 Introduction to natural language processing
+annotation, it is good practice to use multiple annotators for at least a sample of
+the corpus and report the level of inter-annotator agreement that was
+achieved.
+2. Some uses of corpora include:
+Lexicography (compiling dictionaries).
+Compiling grammars for education and reference purposes.
+Stylistics: developing techniques to identify the author or genre of a
+document; investigating the effect on language use of different channels
+such as email, chat, face-to-face conversation, telephone calls and
+hand-written letters.
+Training and evaluation in linguistic research, using machine learning
+techniques.
+3. This chapter includes brief descriptions of several well-known and widely-used
+corpora such as the Brown corpus, the BNC and the Penn Treebank.
+4. Students on this course can access a variety of corpora through online interfaces
+or by using corpus tools provided with the NLTK.
+5. Some simple techniques for analysing corpora include concordancing,
+collocations and (conditional) frequency distributions. None of these techniques
+involve automated linguistic analysis: the interpretation of the outputs is down
+to the analyst.
+3.8 Sample examination question
+a) Explain what is meant by the following types of corpus, and describe an example
+in each category that you have encountered during this course:
+isolated
+categorised
+overlapping
+temporal.
+b) What applications would a tagged and parsed corpus be suitable for? What are
+some advantages and disadvantages of using an automated tagger to build such a
+corpus?
+c) Suppose the following lists show the number of sentences and the most commonly
+occurring part-of-speech tags in three different categories of text in a corpus, with
+their frequency of occurrence in brackets. What can you say about the styles of these
+documents from studying these results? Discuss any assumptions you make.
+Category A (4623 sentences) N (22236) P (10845) DET (10648) NP (8336) V
+(7346) ADJ (5435) ‘,’ (5188) ‘.’ (4472) CNJ (4227) PRO (3408) ADV (2770) VD
+(2531) . . .
+Category B (948 sentences) N (2232) V (1473) DET (1345) PRO (1268) P (1182)
+‘.’ (1078) ADJ (793) ‘,’ (791) CNJ (685) ADV (644) VD (531) NP (467) . . .
+Category C (1716 sentences) N (7304) P (4364) DET (4239) V (3863) ADJ (2620)
+CNJ (2324) PRO (2243) ‘,’ (1913) ‘.’ (1892) ADV (1485) NP (1224) VN (952)
+. . .
+42
+Appendix C
+Answers to selected activities
+This section includes model solutions to some of the exercises and activities where
+appropriate. In other cases there is no ‘correct’ answer and the point of the activity is
+to stimulate you to engage in independent self-directed learning.
+Chapter 2: Introducing NLP: patterns and structure in natural
+language
+Identify parts of speech, page 14
+Jack (Proper Noun) and (conjunction) Jill (Proper Noun) went (verb) up
+(preposition) the (determiner) hill (noun).
+The (determiner) owl (noun) and (conjunction) the (determiner) pussycat (noun)
+went (verb) to (preposition) sea (noun).
+Operation of a finite-state machine, page 17
+1. John swam.
+2. (a) John and Mary walked on the hill.
+(b) The cat sat on the mat and slept.
+(c) John or a fish walked on a hill and barked.
+(d) . . .
+Coding regular expressions, page 19
+1. a(aa)*(bb)*
+2. (aaa)j(aab)j(abb)j(bbb)j(bba)j(baa)j(aba)j(bab)
+97
+CO3354 Introduction to natural language processing
+Regular grammars, page 21
+S!either j if S1
+S!the j a j one S2
+S2!happy S2
+S2!(boy j girl j dog) eats (‘ice cream’ j ‘hot dogs’ j candy) S3
+S3!or j then S2
+S3!
+This is a slightly idealised rendering of Pinker’s state diagram which appears to have
+no halting state.
+The problem with this grammar can be clearly seen: the rule S3 ! or j then S2 has
+no connection with the rule that introduces either or if and so there is no way to
+ensure that the appropriate conjunction is used.
+Past tense forms, page 25
+The general idea is that rules need to be conditional in order to handle
+non-standard cases before applying general regularities: so a reasonable rule based
+on this data set might be:
+welcome ! welcomed else
+-come ! -came
+Chapter 3: Getting to grips with natural language data
+Online corpus queries, page 37
+Examples of incorrect tagging: search on to total/V gives examples like:
+. . . a ticket to total oblivion.
+. . . to describe it to total strangers.
+as well as ‘correct’ examples like
+. . . thought to total about 1,500 families . . .
+. . . a great opportunity to total and celebrate all the small wins made over the
+year
+98
+APPENDIX C. ANSWERS TO SELECTED ACTIVITIES
+Using NLTK tools, page 39
+1. ‘Stylistic’ analysis
+Science Fiction (948 sentences) N (2232) V (1473) DET (1345) PRO (1268) P
+(1182) ‘.’ (1078) ADJ (793) ‘,’ (791) CNJ (685) ADV (644) VD (531) NP (467)
+. . .
+News (4623 sentences) N (22236) P (10845) DET (10648) NP (8336) V (7346)
+ADJ (5435) ‘,’ (5188) ‘.’ (4472) CNJ (4227) PRO (3408) ADV (2770) VD (2531)
+. . .
+Religion (1716 sentences) N (7304) P (4364) DET (4239) V (3863) ADJ (2620)
+CNJ (2324) PRO (2243) ‘,’ (1913) ‘.’ (1892) ADV (1485) NP (1224) VN (952)
+. . .
+Some counts:
+SF: N 2232, PRO 1268, NP 467 ADJ 793
+NE: N 22236, NP 8336, PRO 3408 ADJ 5435
+RE: N 7304, PRO 2243 NP 1224 ADJ 2620
+SF: S 948, COMMA 791, CNJ 685
+NE: COM 5188 S 4623 CNJ 4227
+RE: CNJ 2324 COM 1913 S 1716
+Some tentative conclusions:
+1. Reference and description: both SF and RE use pronouns more than proper
+names; News has more proper names. Hard to interpret without further
+analysis: if an SF work includes a lot of dialogue for example, it might be more
+natural for characters to refer to each other as I, we, you and so on rather than
+by name. And news stories tend to be about named individuals.
+2. Syntactic complexity: we cannot be very precise with this data but it looks as if
+the SF genre has the least syntactic complexity and the RE genre the highest,
+judging from the numbers of commas and conjunctions per sentence. Of course
+we cannot tell whether these tokens are connecting clauses or other types of
+phrases.
+In an examination or coursework question, you would get credit for discussing these
+and other characteristics in the light of your impressionistic understanding of the
+typical styles for these genres.
+2. Reuters
+Display the README file from the Reuters corpus.
+from nltk.corpus import reuters
+desc = reuters.readme()
+print desc
+99
+CO3354 Introduction to natural language processing
+Create a variable soysents containing all sentences from reports concerning soy
+products.
+reuters.categories()
+Pick out categories relating to soy:
+soysents = reuters.sents(categories=['soy-meal', ...])
+Display the first ten sentences in soysents.
+print soysents[:10]
+Create a variable metalwords containing all words from reports concerning
+metals.
+metalwords = reuters.words(categories = ['alum','copper','gold', ...])
+(Note that inspection of texts in the alum category confirms that they are about
+aluminium.)
+What are the most frequently mentioned metals in this collection? Caution: why
+might this result be less than 100 per cent reliable?
+from nltk.book import *
+freqmetal = FreqDist(metalwords)
+freqmetalkeys = freqmetal.keys()
+freqmetal[:100]
+Remember that the contents of a frequency distribution are listed in the order of
+their frequency of occurrence. By scanning the output you should see that the
+first three metals listed are gold, copper and steel. However caution is in order
+as Reuters is an overlapping corpus, so we may be double-counting some
+occurrences. These metals may also be mentioned under the category
+strategic-metal, or some reports may mention more than one kind of metal
+and so come under multiple categories.
